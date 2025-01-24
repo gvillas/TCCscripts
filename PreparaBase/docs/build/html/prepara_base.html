@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; documentação Gerador de Base de Dados 0.0.1</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Gerador de Base de Dados
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Funções:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">AccumulatedAnnualDemand()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.AnnualEmissionLimit"><code class="docutils literal notranslate"><span class="pre">AnnualEmissionLimit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.AnnualExogenousEmission"><code class="docutils literal notranslate"><span class="pre">AnnualExogenousEmission()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.AvailabilityFactor"><code class="docutils literal notranslate"><span class="pre">AvailabilityFactor()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CapacityFactor"><code class="docutils literal notranslate"><span class="pre">CapacityFactor()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CapacityOfOneTechnologyUnit"><code class="docutils literal notranslate"><span class="pre">CapacityOfOneTechnologyUnit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CapacityToActivityUnit"><code class="docutils literal notranslate"><span class="pre">CapacityToActivityUnit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CapitalCost"><code class="docutils literal notranslate"><span class="pre">CapitalCost()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CapitalCostStorage"><code class="docutils literal notranslate"><span class="pre">CapitalCostStorage()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CarregaArquivo"><code class="docutils literal notranslate"><span class="pre">CarregaArquivo()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.CarregaArquivoYAML"><code class="docutils literal notranslate"><span class="pre">CarregaArquivoYAML()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.Conversionld"><code class="docutils literal notranslate"><span class="pre">Conversionld()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.Conversionlh"><code class="docutils literal notranslate"><span class="pre">Conversionlh()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.Conversionls"><code class="docutils literal notranslate"><span class="pre">Conversionls()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.DaySplit"><code class="docutils literal notranslate"><span class="pre">DaySplit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.DaysInDayType"><code class="docutils literal notranslate"><span class="pre">DaysInDayType()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.DepreciationMethod"><code class="docutils literal notranslate"><span class="pre">DepreciationMethod()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.DiscountRate"><code class="docutils literal notranslate"><span class="pre">DiscountRate()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.DiscountRateStorage"><code class="docutils literal notranslate"><span class="pre">DiscountRateStorage()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.EmissionActivityRatio"><code class="docutils literal notranslate"><span class="pre">EmissionActivityRatio()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.EmissionsPenalty"><code class="docutils literal notranslate"><span class="pre">EmissionsPenalty()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.EscreveArquivo"><code class="docutils literal notranslate"><span class="pre">EscreveArquivo()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.FixedCost"><code class="docutils literal notranslate"><span class="pre">FixedCost()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.InputActivityRatio"><code class="docutils literal notranslate"><span class="pre">InputActivityRatio()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.MinStorageCharge"><code class="docutils literal notranslate"><span class="pre">MinStorageCharge()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ModelPeriodEmissionLimit"><code class="docutils literal notranslate"><span class="pre">ModelPeriodEmissionLimit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ModelPeriodExogenousEmission"><code class="docutils literal notranslate"><span class="pre">ModelPeriodExogenousEmission()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.OperationalLife"><code class="docutils literal notranslate"><span class="pre">OperationalLife()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.OperationalLifeStorage"><code class="docutils literal notranslate"><span class="pre">OperationalLifeStorage()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.OutputActivityRatio"><code class="docutils literal notranslate"><span class="pre">OutputActivityRatio()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.REMinProductionTarget"><code class="docutils literal notranslate"><span class="pre">REMinProductionTarget()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.RETagFuel"><code class="docutils literal notranslate"><span class="pre">RETagFuel()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.RETagTechnology"><code class="docutils literal notranslate"><span class="pre">RETagTechnology()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ReserveMargin"><code class="docutils literal notranslate"><span class="pre">ReserveMargin()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ReserveMarginTagFuel"><code class="docutils literal notranslate"><span class="pre">ReserveMarginTagFuel()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ReserveMarginTagTechnology"><code class="docutils literal notranslate"><span class="pre">ReserveMarginTagTechnology()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ResidualCapacity"><code class="docutils literal notranslate"><span class="pre">ResidualCapacity()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.ResidualStorageCapacity"><code class="docutils literal notranslate"><span class="pre">ResidualStorageCapacity()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetDAILYTIMEBRACKET"><code class="docutils literal notranslate"><span class="pre">SetDAILYTIMEBRACKET()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetDAYTYPE"><code class="docutils literal notranslate"><span class="pre">SetDAYTYPE()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetEMISSION"><code class="docutils literal notranslate"><span class="pre">SetEMISSION()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetFUEL"><code class="docutils literal notranslate"><span class="pre">SetFUEL()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetMODE_OF_OPERATION"><code class="docutils literal notranslate"><span class="pre">SetMODE_OF_OPERATION()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetRegion"><code class="docutils literal notranslate"><span class="pre">SetRegion()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetSEASON"><code class="docutils literal notranslate"><span class="pre">SetSEASON()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetSTORAGE"><code class="docutils literal notranslate"><span class="pre">SetSTORAGE()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetTECHNOLOGY"><code class="docutils literal notranslate"><span class="pre">SetTECHNOLOGY()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetTIMESLICE"><code class="docutils literal notranslate"><span class="pre">SetTIMESLICE()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SetYEAR"><code class="docutils literal notranslate"><span class="pre">SetYEAR()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SpecifiedAnnualDemand"><code class="docutils literal notranslate"><span class="pre">SpecifiedAnnualDemand()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.SpecifiedDemandProfile"><code class="docutils literal notranslate"><span class="pre">SpecifiedDemandProfile()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.StorageLevelStart"><code class="docutils literal notranslate"><span class="pre">StorageLevelStart()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.StorageMaxChargeRate"><code class="docutils literal notranslate"><span class="pre">StorageMaxChargeRate()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.StorageMaxDischargeRate"><code class="docutils literal notranslate"><span class="pre">StorageMaxDischargeRate()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TechnologyFromStorage"><code class="docutils literal notranslate"><span class="pre">TechnologyFromStorage()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TechnologyToStorage"><code class="docutils literal notranslate"><span class="pre">TechnologyToStorage()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalAnnualMaxCapacity"><code class="docutils literal notranslate"><span class="pre">TotalAnnualMaxCapacity()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalAnnualMaxCapacityInvestment"><code class="docutils literal notranslate"><span class="pre">TotalAnnualMaxCapacityInvestment()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalAnnualMinCapacity"><code class="docutils literal notranslate"><span class="pre">TotalAnnualMinCapacity()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalAnnualMinCapacityInvestment"><code class="docutils literal notranslate"><span class="pre">TotalAnnualMinCapacityInvestment()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalTechnologyAnnualActivityLowerLimit"><code class="docutils literal notranslate"><span class="pre">TotalTechnologyAnnualActivityLowerLimit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalTechnologyAnnualActivityUpperLimit"><code class="docutils literal notranslate"><span class="pre">TotalTechnologyAnnualActivityUpperLimit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalTechnologyModelPeriodActivityLowerLimit"><code class="docutils literal notranslate"><span class="pre">TotalTechnologyModelPeriodActivityLowerLimit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TotalTechnologyModelPeriodActivityUpperLimit"><code class="docutils literal notranslate"><span class="pre">TotalTechnologyModelPeriodActivityUpperLimit()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.TradeRoute"><code class="docutils literal notranslate"><span class="pre">TradeRoute()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.VariableCost"><code class="docutils literal notranslate"><span class="pre">VariableCost()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prepara_base.YearSplit"><code class="docutils literal notranslate"><span class="pre">YearSplit()</span></code></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Gerador de Base de Dados</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">&lt;no title&gt;</a></li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/prepara_base.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-prepara_base"></span><p>Cada função descrita abaixo é responsável pela leitura dos dados tratados, filtragem/agregações de acordo
+com a configuração fornecida pelo usuário e conversão para o arquivo de dados correspondente do OSeMOSYS.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.AccumulatedAnnualDemand">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">AccumulatedAnnualDemand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.AccumulatedAnnualDemand" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.AnnualEmissionLimit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">AnnualEmissionLimit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.AnnualEmissionLimit" title="Link permanente para esta definição"></a></dt>
+<dd><p>Limites de emissão definidos por ano. A função está preparada para replicar os limites de emissão definidos
+para o SIN para as demais regiões do caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – set EMISSION</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados de limites de emissão</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.AnnualExogenousEmission">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">AnnualExogenousEmission</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.AnnualExogenousEmission" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.AvailabilityFactor">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">AvailabilityFactor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.AvailabilityFactor" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CapacityFactor">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CapacityFactor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_wind</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">off_wind</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solar_pv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_tec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CapacityFactor" title="Link permanente para esta definição"></a></dt>
+<dd><p>Cálculo do fator de capacidade para cada tecnologia. O tratamento é diferenciado para tecnologias
+convencionais e fontes intermitentes. Para a primeira, é utilizado um fator de capacidade constante,
+enquanto as fontes renováveis possuem dados que variam com granularidade horária.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>l</strong> (<em>list</em>) – set TIMESLICE</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>on_wind</strong> (<em>str</em>) – Nome do arquivo de dados com fator de capacidade de eólicas onshore</p></li>
+<li><p><strong>off_wind</strong> (<em>str</em>) – Nome do arquivo de dados com fator de capacidade de eólicas offshore</p></li>
+<li><p><strong>solar_pv</strong> (<em>str</em>) – Nome do arquivo de dados com fator de capacidade de solar fotovoltaica</p></li>
+<li><p><strong>other_tec</strong> (<em>str</em>) – Nome do arquivo de dados com fator de capacidade para outras tecnologias</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CapacityOfOneTechnologyUnit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CapacityOfOneTechnologyUnit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CapacityOfOneTechnologyUnit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CapacityToActivityUnit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CapacityToActivityUnit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CapacityToActivityUnit" title="Link permanente para esta definição"></a></dt>
+<dd><p>Fator de conversão relacionado à energia que seria produzida quando uma unidade de capacidade é completamente
+utilizada no ano. A função está preparada para replicar os dados definidos para o SIN para as demais regiões do
+caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados de ‘CapacityToActivityUnit’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CapitalCost">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CapitalCost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CapitalCost" title="Link permanente para esta definição"></a></dt>
+<dd><p>Custo de investimento de cada tecnologia, por unidade de capacidade. A função está preparada para replicar os
+dados definidos para o SIN para as demais regiões do caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados contendo dados de custos de investimento</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CapitalCostStorage">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CapitalCostStorage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CapitalCostStorage" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CarregaArquivo">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CarregaArquivo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CarregaArquivo" title="Link permanente para esta definição"></a></dt>
+<dd><p>Função auxiliar para leitura de arquivo de dados tratados.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados que será lido</p>
+</dd>
+<dt class="field-even">Retorna<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe lido</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pandas DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.CarregaArquivoYAML">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">CarregaArquivoYAML</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'input.yaml'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.CarregaArquivoYAML" title="Link permanente para esta definição"></a></dt>
+<dd><p>Função auxiliar para realizar a leitura de arquivo YAML</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Nome do arquivo YAML com configurações definidas pelo usuário.</p></li>
+<li><p><strong>&quot;input.yaml&quot;.</strong> (<em>Padrão</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Retorna<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dicionário contendo dados do arquivo YAML</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.Conversionld">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">Conversionld</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.Conversionld" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.Conversionlh">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">Conversionlh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.Conversionlh" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.Conversionls">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">Conversionls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.Conversionls" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.DaySplit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">DaySplit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.DaySplit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.DaysInDayType">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">DaysInDayType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.DaysInDayType" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.DepreciationMethod">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">DepreciationMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.DepreciationMethod" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.DiscountRate">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">DiscountRate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.DiscountRate" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.DiscountRateStorage">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">DiscountRateStorage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.DiscountRateStorage" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.EmissionActivityRatio">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">EmissionActivityRatio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.EmissionActivityRatio" title="Link permanente para esta definição"></a></dt>
+<dd><p>Fator de emissão para cada tecnologia por unidade, por modo de operação. A função está preparada para
+replicar os dados definidos para o SIN para as demais regiões do caso, já que a granularidade mínima no momento
+era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – set EMISSION</p></li>
+<li><p><strong>m</strong> (<em>list</em>) – set MODE_OF_OPERATION</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo contendo dados de fator de emissão</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.EmissionsPenalty">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">EmissionsPenalty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.EmissionsPenalty" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.EscreveArquivo">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">EscreveArquivo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.EscreveArquivo" title="Link permanente para esta definição"></a></dt>
+<dd><p>Função Auxiliar para escrita de arquivo de dados.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>Pandas DataFrame</em>) – Pandas DataFrame com os dados que serão escritos em arquivo ‘csv’</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.FixedCost">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">FixedCost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.FixedCost" title="Link permanente para esta definição"></a></dt>
+<dd><p>Custos fixos de O&amp;M de cada technologia, por unidade de capacidade. A função está preparada para replicar os
+dados definidos para o SIN para as demais regiões do caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados de custos fixos</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.InputActivityRatio">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">InputActivityRatio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.InputActivityRatio" title="Link permanente para esta definição"></a></dt>
+<dd><p>Taxa de uso do combustível/commodity de uma tecnologia. A função está preparada para replicar os
+dados definidos para o SIN para as demais regiões do caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>f</strong> (<em>list</em>) – set FUEL</p></li>
+<li><p><strong>m</strong> (<em>list</em>) – set MODE_OF_OPERATION</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados contendo a ‘ActivityRatio’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.MinStorageCharge">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">MinStorageCharge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.MinStorageCharge" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ModelPeriodEmissionLimit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ModelPeriodEmissionLimit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ModelPeriodEmissionLimit" title="Link permanente para esta definição"></a></dt>
+<dd><p>Limite anual de emissões geradas por cada região para todo horizonte de estudo. A função está preparada para
+replicar os dados definidos para o SIN para as demais regiões do caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – REGION</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – EMISSION</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados com limites de emissão</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ModelPeriodExogenousEmission">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ModelPeriodExogenousEmission</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ModelPeriodExogenousEmission" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.OperationalLife">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">OperationalLife</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.OperationalLife" title="Link permanente para esta definição"></a></dt>
+<dd><p>Vida útil das tecnologias. A função está preparada para replicar os dados definidos para o SIN para as
+demais regiões do caso, já que a granularidade mínima no momento era o SIN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados com vida útil das tecnologias</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.OperationalLifeStorage">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">OperationalLifeStorage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.OperationalLifeStorage" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.OutputActivityRatio">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">OutputActivityRatio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.OutputActivityRatio" title="Link permanente para esta definição"></a></dt>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TECHNOLOGY</p></li>
+<li><p><strong>f</strong> (<em>list</em>) – set FUEL</p></li>
+<li><p><strong>m</strong> (<em>list</em>) – set MODE_OF_OPERATION</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados com ‘OutputActivityRatio’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.REMinProductionTarget">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">REMinProductionTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.REMinProductionTarget" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.RETagFuel">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">RETagFuel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.RETagFuel" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.RETagTechnology">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">RETagTechnology</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.RETagTechnology" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ReserveMargin">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ReserveMargin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ReserveMargin" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ReserveMarginTagFuel">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ReserveMarginTagFuel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ReserveMarginTagFuel" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ReserveMarginTagTechnology">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ReserveMarginTagTechnology</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ReserveMarginTagTechnology" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ResidualCapacity">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ResidualCapacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ResidualCapacity" title="Link permanente para esta definição"></a></dt>
+<dd><p>Cálculo da capacidade residual do sistema para cada ano do estudo. Os dados são apresentados por tecnologia e para cada agregação espacial determinada
+pelo usuário.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – REGION</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – TECHNOLOGY</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo de dados tratados com capacidade residual</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.ResidualStorageCapacity">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">ResidualStorageCapacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.ResidualStorageCapacity" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetDAILYTIMEBRACKET">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetDAILYTIMEBRACKET</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetDAILYTIMEBRACKET" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetDAYTYPE">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetDAYTYPE</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetDAYTYPE" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetEMISSION">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetEMISSION</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetEMISSION" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetFUEL">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetFUEL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetFUEL" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetMODE_OF_OPERATION">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetMODE_OF_OPERATION</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetMODE_OF_OPERATION" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetRegion">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetRegion" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetSEASON">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetSEASON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetSEASON" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetSTORAGE">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetSTORAGE</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetSTORAGE" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetTECHNOLOGY">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetTECHNOLOGY</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetTECHNOLOGY" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetTIMESLICE">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetTIMESLICE</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetTIMESLICE" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SetYEAR">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SetYEAR</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SetYEAR" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SpecifiedAnnualDemand">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SpecifiedAnnualDemand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SpecifiedAnnualDemand" title="Link permanente para esta definição"></a></dt>
+<dd><p>Cálculo da demanda total anual do sistema. A demanda de cada estado é agregada nas regiões de acordo com a especificação do usuário.</p>
+<p><strong>Os dados tratados de demanda são gerados a partir do script pypsa-brazil a partir da fonte:</strong>
+<a class="reference external" href="https://dados.ons.org.br/dataset/carga-energia-verificada">https://dados.ons.org.br/dataset/carga-energia-verificada</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>f</strong> (<em>list</em>) – set FUEL</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo ‘csv’ que contém os dados tratados de demanda</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.SpecifiedDemandProfile">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">SpecifiedDemandProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.SpecifiedDemandProfile" title="Link permanente para esta definição"></a></dt>
+<dd><p>Cálculo do perfil da demanda do sistema. O perfil é obtido a partir dos dados de demanda horária fornecidos.</p>
+<p><strong>Os dados tratados de demanda são gerados a partir do script pypsa-brazil a partir da fonte:</strong>
+<a class="reference external" href="https://dados.ons.org.br/dataset/carga-energia-verificada">https://dados.ons.org.br/dataset/carga-energia-verificada</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>dict</em>) – set REGION</p></li>
+<li><p><strong>f</strong> (<em>list</em>) – set FUEL</p></li>
+<li><p><strong>t</strong> (<em>list</em>) – set TIMESLICE</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – set YEAR</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – Nome do arquivo ‘csv’ que contém os dados tratados de demanda</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.StorageLevelStart">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">StorageLevelStart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.StorageLevelStart" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.StorageMaxChargeRate">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">StorageMaxChargeRate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.StorageMaxChargeRate" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.StorageMaxDischargeRate">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">StorageMaxDischargeRate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.StorageMaxDischargeRate" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TechnologyFromStorage">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TechnologyFromStorage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TechnologyFromStorage" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TechnologyToStorage">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TechnologyToStorage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TechnologyToStorage" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalAnnualMaxCapacity">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalAnnualMaxCapacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalAnnualMaxCapacity" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalAnnualMaxCapacityInvestment">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalAnnualMaxCapacityInvestment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalAnnualMaxCapacityInvestment" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalAnnualMinCapacity">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalAnnualMinCapacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalAnnualMinCapacity" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalAnnualMinCapacityInvestment">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalAnnualMinCapacityInvestment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalAnnualMinCapacityInvestment" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalTechnologyAnnualActivityLowerLimit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalTechnologyAnnualActivityLowerLimit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalTechnologyAnnualActivityLowerLimit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalTechnologyAnnualActivityUpperLimit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalTechnologyAnnualActivityUpperLimit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalTechnologyAnnualActivityUpperLimit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalTechnologyModelPeriodActivityLowerLimit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalTechnologyModelPeriodActivityLowerLimit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalTechnologyModelPeriodActivityLowerLimit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TotalTechnologyModelPeriodActivityUpperLimit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TotalTechnologyModelPeriodActivityUpperLimit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TotalTechnologyModelPeriodActivityUpperLimit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.TradeRoute">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">TradeRoute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.TradeRoute" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.VariableCost">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">VariableCost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.VariableCost" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prepara_base.YearSplit">
+<span class="sig-prename descclassname"><span class="pre">prepara_base.</span></span><span class="sig-name descname"><span class="pre">YearSplit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prepara_base.YearSplit" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="modules.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Gabriel Villas Boas Sancho.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

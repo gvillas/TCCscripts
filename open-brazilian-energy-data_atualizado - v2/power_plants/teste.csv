@@ -1,0 +1,1073 @@
+state,type,phase,year,capacity
+AC,oil,operation,2045,63.4264
+AC,oil,operation,2056,69.46640000000001
+AL,biomass,operation,2031,14.312
+AL,biomass,operation,2032,83.1
+AL,biomass,operation,2034,41.5
+AL,biomass,operation,2036,14.0
+AL,biomass,operation,2037,19.9
+AL,biomass,operation,2044,115.5
+AL,biomass,operation,2056,40.0
+AL,gas,operation,2036,0.79
+AL,hydro,operation,2052,3562.0
+AL,solar_pv,construction not started,2058,102.7
+AM,biomass,construction not started,2033,8.0
+AM,biomass,construction not started,2040,9.8
+AM,biomass,construction not started,2041,9.8
+AM,biomass,operation,2032,9.0
+AM,gas,construction not started,2056,9.82
+AM,gas,construction not started,2057,295.429
+AM,gas,construction not started,2058,753.7629999999999
+AM,gas,operation,2030,166.0
+AM,gas,operation,2035,75.477
+AM,gas,operation,2036,146.8
+AM,gas,operation,2046,590.75
+AM,gas,operation,2052,38.772
+AM,gas,operation,2055,29.45
+AM,hydro,operation,2016,24.96
+AM,hydro,operation,2027,249.75
+AM,oil,construction,2052,12.876
+AM,oil,construction not started,2052,2.275
+AM,oil,operation,2023,8.836
+AM,oil,operation,2026,14.692
+AM,oil,operation,2030,6.4
+AM,oil,operation,2032,7.59
+AM,oil,operation,2035,99.5968
+AM,oil,operation,2036,85.38
+AM,oil,operation,2045,0.077
+AM,oil,operation,2051,21.683999999999997
+AM,oil,operation,2052,139.9085
+AM,oil,operation,2053,270.361
+AM,oil,operation,2054,31.6235
+AM,oil,operation,2055,32.289
+AP,biomass,construction not started,2056,2.835
+AP,hydro,operation,2047,252.0
+AP,hydro,operation,2048,219.0
+AP,hydro,operation,2052,78.0
+AP,oil,operation,2024,8.25
+AP,oil,operation,2045,12.51
+AP,small_hydro,construction,2033,7.5
+BA,biomass,construction,2054,22.5
+BA,biomass,construction not started,2058,110.0
+BA,biomass,operation,2026,108.6
+BA,biomass,operation,2033,126.6
+BA,biomass,operation,2034,16.0
+BA,biomass,operation,2037,30.0
+BA,biomass,operation,2039,19.73
+BA,biomass,operation,2041,214.08
+BA,biomass,operation,2042,16.79
+BA,biomass,operation,2057,6.0
+BA,gas,operation,2026,130.71
+BA,gas,operation,2029,185.891
+BA,gas,operation,2031,8.316
+BA,gas,operation,2050,55.986
+BA,gas,operation,2051,28.022
+BA,gas,operation,2055,37.44
+BA,gas,operation,2057,9.36
+BA,hydro,operation,2028,10.65
+BA,hydro,operation,2033,60.0
+BA,hydro,operation,2039,462.011
+BA,hydro,operation,2044,160.0
+BA,hydro,operation,2052,4979.908
+BA,mini_hydro,operation,2023,0.45
+BA,oil,construction,2049,288.9
+BA,oil,operation,2023,297.15470000000005
+BA,oil,operation,2028,62.5
+BA,oil,operation,2032,44.695
+BA,oil,operation,2037,7.5
+BA,oil,operation,2042,297.6
+BA,on_wind,construction,2055,437.5
+BA,on_wind,construction,2056,1007.1
+BA,on_wind,construction,2057,718.8
+BA,on_wind,construction,2058,27.0
+BA,on_wind,construction not started,2055,380.1
+BA,on_wind,construction not started,2056,498.0
+BA,on_wind,construction not started,2057,2248.0
+BA,on_wind,construction not started,2058,5791.5
+BA,on_wind,operation,2015,13.5
+BA,on_wind,operation,2035,27.0
+BA,on_wind,operation,2042,30.0
+BA,on_wind,operation,2045,587.89
+BA,on_wind,operation,2046,353.365
+BA,on_wind,operation,2047,780.6999999999999
+BA,on_wind,operation,2048,106.9
+BA,on_wind,operation,2049,1051.45
+BA,on_wind,operation,2050,910.4
+BA,on_wind,operation,2051,496.35
+BA,on_wind,operation,2052,148.5
+BA,on_wind,operation,2053,449.4
+BA,on_wind,operation,2054,1440.055
+BA,on_wind,operation,2055,1627.46
+BA,on_wind,operation,2056,633.9
+BA,on_wind,operation,2057,243.6
+BA,small_hydro,construction,2054,17.001
+BA,small_hydro,operation,2022,3.97
+BA,small_hydro,operation,2029,8.0
+BA,small_hydro,operation,2042,25.8
+BA,small_hydro,operation,2044,16.0
+BA,small_hydro,operation,2047,35.980000000000004
+BA,solar_pv,construction,2056,350.0
+BA,solar_pv,construction not started,2023,10.311
+BA,solar_pv,construction not started,2024,49.95
+BA,solar_pv,construction not started,2054,85.0
+BA,solar_pv,construction not started,2055,801.154
+BA,solar_pv,construction not started,2056,2018.028
+BA,solar_pv,construction not started,2057,4100.658
+BA,solar_pv,construction not started,2058,17596.258
+BA,solar_pv,operation,2040,56.0
+BA,solar_pv,operation,2050,112.0
+BA,solar_pv,operation,2051,516.62
+BA,solar_pv,operation,2053,94.64
+BA,solar_pv,operation,2054,572.07695
+BA,solar_pv,operation,2055,692.4456
+CE,coal,operation,2043,218.0
+CE,coal,operation,2044,720.274
+CE,coal,operation,2045,365.0
+CE,gas,construction not started,2057,1571.888
+CE,gas,operation,2023,326.601
+CE,gas,operation,2031,220.0
+CE,gas,operation,2037,5.25
+CE,oil,operation,2042,168.0
+CE,oil,operation,2052,5.65
+CE,on_wind,construction,2057,112.5
+CE,on_wind,construction not started,2055,45.0
+CE,on_wind,construction not started,2057,1322.0
+CE,on_wind,construction not started,2058,1396.3
+CE,on_wind,operation,2022,27.75
+CE,on_wind,operation,2031,96.4
+CE,on_wind,operation,2032,290.63
+CE,on_wind,operation,2033,50.0
+CE,on_wind,operation,2038,41.7
+CE,on_wind,operation,2039,25.2
+CE,on_wind,operation,2041,115.4
+CE,on_wind,operation,2044,75.6
+CE,on_wind,operation,2045,535.2
+CE,on_wind,operation,2047,308.8
+CE,on_wind,operation,2049,299.4
+CE,on_wind,operation,2050,174.16
+CE,on_wind,operation,2051,126.7
+CE,on_wind,operation,2054,327.6
+CE,on_wind,operation,2055,71.4
+CE,solar_pv,construction,2054,333.948
+CE,solar_pv,construction,2055,47.25
+CE,solar_pv,construction,2056,322.0
+CE,solar_pv,construction not started,2022,81.118
+CE,solar_pv,construction not started,2023,110.20400000000001
+CE,solar_pv,construction not started,2024,25.0
+CE,solar_pv,construction not started,2054,99.822
+CE,solar_pv,construction not started,2055,654.2
+CE,solar_pv,construction not started,2056,795.976
+CE,solar_pv,construction not started,2057,1652.112
+CE,solar_pv,construction not started,2058,12738.886
+CE,solar_pv,operation,2051,213.0
+CE,solar_pv,operation,2053,413.397
+CE,solar_pv,operation,2054,163.70000000000002
+CE,solar_pv,operation,2055,167.49
+DF,hydro,operation,2050,30.0
+ES,biomass,operation,2032,238.0
+ES,biomass,operation,2034,33.0
+ES,biomass,operation,2051,33.0
+ES,gas,operation,2044,587.82
+ES,gas,operation,2056,112.44
+ES,hydro,operation,2025,25.0
+ES,hydro,operation,2027,233.337
+ES,hydro,operation,2035,55.0
+ES,mini_hydro,operation,2053,1.512
+ES,oil,operation,2011,225.1
+ES,oil,operation,2035,147.3
+ES,oil,operation,2043,174.6
+ES,small_hydro,construction not started,2043,10.0
+ES,small_hydro,construction not started,2055,8.0
+ES,small_hydro,operation,2026,36.076
+ES,small_hydro,operation,2027,2.056
+ES,small_hydro,operation,2029,34.0
+ES,small_hydro,operation,2031,29.0
+ES,small_hydro,operation,2040,3.8
+ES,small_hydro,operation,2041,21.0
+ES,small_hydro,operation,2042,46.528
+ES,small_hydro,operation,2043,30.0
+ES,small_hydro,operation,2044,19.0
+ES,small_hydro,operation,2051,10.5
+GO,biomass,construction,2039,25.0
+GO,biomass,construction,2044,38.25
+GO,biomass,construction,2057,65.0
+GO,biomass,construction not started,2053,10.2
+GO,biomass,operation,2031,65.0
+GO,biomass,operation,2032,15.0
+GO,biomass,operation,2033,46.52
+GO,biomass,operation,2034,63.5
+GO,biomass,operation,2037,24.0
+GO,biomass,operation,2039,141.5
+GO,biomass,operation,2041,80.0
+GO,biomass,operation,2042,50.0
+GO,biomass,operation,2043,63.0
+GO,biomass,operation,2044,619.528
+GO,biomass,operation,2045,78.0
+GO,biomass,operation,2050,40.0
+GO,biomass,operation,2051,28.5
+GO,biomass,operation,2056,94.5
+GO,biomass,operation,2057,21.7
+GO,hydro,construction not started,2035,50.0
+GO,hydro,construction not started,2058,49.5
+GO,hydro,operation,2011,12.0
+GO,hydro,operation,2035,450.0
+GO,hydro,operation,2040,470.227
+GO,hydro,operation,2043,427.5
+GO,hydro,operation,2044,248.0
+GO,hydro,operation,2046,1463.4
+GO,hydro,operation,2048,1710.0
+GO,mini_hydro,operation,2054,3.0
+GO,oil,operation,2024,140.331
+GO,oil,operation,2032,134.016
+GO,oil,operation,2035,14.8
+GO,oil,operation,2042,175.56
+GO,oil,operation,2045,9.26
+GO,small_hydro,construction,2044,22.5
+GO,small_hydro,construction not started,2032,36.99
+GO,small_hydro,construction not started,2037,30.0
+GO,small_hydro,construction not started,2053,40.0
+GO,small_hydro,construction not started,2058,29.8
+GO,small_hydro,operation,2034,12.0
+GO,small_hydro,operation,2037,29.328
+GO,small_hydro,operation,2038,16.0
+GO,small_hydro,operation,2039,18.0
+GO,small_hydro,operation,2040,30.0
+GO,small_hydro,operation,2041,29.41
+GO,small_hydro,operation,2042,60.0
+GO,small_hydro,operation,2043,18.0
+GO,small_hydro,operation,2044,30.0
+GO,small_hydro,operation,2045,48.0
+GO,small_hydro,operation,2046,36.26
+GO,small_hydro,operation,2048,30.0
+GO,small_hydro,operation,2049,85.834
+GO,small_hydro,operation,2051,16.5
+GO,small_hydro,operation,2052,41.8
+GO,solar_pv,construction not started,2023,23.95
+GO,solar_pv,construction not started,2056,400.0
+GO,solar_pv,construction not started,2057,3670.875
+GO,solar_pv,construction not started,2058,1743.808
+MA,biomass,operation,2033,12.2
+MA,biomass,operation,2044,254.84
+MA,coal,operation,2037,75.2
+MA,coal,operation,2044,360.137
+MA,gas,construction not started,2051,5.542
+MA,gas,operation,2043,56.277
+MA,gas,operation,2044,270.467
+MA,gas,operation,2047,518.8
+MA,gas,operation,2054,365.32
+MA,oil,operation,2043,331.74
+MA,on_wind,construction not started,2058,130.2
+MA,on_wind,operation,2051,220.8
+MA,on_wind,operation,2053,108.0
+MA,on_wind,operation,2054,97.2
+MA,solar_pv,construction not started,2057,226.168
+MG,biomass,construction,2055,35.0
+MG,biomass,construction,2056,40.0
+MG,biomass,construction not started,2056,48.0
+MG,biomass,construction not started,2057,70.0
+MG,biomass,construction not started,2058,20.0
+MG,biomass,operation,2021,8.0
+MG,biomass,operation,2030,100.0
+MG,biomass,operation,2031,15.0
+MG,biomass,operation,2032,229.623
+MG,biomass,operation,2034,132.0
+MG,biomass,operation,2037,30.0
+MG,biomass,operation,2038,193.09199999999998
+MG,biomass,operation,2039,231.245
+MG,biomass,operation,2040,77.8
+MG,biomass,operation,2041,96.4
+MG,biomass,operation,2042,30.0
+MG,biomass,operation,2043,176.4
+MG,biomass,operation,2044,190.0
+MG,biomass,operation,2045,51.6
+MG,biomass,operation,2052,16.08
+MG,biomass,operation,2053,100.0
+MG,biomass,operation,2055,332.7
+MG,biomass,operation,2058,7.586
+MG,coal,operation,2029,102.89
+MG,gas,operation,2014,40.0
+MG,gas,operation,2029,87.048
+MG,gas,operation,2031,235.0
+MG,gas,operation,2032,19.299
+MG,gas,operation,2056,115.92
+MG,hydro,operation,2008,17.0
+MG,hydro,operation,2024,11.21
+MG,hydro,operation,2025,60.0
+MG,hydro,operation,2026,218.0
+MG,hydro,operation,2027,1702.0
+MG,hydro,operation,2029,674.5
+MG,hydro,operation,2032,1508.2
+MG,hydro,operation,2033,21.6
+MG,hydro,operation,2034,105.0
+MG,hydro,operation,2035,140.0
+MG,hydro,operation,2036,210.0
+MG,hydro,operation,2037,399.0
+MG,hydro,operation,2038,39.0
+MG,hydro,operation,2039,330.0
+MG,hydro,operation,2040,180.0
+MG,hydro,operation,2041,50.0
+MG,hydro,operation,2042,248.78
+MG,hydro,operation,2043,1549.7
+MG,hydro,operation,2046,148.5
+MG,hydro,operation,2047,103.551
+MG,hydro,operation,2048,408.0
+MG,hydro,operation,2050,2.408
+MG,hydro,operation,2052,5381.8
+MG,hydro,operation,2053,668.792
+MG,mini_hydro,construction,2055,1.6
+MG,mini_hydro,construction,2058,3.0
+MG,mini_hydro,operation,2024,0.19
+MG,mini_hydro,operation,2052,5.7
+MG,mini_hydro,operation,2053,3.0
+MG,mini_hydro,operation,2054,1.0
+MG,mini_hydro,operation,2055,8.0
+MG,oil,construction,2053,30.0
+MG,oil,operation,2030,24.4
+MG,oil,operation,2032,23.0
+MG,oil,operation,2034,57.22
+MG,oil,operation,2038,8.0
+MG,on_wind,construction not started,2058,336.392
+MG,small_hydro,construction not started,2032,11.0
+MG,small_hydro,construction not started,2035,35.516
+MG,small_hydro,construction not started,2036,13.0
+MG,small_hydro,construction not started,2043,29.25
+MG,small_hydro,construction not started,2044,23.0
+MG,small_hydro,construction not started,2051,15.0
+MG,small_hydro,construction not started,2055,22.625999999999998
+MG,small_hydro,operation,2025,9.28
+MG,small_hydro,operation,2026,10.685
+MG,small_hydro,operation,2027,8.540000000000001
+MG,small_hydro,operation,2028,2.88
+MG,small_hydro,operation,2029,3.8
+MG,small_hydro,operation,2030,15.32
+MG,small_hydro,operation,2031,34.156000000000006
+MG,small_hydro,operation,2032,104.57
+MG,small_hydro,operation,2033,30.172
+MG,small_hydro,operation,2034,42.0
+MG,small_hydro,operation,2035,33.64917
+MG,small_hydro,operation,2036,12.4
+MG,small_hydro,operation,2037,95.0
+MG,small_hydro,operation,2039,2.88
+MG,small_hydro,operation,2041,22.5
+MG,small_hydro,operation,2042,48.5
+MG,small_hydro,operation,2044,19.0
+MG,small_hydro,operation,2045,27.0
+MG,small_hydro,operation,2046,9.0
+MG,small_hydro,operation,2047,50.8
+MG,small_hydro,operation,2048,59.835
+MG,small_hydro,operation,2049,38.0
+MG,small_hydro,operation,2051,35.5
+MG,small_hydro,operation,2052,59.232
+MG,solar_pv,construction,2055,590.0
+MG,solar_pv,construction,2056,1542.3
+MG,solar_pv,construction,2057,509.879
+MG,solar_pv,construction,2058,10.0
+MG,solar_pv,construction not started,2022,50.0
+MG,solar_pv,construction not started,2054,600.24
+MG,solar_pv,construction not started,2055,140.0
+MG,solar_pv,construction not started,2056,2188.0280000000002
+MG,solar_pv,construction not started,2057,20418.139
+MG,solar_pv,construction not started,2058,12133.468
+MG,solar_pv,operation,2050,156.125
+MG,solar_pv,operation,2051,473.14
+MG,solar_pv,operation,2053,121.5
+MG,solar_pv,operation,2054,2366.306
+MG,solar_pv,operation,2055,710.0
+MS,biomass,construction,2056,384.0
+MS,biomass,construction,2057,48.0
+MS,biomass,construction,2058,39.0
+MS,biomass,construction not started,2034,22.0
+MS,biomass,construction not started,2039,150.0
+MS,biomass,construction not started,2058,86.44
+MS,biomass,operation,2033,85.8
+MS,biomass,operation,2034,175.0
+MS,biomass,operation,2038,94.841
+MS,biomass,operation,2039,429.1
+MS,biomass,operation,2040,81.5
+MS,biomass,operation,2041,230.103
+MS,biomass,operation,2042,6.0
+MS,biomass,operation,2043,90.0
+MS,biomass,operation,2044,209.828
+MS,biomass,operation,2049,30.0
+MS,biomass,operation,2051,50.0
+MS,biomass,operation,2052,269.58
+MS,biomass,operation,2053,40.0
+MS,biomass,operation,2055,35.2
+MS,biomass,operation,2056,52.0
+MS,biomass,operation,2057,56.471000000000004
+MS,gas,operation,2031,385.819
+MS,gas,operation,2056,177.116
+MS,hydro,operation,2029,29.5
+MS,hydro,operation,2039,48.0
+MS,hydro,operation,2047,4995.2
+MS,hydro,operation,2056,1540.0
+MS,small_hydro,construction,2055,22.0
+MS,small_hydro,construction not started,2056,10.0
+MS,small_hydro,operation,2034,16.0
+MS,small_hydro,operation,2035,29.0
+MS,small_hydro,operation,2037,13.0
+MS,small_hydro,operation,2038,21.6
+MS,small_hydro,operation,2039,17.0
+MS,small_hydro,operation,2040,54.0
+MS,small_hydro,operation,2042,28.03
+MS,small_hydro,operation,2046,8.838
+MS,small_hydro,operation,2049,107.5
+MS,small_hydro,operation,2052,18.0
+MS,solar_pv,construction not started,2054,255.056
+MS,solar_pv,construction not started,2057,472.0
+MS,solar_pv,construction not started,2058,2387.2580000000003
+MT,biomass,construction,2057,9.573
+MT,biomass,construction not started,2055,324.0
+MT,biomass,operation,2031,37.5
+MT,biomass,operation,2032,30.0
+MT,biomass,operation,2034,27.2
+MT,biomass,operation,2039,8.0
+MT,biomass,operation,2041,9.696
+MT,biomass,operation,2044,72.7
+MT,biomass,operation,2047,30.0
+MT,biomass,operation,2051,30.0
+MT,biomass,operation,2054,143.535
+MT,biomass,operation,2055,55.0
+MT,biomass,operation,2056,32.5
+MT,biomass,operation,2057,47.945
+MT,gas,construction,2056,354.57
+MT,gas,operation,2028,529.2
+MT,hydro,construction,2057,49.998
+MT,hydro,construction not started,2058,43.0
+MT,hydro,operation,2024,121.5
+MT,hydro,operation,2026,277.37
+MT,hydro,operation,2027,0.8
+MT,hydro,operation,2037,386.1
+MT,hydro,operation,2046,300.0
+MT,hydro,operation,2047,1819.8
+MT,hydro,operation,2049,961.0
+MT,hydro,operation,2050,401.88
+MT,hydro,operation,2052,84.0
+MT,hydro,operation,2053,45.0
+MT,mini_hydro,operation,2053,5.0
+MT,small_hydro,construction,2030,22.0
+MT,small_hydro,construction,2044,4.0
+MT,small_hydro,construction,2052,9.9
+MT,small_hydro,construction not started,2035,11.56
+MT,small_hydro,construction not started,2040,23.71
+MT,small_hydro,construction not started,2054,36.7
+MT,small_hydro,construction not started,2058,38.0
+MT,small_hydro,operation,2022,4.0
+MT,small_hydro,operation,2027,42.41
+MT,small_hydro,operation,2030,5.0
+MT,small_hydro,operation,2031,20.2
+MT,small_hydro,operation,2032,153.78300000000002
+MT,small_hydro,operation,2033,14.16
+MT,small_hydro,operation,2035,48.413
+MT,small_hydro,operation,2036,29.3
+MT,small_hydro,operation,2037,69.0
+MT,small_hydro,operation,2038,73.82
+MT,small_hydro,operation,2039,12.9
+MT,small_hydro,operation,2040,56.0
+MT,small_hydro,operation,2044,33.0
+MT,small_hydro,operation,2045,46.81
+MT,small_hydro,operation,2046,28.0
+MT,small_hydro,operation,2047,184.802
+MT,small_hydro,operation,2048,16.0
+MT,small_hydro,operation,2049,100.568
+MT,small_hydro,operation,2050,20.88
+MT,small_hydro,operation,2051,23.11
+MT,small_hydro,operation,2052,41.1
+MT,small_hydro,operation,2053,51.2
+MT,small_hydro,operation,2054,24.0
+MT,solar_pv,construction not started,2057,376.5
+MT,solar_pv,construction not started,2058,870.0
+PA,biomass,construction,2056,23.939999999999998
+PA,biomass,construction not started,2056,6.93
+PA,biomass,operation,2027,55.0
+PA,biomass,operation,2045,20.0
+PA,biomass,operation,2051,20.0
+PA,coal,operation,2033,103.854
+PA,gas,construction,2055,604.52
+PA,hydro,operation,2044,392.95
+PA,hydro,operation,2045,11233.1
+PA,hydro,operation,2052,8577.8
+PA,oil,operation,2008,15.3
+PA,oil,operation,2027,8.0
+PA,oil,operation,2038,45.8
+PA,oil,operation,2039,15.472
+PA,oil,operation,2041,1.3
+PA,oil,operation,2051,96.85799999999999
+PA,oil,operation,2057,6.0
+PA,small_hydro,operation,2032,40.0
+PA,small_hydro,operation,2040,20.0
+PB,biomass,operation,2032,28.8
+PB,biomass,operation,2034,30.0
+PB,biomass,operation,2039,12.2
+PB,biomass,operation,2051,30.5
+PB,biomass,operation,2057,5.704
+PB,oil,operation,2042,510.784
+PB,on_wind,construction,2056,38.5
+PB,on_wind,construction,2058,88.0
+PB,on_wind,construction not started,2056,399.8
+PB,on_wind,construction not started,2057,1076.0
+PB,on_wind,construction not started,2058,816.0
+PB,on_wind,operation,2029,43.199999999999996
+PB,on_wind,operation,2034,4.5
+PB,on_wind,operation,2037,10.2
+PB,on_wind,operation,2039,4.8
+PB,on_wind,operation,2050,94.5
+PB,on_wind,operation,2053,294.525
+PB,on_wind,operation,2054,176.71499999999997
+PB,on_wind,operation,2055,363.8
+PB,small_hydro,operation,2026,3.52
+PB,solar_pv,construction,2056,300.0
+PB,solar_pv,construction,2057,150.0
+PB,solar_pv,construction not started,2055,251.92000000000002
+PB,solar_pv,construction not started,2056,800.0
+PB,solar_pv,construction not started,2057,750.0
+PB,solar_pv,construction not started,2058,1721.898
+PB,solar_pv,operation,2050,27.0
+PB,solar_pv,operation,2051,108.4
+PB,solar_pv,operation,2054,68.8
+PB,solar_pv,operation,2055,252.864
+PE,biomass,operation,2023,8.0
+PE,biomass,operation,2031,30.0
+PE,biomass,operation,2032,73.0
+PE,biomass,operation,2033,20.2
+PE,biomass,operation,2034,70.805
+PE,biomass,operation,2038,25.0
+PE,biomass,operation,2041,30.0
+PE,biomass,operation,2042,10.0
+PE,biomass,operation,2045,11.2
+PE,biomass,operation,2053,28.52
+PE,biomass,operation,2055,12.0
+PE,gas,operation,2030,550.0
+PE,gas,operation,2031,49.725
+PE,gas,operation,2041,6.0
+PE,hydro,operation,2052,1479.6
+PE,oil,operation,2030,4.7592
+PE,oil,operation,2032,136.2
+PE,oil,operation,2039,100.0
+PE,oil,operation,2042,237.12
+PE,oil,operation,2043,381.255
+PE,oil,operation,2044,200.79
+PE,on_wind,construction,2057,176.7
+PE,on_wind,construction not started,2058,405.6
+PE,on_wind,operation,2032,4.95
+PE,on_wind,operation,2033,19.8
+PE,on_wind,operation,2047,79.9
+PE,on_wind,operation,2049,707.715
+PE,on_wind,operation,2050,80.5
+PE,on_wind,operation,2055,193.5
+PE,small_hydro,operation,2032,1.224
+PE,small_hydro,operation,2041,5.751
+PE,small_hydro,operation,2052,6.5
+PE,solar_pv,construction,2044,27.496
+PE,solar_pv,construction,2055,86.419
+PE,solar_pv,construction not started,2055,266.236
+PE,solar_pv,construction not started,2056,499.3
+PE,solar_pv,construction not started,2057,1011.301
+PE,solar_pv,construction not started,2058,2402.568
+PE,solar_pv,operation,2053,182.0
+PE,solar_pv,operation,2054,155.001
+PE,solar_pv,operation,2055,644.50018
+PE,solar_pv,operation,2056,27.0
+PE,solar_pv,operation,2057,27.0
+PI,biomass,operation,2038,28.5
+PI,hydro,operation,2052,237.3
+PI,on_wind,construction,2022,45.6
+PI,on_wind,construction,2056,125.4
+PI,on_wind,construction,2057,319.2
+PI,on_wind,construction not started,2058,2330.2
+PI,on_wind,operation,2032,18.0
+PI,on_wind,operation,2046,60.5
+PI,on_wind,operation,2047,248.2
+PI,on_wind,operation,2049,782.4
+PI,on_wind,operation,2050,302.2
+PI,on_wind,operation,2051,229.79999999999998
+PI,on_wind,operation,2053,595.2
+PI,on_wind,operation,2054,594.35
+PI,on_wind,operation,2055,802.8
+PI,on_wind,operation,2056,273.6
+PI,solar_pv,construction,2051,48.118
+PI,solar_pv,construction,2054,116.434
+PI,solar_pv,construction,2055,102.79599999999999
+PI,solar_pv,construction,2056,1317.225
+PI,solar_pv,construction not started,2022,49.995
+PI,solar_pv,construction not started,2056,1430.194
+PI,solar_pv,construction not started,2057,6050.576
+PI,solar_pv,construction not started,2058,11440.323
+PI,solar_pv,operation,2044,154.665
+PI,solar_pv,operation,2049,58.429
+PI,solar_pv,operation,2051,270.0
+PI,solar_pv,operation,2053,623.09
+PI,solar_pv,operation,2054,353.328
+PR,biomass,operation,2030,113.25
+PR,biomass,operation,2031,12.33
+PR,biomass,operation,2032,70.0
+PR,biomass,operation,2033,9.5
+PR,biomass,operation,2034,153.9
+PR,biomass,operation,2035,9.0
+PR,biomass,operation,2037,35.0
+PR,biomass,operation,2038,69.5
+PR,biomass,operation,2041,15.0
+PR,biomass,operation,2042,15.775
+PR,biomass,operation,2043,432.026
+PR,biomass,operation,2044,6.0
+PR,biomass,operation,2045,43.0
+PR,biomass,operation,2051,15.0
+PR,biomass,operation,2052,9.982
+PR,biomass,operation,2055,134.8
+PR,biomass,operation,2056,62.6
+PR,coal,operation,2019,20.0
+PR,gas,operation,2029,484.15
+PR,gas,operation,2031,9.119
+PR,gas,operation,2036,7.0
+PR,gas,operation,2056,10.319
+PR,hydro,construction not started,2051,62.0
+PR,hydro,operation,2023,7000.0
+PR,hydro,operation,2024,1676.858
+PR,hydro,operation,2028,36.0
+PR,hydro,operation,2030,1420.0
+PR,hydro,operation,2031,1090.835
+PR,hydro,operation,2032,2101.8
+PR,hydro,operation,2033,1240.0
+PR,hydro,operation,2037,72.0
+PR,hydro,operation,2040,240.336
+PR,hydro,operation,2046,8.2
+PR,hydro,operation,2048,37.042
+PR,hydro,operation,2049,711.2
+PR,hydro,operation,2050,36.0
+PR,hydro,operation,2053,260.0
+PR,mini_hydro,operation,2014,0.736
+PR,mini_hydro,operation,2052,1.0
+PR,mini_hydro,operation,2054,4.0
+PR,oil,operation,2038,58.0
+PR,oil,operation,2042,10.8
+PR,oil,operation,2052,5.44
+PR,on_wind,operation,2029,2.5
+PR,small_hydro,construction,2052,14.2
+PR,small_hydro,construction,2053,7.0
+PR,small_hydro,construction,2054,28.0
+PR,small_hydro,construction,2055,10.0
+PR,small_hydro,construction,2056,30.0
+PR,small_hydro,construction not started,2036,12.0
+PR,small_hydro,construction not started,2039,15.5
+PR,small_hydro,construction not started,2040,10.0
+PR,small_hydro,construction not started,2051,15.0
+PR,small_hydro,construction not started,2053,19.0
+PR,small_hydro,construction not started,2054,30.94
+PR,small_hydro,construction not started,2055,9.9
+PR,small_hydro,construction not started,2056,5.2
+PR,small_hydro,construction not started,2057,18.15
+PR,small_hydro,construction not started,2058,34.5
+PR,small_hydro,operation,2026,2.3
+PR,small_hydro,operation,2027,10.0
+PR,small_hydro,operation,2028,18.0
+PR,small_hydro,operation,2031,16.240000000000002
+PR,small_hydro,operation,2032,29.5
+PR,small_hydro,operation,2033,2.568
+PR,small_hydro,operation,2034,29.072
+PR,small_hydro,operation,2036,39.12
+PR,small_hydro,operation,2037,16.2
+PR,small_hydro,operation,2038,4.2
+PR,small_hydro,operation,2041,29.81
+PR,small_hydro,operation,2043,27.435
+PR,small_hydro,operation,2045,33.7
+PR,small_hydro,operation,2046,87.827
+PR,small_hydro,operation,2047,33.8071
+PR,small_hydro,operation,2049,5.0
+PR,small_hydro,operation,2050,19.6
+PR,small_hydro,operation,2051,8.4
+PR,small_hydro,operation,2052,23.5
+PR,small_hydro,operation,2053,25.42
+PR,small_hydro,operation,2054,6.0
+PR,small_hydro,operation,2055,19.1
+PR,small_hydro,operation,2057,8.0
+RJ,biomass,construction,2055,8.466
+RJ,biomass,operation,2040,44.0
+RJ,biomass,operation,2053,16.932
+RJ,coal,operation,2041,21.0
+RJ,gas,construction,2045,257.101
+RJ,gas,construction,2053,1672.599
+RJ,gas,operation,2015,1000.0
+RJ,gas,operation,2027,202.97
+RJ,gas,operation,2028,18.240000000000002
+RJ,gas,operation,2030,3098.5950000000003
+RJ,gas,operation,2040,16.065
+RJ,gas,operation,2043,75.33
+RJ,gas,operation,2047,530.0
+RJ,gas,operation,2050,1338.3
+RJ,gas,operation,2053,565.5
+RJ,gas,operation,2056,452.88
+RJ,hydro,construction not started,2050,150.0
+RJ,hydro,operation,2026,799.087
+RJ,hydro,operation,2052,216.0
+RJ,oil,operation,2033,11.45
+RJ,oil,operation,2042,490.0
+RJ,on_wind,operation,2032,28.05
+RJ,small_hydro,construction,2057,14.0
+RJ,small_hydro,construction not started,2036,9.594
+RJ,small_hydro,operation,2026,17.0
+RJ,small_hydro,operation,2028,39.0
+RJ,small_hydro,operation,2029,10.4
+RJ,small_hydro,operation,2032,2.547
+RJ,small_hydro,operation,2034,25.0
+RJ,small_hydro,operation,2041,60.0
+RJ,small_hydro,operation,2042,25.0
+RJ,small_hydro,operation,2044,34.0
+RJ,small_hydro,operation,2048,34.355
+RJ,small_hydro,operation,2049,8.0
+RJ,small_hydro,operation,2050,2.68
+RJ,solar_pv,construction not started,2058,174.5636
+RN,biomass,operation,2032,61.0
+RN,gas,operation,2031,322.96715
+RN,oil,operation,2032,53.12
+RN,oil,operation,2042,66.4
+RN,on_wind,construction,2054,81.0
+RN,on_wind,construction,2055,448.8
+RN,on_wind,construction,2056,265.3
+RN,on_wind,construction,2057,285.3
+RN,on_wind,construction not started,2023,27.5
+RN,on_wind,construction not started,2055,349.5
+RN,on_wind,construction not started,2056,798.6
+RN,on_wind,construction not started,2057,923.1
+RN,on_wind,construction not started,2058,748.5
+RN,on_wind,operation,2031,149.95
+RN,on_wind,operation,2036,51.0
+RN,on_wind,operation,2039,14.4
+RN,on_wind,operation,2040,14.4
+RN,on_wind,operation,2041,30.0
+RN,on_wind,operation,2042,153.165
+RN,on_wind,operation,2044,169.6
+RN,on_wind,operation,2045,840.24
+RN,on_wind,operation,2046,1159.0
+RN,on_wind,operation,2047,610.16
+RN,on_wind,operation,2048,62.0
+RN,on_wind,operation,2049,560.775
+RN,on_wind,operation,2050,285.0
+RN,on_wind,operation,2051,27.3
+RN,on_wind,operation,2053,600.285
+RN,on_wind,operation,2054,2122.07
+RN,on_wind,operation,2055,1699.685
+RN,on_wind,operation,2056,478.3
+RN,on_wind,operation,2057,45.0
+RN,small_hydro,operation,2052,4.7
+RN,solar_pv,construction,2054,212.35565000000003
+RN,solar_pv,construction,2055,452.59
+RN,solar_pv,construction,2056,117.54
+RN,solar_pv,construction,2057,181.072
+RN,solar_pv,construction not started,2035,48.0
+RN,solar_pv,construction not started,2054,83.72
+RN,solar_pv,construction not started,2055,58.0
+RN,solar_pv,construction not started,2056,456.056
+RN,solar_pv,construction not started,2057,4962.006
+RN,solar_pv,construction not started,2058,4113.201
+RN,solar_pv,operation,2051,120.0
+RN,solar_pv,operation,2055,240.58999999999997
+RN,solar_pv,operation,2056,192.472
+RO,biomass,operation,2035,24.0
+RO,biomass,operation,2056,1.28
+RO,gas,operation,2030,349.0
+RO,hydro,operation,2032,290.25
+RO,hydro,operation,2045,3750.0
+RO,hydro,operation,2047,3568.0
+RO,oil,operation,1998,23.75
+RO,oil,operation,2018,10.946
+RO,oil,operation,2022,82.92
+RO,oil,operation,2024,64.0
+RO,oil,operation,2027,13.0
+RO,oil,operation,2045,6.39
+RO,small_hydro,construction,2032,30.0
+RO,small_hydro,construction not started,2031,12.3
+RO,small_hydro,construction not started,2032,10.5
+RO,small_hydro,construction not started,2037,21.0
+RO,small_hydro,operation,2025,1.26
+RO,small_hydro,operation,2031,4.8
+RO,small_hydro,operation,2032,30.98
+RO,small_hydro,operation,2034,6.9
+RO,small_hydro,operation,2036,54.010000000000005
+RO,small_hydro,operation,2038,1.4
+RO,small_hydro,operation,2039,9.6
+RO,small_hydro,operation,2041,3.6
+RO,small_hydro,operation,2043,7.0
+RO,small_hydro,operation,2047,9.801
+RO,small_hydro,operation,2053,11.12
+RO,solar_pv,operation,2056,10.5
+RR,biomass,construction,2054,56.952
+RR,biomass,operation,2054,75.486
+RR,gas,operation,2055,140.834
+RR,hydro,operation,2048,10.0
+RR,oil,operation,2012,21.69
+RR,oil,operation,2023,0.281
+RR,oil,operation,2025,7.492
+RR,oil,operation,2030,85.992
+RR,oil,operation,2054,42.25
+RR,oil,operation,2056,6.615
+RR,solar_pv,operation,2056,2.1
+RS,biomass,construction not started,2053,50.0
+RS,biomass,construction not started,2058,12.09
+RS,biomass,operation,2031,10.0
+RS,biomass,operation,2035,8.025
+RS,biomass,operation,2037,12.5
+RS,biomass,operation,2041,277.711
+RS,biomass,operation,2043,5.8
+RS,biomass,operation,2045,8.0
+RS,biomass,operation,2051,7.0
+RS,biomass,operation,2054,30.0
+RS,biomass,operation,2056,12.280000000000001
+RS,coal,operation,2041,350.0
+RS,coal,operation,2050,345.0
+RS,gas,operation,2027,639.9
+RS,gas,operation,2031,248.573
+RS,hydro,operation,2031,226.0
+RS,hydro,operation,2037,125.0
+RS,hydro,operation,2039,360.0
+RS,hydro,operation,2041,690.0
+RS,hydro,operation,2042,6.2
+RS,hydro,operation,2043,74.0
+RS,hydro,operation,2046,128.0
+RS,hydro,operation,2052,900.8199999999999
+RS,oil,operation,2012,74.4
+RS,oil,operation,2031,71.9
+RS,on_wind,construction,2057,302.4
+RS,on_wind,construction not started,2057,94.52
+RS,on_wind,construction not started,2058,1740.4
+RS,on_wind,operation,2032,229.2
+RS,on_wind,operation,2044,31.7
+RS,on_wind,operation,2045,200.4
+RS,on_wind,operation,2046,248.1
+RS,on_wind,operation,2047,669.1
+RS,on_wind,operation,2049,403.39
+RS,on_wind,operation,2050,54.0
+RS,small_hydro,construction,2043,9.75
+RS,small_hydro,construction,2057,15.52
+RS,small_hydro,construction not started,2032,30.0
+RS,small_hydro,construction not started,2034,30.0
+RS,small_hydro,construction not started,2041,43.20795
+RS,small_hydro,construction not started,2043,5.5
+RS,small_hydro,construction not started,2045,5.75
+RS,small_hydro,construction not started,2054,7.2
+RS,small_hydro,construction not started,2055,27.07
+RS,small_hydro,construction not started,2057,33.269999999999996
+RS,small_hydro,construction not started,2058,6.4
+RS,small_hydro,operation,2025,3.6
+RS,small_hydro,operation,2031,23.435000000000002
+RS,small_hydro,operation,2032,54.0
+RS,small_hydro,operation,2033,54.194
+RS,small_hydro,operation,2034,67.34
+RS,small_hydro,operation,2035,2.2
+RS,small_hydro,operation,2036,48.0
+RS,small_hydro,operation,2037,9.2
+RS,small_hydro,operation,2039,32.0
+RS,small_hydro,operation,2040,5.982
+RS,small_hydro,operation,2041,9.0
+RS,small_hydro,operation,2042,78.25
+RS,small_hydro,operation,2043,50.7663
+RS,small_hydro,operation,2044,8.0
+RS,small_hydro,operation,2045,10.0
+RS,small_hydro,operation,2046,43.67
+RS,small_hydro,operation,2048,35.7
+RS,small_hydro,operation,2049,44.0
+RS,small_hydro,operation,2050,67.211
+RS,small_hydro,operation,2052,31.016000000000002
+RS,small_hydro,operation,2053,7.9
+RS,small_hydro,operation,2055,21.924999999999997
+SC,biomass,operation,2025,33.745
+SC,biomass,operation,2032,28.0
+SC,biomass,operation,2033,16.0
+SC,biomass,operation,2034,79.193
+SC,biomass,operation,2035,10.0
+SC,biomass,operation,2039,37.822
+SC,biomass,operation,2052,14.3
+SC,biomass,operation,2057,28.6
+SC,coal,operation,2028,740.0
+SC,gas,construction,2056,100.2
+SC,gas,construction not started,2057,28.023
+SC,gas,operation,2044,337.6
+SC,hydro,operation,2032,1450.0
+SC,hydro,operation,2035,1140.0
+SC,hydro,operation,2039,880.0
+SC,hydro,operation,2040,120.0
+SC,hydro,operation,2042,1046.8899999999999
+SC,hydro,operation,2047,141.9
+SC,hydro,operation,2051,191.9
+SC,hydro,operation,2053,63.202
+SC,hydro,operation,2054,30.0
+SC,mini_hydro,construction,2055,2.0
+SC,mini_hydro,construction not started,2058,4.696
+SC,mini_hydro,operation,2042,4.4
+SC,mini_hydro,operation,2052,4.0
+SC,mini_hydro,operation,2055,5.431
+SC,mini_hydro,operation,2058,4.95
+SC,on_wind,operation,2034,222.0
+SC,on_wind,operation,2036,9.0
+SC,small_hydro,construction,2041,2.0
+SC,small_hydro,construction,2044,5.0
+SC,small_hydro,construction,2045,5.7
+SC,small_hydro,construction,2053,5.1
+SC,small_hydro,construction,2054,9.6
+SC,small_hydro,construction,2055,37.852999999999994
+SC,small_hydro,construction not started,2038,4.68
+SC,small_hydro,construction not started,2039,27.0
+SC,small_hydro,construction not started,2040,28.060000000000002
+SC,small_hydro,construction not started,2041,24.0
+SC,small_hydro,construction not started,2044,12.0
+SC,small_hydro,construction not started,2045,8.48
+SC,small_hydro,construction not started,2052,23.04
+SC,small_hydro,construction not started,2055,31.8887
+SC,small_hydro,construction not started,2056,35.0
+SC,small_hydro,construction not started,2058,30.779
+SC,small_hydro,operation,2031,1.8
+SC,small_hydro,operation,2032,6.7
+SC,small_hydro,operation,2033,11.546999999999999
+SC,small_hydro,operation,2034,30.490000000000002
+SC,small_hydro,operation,2036,31.5
+SC,small_hydro,operation,2037,6.7
+SC,small_hydro,operation,2038,36.15
+SC,small_hydro,operation,2039,47.595
+SC,small_hydro,operation,2040,15.0
+SC,small_hydro,operation,2041,46.0
+SC,small_hydro,operation,2042,28.5
+SC,small_hydro,operation,2043,11.399999999999999
+SC,small_hydro,operation,2044,27.2
+SC,small_hydro,operation,2045,13.17
+SC,small_hydro,operation,2046,6.075
+SC,small_hydro,operation,2047,54.202
+SC,small_hydro,operation,2048,30.5
+SC,small_hydro,operation,2049,64.71000000000001
+SC,small_hydro,operation,2050,14.32
+SC,small_hydro,operation,2052,64.801
+SC,small_hydro,operation,2053,54.199
+SC,small_hydro,operation,2054,22.5
+SE,biomass,operation,2034,8.0
+SE,biomass,operation,2038,17.5
+SE,biomass,operation,2040,25.0
+SE,biomass,operation,2041,8.0
+SE,gas,operation,2050,1593.199
+SE,mini_hydro,operation,2001,0.55
+SE,on_wind,operation,2045,34.5
+SE,solar_pv,construction not started,2057,500.0
+SE,solar_pv,construction not started,2058,232.488
+SP,biomass,construction,2055,40.0
+SP,biomass,construction,2057,80.0
+SP,biomass,construction not started,2023,25.0
+SP,biomass,construction not started,2043,20.0
+SP,biomass,construction not started,2052,25.668
+SP,biomass,construction not started,2054,72.5
+SP,biomass,construction not started,2055,80.0
+SP,biomass,construction not started,2057,245.0
+SP,biomass,construction not started,2058,75.0
+SP,biomass,operation,2026,93.0
+SP,biomass,operation,2027,106.0
+SP,biomass,operation,2028,135.75
+SP,biomass,operation,2030,329.9
+SP,biomass,operation,2031,366.178
+SP,biomass,operation,2032,521.76
+SP,biomass,operation,2033,486.91
+SP,biomass,operation,2034,516.2
+SP,biomass,operation,2035,53.0
+SP,biomass,operation,2037,75.70400000000001
+SP,biomass,operation,2038,569.3
+SP,biomass,operation,2039,459.1
+SP,biomass,operation,2040,365.8
+SP,biomass,operation,2041,237.76999999999998
+SP,biomass,operation,2042,394.15
+SP,biomass,operation,2043,228.0
+SP,biomass,operation,2044,550.027
+SP,biomass,operation,2045,97.053
+SP,biomass,operation,2046,70.0
+SP,biomass,operation,2050,7.0
+SP,biomass,operation,2051,242.393
+SP,biomass,operation,2052,43.1
+SP,biomass,operation,2053,155.1
+SP,biomass,operation,2054,500.011
+SP,biomass,operation,2055,50.0
+SP,biomass,operation,2056,8.6
+SP,coal,operation,2027,24.4
+SP,gas,operation,2024,126.702
+SP,gas,operation,2028,39.9
+SP,gas,operation,2030,249.9
+SP,gas,operation,2031,444.257
+SP,gas,operation,2037,13.898
+SP,gas,operation,2038,5.25
+SP,gas,operation,2040,7.7
+SP,gas,operation,2043,8.76
+SP,gas,operation,2044,11.0
+SP,gas,operation,2052,15.05
+SP,gas,operation,2054,95.2
+SP,gas,operation,2056,15.95
+SP,hydro,operation,2016,230.7
+SP,hydro,operation,2020,27.6
+SP,hydro,operation,2021,36.87
+SP,hydro,operation,2022,87.02
+SP,hydro,operation,2024,55.0
+SP,hydro,operation,2026,56.05
+SP,hydro,operation,2031,210.0
+SP,hydro,operation,2032,2516.906
+SP,hydro,operation,2037,82.5
+SP,hydro,operation,2038,70.0
+SP,hydro,operation,2040,44.0
+SP,hydro,operation,2042,42.423
+SP,hydro,operation,2043,913.8
+SP,hydro,operation,2044,807.5
+SP,hydro,operation,2046,31.5
+SP,hydro,operation,2048,804.0
+SP,oil,operation,2008,5.0
+SP,oil,operation,2015,390.0
+SP,oil,operation,2016,8.988
+SP,oil,operation,2028,106.67
+SP,oil,operation,2029,32.6
+SP,oil,operation,2030,33.2
+SP,oil,operation,2031,138.172
+SP,oil,operation,2032,14.6
+SP,oil,operation,2033,16.024
+SP,oil,operation,2034,16.955
+SP,oil,operation,2037,9.6
+SP,oil,operation,2039,5.47
+SP,oil,operation,2040,18.5
+SP,oil,operation,2042,8.0
+SP,oil,operation,2043,32.934
+SP,oil,operation,2044,10.0
+SP,oil,operation,2053,75.56
+SP,oil,operation,2054,58.16
+SP,small_hydro,construction,2028,7.215
+SP,small_hydro,construction,2030,8.09
+SP,small_hydro,construction not started,2043,6.79
+SP,small_hydro,operation,2015,15.0
+SP,small_hydro,operation,2027,6.8
+SP,small_hydro,operation,2028,4.87
+SP,small_hydro,operation,2029,84.69
+SP,small_hydro,operation,2030,3.88
+SP,small_hydro,operation,2031,5.554
+SP,small_hydro,operation,2032,10.7
+SP,small_hydro,operation,2033,2.88
+SP,small_hydro,operation,2035,2.16
+SP,small_hydro,operation,2036,8.120000000000001
+SP,small_hydro,operation,2043,10.5
+SP,small_hydro,operation,2045,25.024
+SP,small_hydro,operation,2047,22.68
+SP,small_hydro,operation,2048,60.0
+SP,solar_pv,construction,2056,33.21
+SP,solar_pv,construction,2057,254.50542000000002
+SP,solar_pv,operation,2030,30.0
+SP,solar_pv,operation,2050,201.0
+SP,solar_pv,operation,2051,46.08
+SP,solar_pv,operation,2053,76.0
+SP,solar_pv,operation,2054,498.48720000000003
+TO,biomass,operation,2046,91.5
+TO,hydro,operation,2035,902.5
+TO,hydro,operation,2038,243.2
+TO,hydro,operation,2042,498.75
+TO,hydro,operation,2047,1087.0
+TO,mini_hydro,construction,2058,4.4
+TO,mini_hydro,operation,2052,7.3
+TO,oil,operation,2042,8.02
+TO,small_hydro,construction not started,2057,5.5
+TO,small_hydro,operation,2030,10.32
+TO,small_hydro,operation,2031,5.04
+TO,small_hydro,operation,2034,80.9
+TO,small_hydro,operation,2045,31.4
+TO,small_hydro,operation,2047,14.04
+TO,small_hydro,operation,2051,29.064
+TO,small_hydro,operation,2052,10.0
+TO,small_hydro,operation,2053,8.0
+TO,solar_pv,construction not started,2057,90.0
+TO,solar_pv,construction not started,2058,847.532
+TO,solar_pv,operation,2051,5.0

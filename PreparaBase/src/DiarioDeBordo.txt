@@ -1,0 +1,106 @@
+Modificações feitas nos arquivos convertidos do Brazil_data_1S1D24H_vF.txt
+
+A ideia é utilizar esses arquivos para gerar uma base de "dados brutos", a partir da qual o script python
+irá montar a base csv para o otoole converter no datafile do OSeMOSYS.
+
+
+Seguir com as minhas ideias e ir atualizando o pessoal
+
+
+AnnualEmissionLimit:
+	REGION alterada para SIN (significa que os dados não variam por sistema)
+	
+CapacityFactor:
+	Divisão da informação em 4 arquivos:
+	- in_CapacityFactorSolarPV contem o FC de usinas renováveis (eólicas e solares)
+		O arquivo contém dados de FC para 8760 horas, por estado, em formato de tabela.
+	- in_CapacityFactorOnWind
+		O arquivo contém dados de FC para 8760 horas, por estado, em formato de tabela.
+	- in_CapacityFactorOffWind
+		O arquivo contém dados de FC para 8760 horas, por estado, em formato de tabela.	
+	- in_CapacityFactor contem os dados das demais tecnologias
+		Mantido forma de vetor (dados variam apenas por tecnologia)
+		Associação de tecnologias antigas e novas requer simplificações, pois arquivo da Aneel não fornece algumas
+		distinções antes consideradas. Tecnologias mantidas de acordo com arquivo TecsAtigasNovas.xlsx
+		REGION alterada para SIN
+		TIMESLICE alterada para SEMPRE
+
+CapacityToActivityUnit:
+	REGION Alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+	Mantidas tecnologias relacionadas à importação de combustíveis
+
+CapitalCost:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+
+EmissionActivityRatio:
+	REGION alterada para SIN
+	Mantidas tecnologias relacionadas à importação de combustíveis
+
+FixedCost:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+
+InputActivityRatio:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+
+ModelPeriodEmissionLimit:
+	REGION alterada para SIN
+
+OperationalLife:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+	Mantidas tecnologias relacionadas à importação de combustíveis
+
+OutputActivityRatio:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+	Mantidas tecnologias relacionadas à importação de combustíveis
+
+REMinProductionTarget:
+	REGION alterada para SIN
+
+ReserveMarginTagTechnology:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+
+ResidualCapacity:
+	Subsituido pelo arquivo de capacidade instalada gerado pelo script do pypsa, com base nos dados da ANEEL
+
+Demandas:
+	Os seguintes arquivos serão construídos a partir do arquivo base de demanda gerado pelo script do pypsa
+	- SpecifiedAnnualDemand
+	- SpecifiedDemandProfile
+	- 
+TotalAnnualMaxCapacity:
+	Dados excluidos (haviam apenas limites = 0 de Geotérmicas)
+
+TotalAnnualMaxCapacityInvestment:
+	Dados excluidos (tecnologias mudaram e os limites eram infinitos 999999)
+
+TotalTechnologyAnnualActivityLowerLimit:
+	Dados excluidos. Havia informação apenas para antes de 2022
+	O que são os dados?
+
+TotalTechnologyAnnualActivityUpperLimit:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+
+TotalTechnologyModelPeriodActivityUpperLimit:
+	Dados excluidos, limites eram infinitos
+
+VariableCost:
+	REGION alterada para SIN
+	Mantidas tecnologias de acordo com arquivo TecsAntigasNovas.xlsx
+	
+
+Nao Utilizadas
+	Conversionld
+	Conversionlh
+	Conversionls
+	DAILYTIMEBRACKET
+	DaysInDayType
+	DaySplit
+	DAYTYPE

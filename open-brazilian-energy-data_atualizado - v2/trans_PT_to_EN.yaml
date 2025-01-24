@@ -1,0 +1,1092 @@
+#__version__ = '0.1.0'
+#__maintainer__ = 'Ying Deng 12.12.2022'
+#__authors__ = 'Ying Deng'
+#__credits__ = 'Ying Deng'
+#__email__ = 'Ying.Deng@dlr.de'
+#__date__ = '12.07.2022'
+#__status__ = 'dev'  # options are: dev, test, prod
+#__copyright__ = 'DLR'
+
+# This is a script listing all the translation used in the module
+
+# # note: the capitals and lower case letters is based on the column name in data, NOT the metadata
+# %% column_xx -> this is the parameter required in the utility.py/ de translate_pt_en_df()
+#      - key: the column name (PT) in the raw data (pandas.DataFrame)
+#      - value: the column name (EN)
+column_aneel:  # for installed capacity; see README of ANEEL file: data/power_plants/raw
+  # all columns are translated
+  Empreendimento: plant_name
+  CEG: plant_id
+  UF: state
+  Fonte: type
+  Fase: phase
+  Origem: fuel_type
+  Tipo: fuel_source
+  Tipo de Atuação: operation_type
+  Combustível Final: primary
+  Entrada em Operação: auction_start_time
+  Potência Outorgada (kW): capacity  # granted capacity, Note: unit is kW
+  Potência Fiscalizada (kW): capacity_regulated
+  Garantia Fisica (kW): power_guaranteed
+  'Geracão Qualificada': qualified
+  Latitude Decimal: latitude
+  Longitude Decimal: longitude
+  Início Vigência: start_time
+  Fim Vigência: end_time
+  Proprietário / Regime de Exploração: regime
+  Sub-Bacia: basin
+  Município (s): city
+
+column_ons:  # see README of temp file: "\REFuelsESM\data\validation\2021_annual installed capacity_ONS\README.docx"
+  # part of the columns is translated
+  nom_tipousina: type # plant type
+  Subsistema: region
+  Din Instante: time
+  Val Capacinstaladaconmw: capacity  # in unit of MW
+  STR Din Instante Cps 1: year
+  Table Name: table_name
+  id_subsistema: region_id
+  Zero: zero  # meaning is unknown, but values only 0
+  Usina: plant_name
+
+  # meta data: https://dados.ons.org.br/dataset/capacidade-geracao
+  nom_subsistema: region
+  id_estado: state
+  nom_estado: state_name
+  nom_modalidadeoperacao: grid_mode
+  nom_agenteproprietario: agent
+  nom_usina: plant_name
+  ceg: plant_id  # Unique Code of the (ANEEL)
+  nom_unidadegeradora: ons_name # Name of the Generating Unit defined in ONS
+  cod_equipamento: ons_id # Equipment Code - Unit Generating Unit
+  num_unidadegeradora: operation # Operational Code of the Unit Generating Unit
+  nom_combustivel: primary # Fuel for the Generator Unit; primary fuel
+  dat_entradateste: auction_start_time # Date of Release for Commissioning
+  dat_entradaoperacao: start_time # Date of Release for Commercial Operation
+  dat_desativacao: end_time # Generating Unit Deactivation Date; NULL (or empty) content represents that the generating unit is active.
+  val_potenciaefetiva: capacity # Nominal Power of the Generator Unit, according to ANEEL's Normative Document, in MW
+
+column_ons_gen:
+  # part of the columns is translated: see "\REFuelsESM\data\validation\2021_ONS_hydro\README.docx"
+  dsc_estado: state
+  id_subsistema: region
+  Modalidade de Operação: plant_operation
+  nom_tipocombustivel2: primary
+  nom_tipousinasite: type
+  nom_usina2: plant_name
+  Período Verifica GE Simp 4: checked
+  Usado no Dia 2: region_id
+  USINACEG: plant_id_ceg
+  Selecione Tipo de GE Simp 4: capacity_dup
+  Codigo Aneel: plant_id  # before plant_id_aneel
+  Din Instante: time
+  Table Name: table_name
+  Val Geraenergiaconmwmed: capacity  # the unit is MWh (daily average)
+
+column_ons_hydro:
+  Subsistema: region
+  Val Enaarmazenavelmwmes: inflow  # the unit is MW_month (monthly average, MWmês) # ENA, MW_month * 30 * 24 = MWh
+  val_eaconmwmes: inflow # verified EAR, the info on http://www.ons.org.br/paginas/energia-agora/reservatorios, is the verified EAR
+  Din Instante: time
+
+column_ons_hydro_store:
+  Din Instante: time
+  Subsistema: region
+  val_eaconmwmes: capacity  # the unit is MWh (daily average)
+
+column_ons_hourly_load:
+  Din Instante: time
+  Subsistema: region
+  Val Cargaenergiaconmwmed: load # unit [MWh]
+
+column_ons_transmission:
+  Din Instante: time
+  id_sistemainterlig: start_node
+  id_sistemainterlig_destino: end_node
+  Val Intercambenergiaconmwmed: power
+
+column_ons_weekly_cost:  # marginal cost of the grid operator ons, per unit of generation
+  Din Instante: time
+  Subsistema: region
+  Média Semanal: marginal_cost # unit [R$/MWh] , source: p.4. http://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/SUMARIOEXECUTIVO_PMO_202107_REV4.pdf#search=PMO
+
+column_epe_shp_plant:
+  # source: https://arquivos.epe.gov.br/DEA/SMA/Metadados%20WebMapEPE/Sistema%20El%C3%A9trico%20Existente/Metadados%20-%20UHE%20-%20Base%20Existente.pdf
+  # power plants - base layer (Existente):
+  NOME: plant_name # Plant name
+  Nome: plant_name # variant for NOME
+  nome: plant_name # variant for NOME
+  RIO: basin # river where the development is located
+  potencia: capacity  # unit of kW; Installed capacity of the enterprise
+  Potencia: capacity # variant for potencia
+  ini_oper: start_time
+  ceg: plant_id  # Unique generation enterprise code
+  combust: primary # fuel used
+  COMBUST: primary # variant for combust
+  UF: state
+  reg_geog: region
+  propriet: agent
+  # power plants- plan layer (Planejado), besides the name in above:
+  Combustível: primary # variant for combust
+  CEG: plant_id  # Unique generation enterprise code
+  ano_prev: start_time
+  Potência (KW): capacity
+  Rio: basin # variant for RIO
+  Leilao: auction
+  leilao: auction
+  Leilão: auction
+
+column_epe_shp_line_subs:  # shapefile of line and substation
+  # source:
+  # - line: https://arquivos.epe.gov.br/DEA/SMA/Metadados%20WebMapEPE/Sistema%20El%C3%A9trico%20Existente/Metadados%20-%20Linhas%20de%20Transmiss%C3%A3o%20-%20Base%20Existente.pdf
+  # - substation: https://arquivos.epe.gov.br/DEA/SMA/Metadados%20WebMapEPE/Sistema%20El%C3%A9trico%20Existente/Metadados%20-%20Subesta%C3%A7%C3%B5es%20-%20Base%20Existente.pdf
+  Nome: name
+  # in operation (*___Base_Existente.shp)
+  Concession: agent # Name of dealer
+  Tensao: voltage # unit of kV, Voltage levels existing in the line /substation
+  Extensao: length # unit of km, length of the transmission line
+  Ano_Opera: start_time # Year of entry into operation of the transmission line
+  # under construction (*___Expansão_Planejada.shp)
+  Ano_Planej: start_time
+
+column_epe_shp_sub:  # shapefile of substation
+  # source: https://arquivos.epe.gov.br/DEA/SMA/Metadados%20WebMapEPE/Sistema%20El%C3%A9trico%20Existente/Metadados%20-%20Subesta%C3%A7%C3%B5es%20-%20Base%20Existente.pdf
+  Nome: sub_name
+  # line - base layer (Subestacoes__Base_Existente.shp), besides the name in above two
+  Concession: agent # Name of dealer
+  Tensao: voltage # unit of kV
+  Extensao: length # unit of km, length of the transmission line
+  Ano_Opera: start_time # Year of entry into operation of the transmission line
+  # line - plan layer (Subestacoes___Expansão_Planejada.shp)
+  Ano_Planej: start_time # Year of transmission line start-up
+
+column_state_shp:
+  # Source: https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html?=&t=sobre
+  # details see the README in node/
+  # Note the region (column: NM_REGIAO) is the region base on location, not the electric region
+  NM_UF: state_name
+  SIGLA_UF: state
+  NM_REGION: region
+  CD_UF: state_code
+
+column_aneel_auction:
+  # part of the columns is translated
+  # Note for auction of generation from ANEEL: https://www.aneel.gov.br/documents/654791/0/CEL_Resultados_Leil%C3%B5es_Gera%C3%A7%C3%A3o_2005a2019_28102019/b56f496f-92d1-3905-b57e-2dedbde2738a
+  'Unnamed: 1': type
+  Usina: plant_name
+  LEILÃO: time  # Note indeed this is the auction id, since we can derive the time from this, it's renamed as 'time'
+  Pot. (MW): capacity # [MW]
+  Preço (R$/MW): price  # [R$/MW]
+  Fonte: primary
+  Invest. Previsto  (R$): investment # [R$]
+  Localização: location
+  Mod.: regime
+  'Garantia Física (MWmédio)': capacity_guarantee  # MWm -> MW 8760h/year
+  'Empresa / Consórcio': company
+
+column_aneel_auction_grid:
+  EMPREENDIMENTOS: project
+  UF: state
+  Extensão Km: length
+  Prazo (meses): period  # in month ???
+  RAP - Receita Anual Permitida (R$):
+
+column_anp_fuel_price:
+  # this is translated from the raw data
+  MÊS: time  # this is month
+  PRODUTO: product
+  REGIÃO: region
+  ESTADO: state
+  UNIDADE DE MEDIDA: unit
+  PREÇO MÉDIO DE DISTRIBUIÇÃO: price  # AVERAGE PRICE DISTRIBUTION
+  DESVIO PADRÃO: uncertainty # standard deviation
+column_anac_airport:
+  # part
+  # full, public airport, see source: https://www.anac.gov.br/acesso-a-informacao/dados-abertos/areas-de-atuacao/aerodromos/lista-de-aerodromos-publicos-v2/70-lista-de-aerodromos-publicos-v2
+  # full, private airport & helipad & helideck, see source: https://www.anac.gov.br/acesso-a-informacao/dados-abertos/areas-de-atuacao/aerodromos/lista-de-aerodromos-publicos-v2/70-lista-de-aerodromos-publicos-v2
+  # note: the capitals and lower case letters is based on the column name in data, NOT the metadata
+  Código OACI: airport_icao
+  CIAD: airport_digit
+  Nome: airport_name
+  Município: city
+  UF: state
+  Município Servido: service_city
+  "UF Servido": service_state
+  LATGEOPOINT: latitude  # EPSG:4326
+  LONGEOPOINT: longitude # EPSG:4326
+  Latitude: latitude_GMS  # in format XX°XX'XX''
+  Longitude: longitude_GMS  # in format XX°XX'XX''
+  ALTITUDE: altitude #  [m]
+  Operaçăo Diurna: operation_daytime
+  Operaçăo Noturna: operation_night
+
+  CÓDIGO OACI: airport_icao
+  NOME: airport_name
+service_state: state
+
+#column_ourairport:
+#  # partly
+#  # full, see https://ourairports.com/help/data-dictionary.html#airports
+#  ident: airport_ident  # note, This will be the ICAO code if available. Otherwise, it will be a local airport code (if no conflict), or if nothing else is available, an internally-generated code starting with the ISO2 country code, followed by a dash and a four-digit number
+#
+
+column_anac_fuel:
+  # see the readme in raw/fuel_load
+  id_basica: step_id
+  id_empresa: company_id
+  sg_empresa_icao: airline_icao
+  sg_empresa_iata: airline_iata
+  nm_empresa: airline_name
+  nm_pais: airline_country
+  ds_tipo_empresa: company_type
+  nr_voo: flight_number
+  nr_singular: flight_singularity
+  id_di: identifier_digit
+  cd_di: character_digit  # the character used to identify the type of authorisation for each flight stage
+  ds_di: identifier_digit_description
+  ds_grupo_di: group_digit
+  dt_referencia: date  # YYYY-MM-DD
+  nr_ano_referencia: year
+  nr_semestre_referencia: semester_id
+  nm_semestre_referencia: semester_name
+  nr_trimestre_referencia: quarter_id
+  nm_trimestre_referencia: quarter_name
+  nr_mes_referencia: month_id
+  nm_mes_referencia: month_name
+  nr_semana_referencia: week_id
+  nm_dia_semana_referencia: week_name
+  nr_dia_referencia: day_id
+  nr_ano_mes_referencia: year_month # same as time but YYYYMM format
+  id_tipo_linha: line_type_id  # consider only the stage
+  cd_tipo_linha: character_line_type
+  ds_tipo_linha: line_type_description
+  ds_natureza_tipo_linha: line_type_nature_description  # Considers the nature of the flight, not just the stage
+  ds_servico_tipo_linha: line_type_service_description
+  ds_natureza_etapa: flight_state_nature_description
+  hr_partida_real: departure_time  # real departure time of the flight, HH:MM:SS
+  dt_partida_real: departure_date  # real take-off date of the stage, YYYY-MM-DD
+  nr_ano_partida_real: departure_year  # real take-off year
+  nr_semestre_partida_real: departure_semester_id  # real take-off semester
+  nm_semestre_partida_real: departure_semester_name
+  nr_trimestre_partida_real: departure_quarter_id
+  nm_trimestre_partida_real: departure_quarter_name
+  nr_mes_partida_real: departure_month_id
+  nm_mes_partida_real: departure_month_name
+  nr_semana_partida_real: departure_week_id
+  nm_dia_semana_partida_real: departure_week_name
+  nr_dia_partida_real: departure_day_id
+  nr_ano_mes_partida_real: departure_year_month
+  id_aerodromo_origem: origin_airport_id
+  sg_icao_origem: origin_airport_icao
+  sg_iata_origem: origin_airport_iata
+  nm_aerodromo_origem: origin_airport_name
+  nm_municipio_origem: origin_city_name  # city -> municipality
+  sg_uf_origem: origin_state_name # state -> Federal Unit
+  nm_regiao_origem: origin_region_name
+  nm_pais_origem: origin_country
+  nm_continente_origem: origin_continent
+  nr_etapa: stage_number
+  hr_chegada_real: arrival_time
+  dt_chegada_real: arrival_date
+  nr_ano_chegada_real: arrival_year
+  nr_semestre_chegada_real: arrival_semester_id
+  nm_semestre_chegada_real: arrival_semester_name
+  nr_trimestre_chegada_real: arrival_quarter_id
+  nm_trimestre_chegada_real: arrival_quarter_name
+  nr_mes_chegada_real: arrival_month_id
+  nm_mes_chegada_real: arrival_month_name
+  nr_semana_chegada_real: arrival_week_id
+  nm_dia_semana_chegada_real: arrival_week_name
+  nr_dia_chegada_real: arrival_day_id
+  nr_ano_mes_chegada_real: arrival_year_month
+  id_equipamento: aircraft_model
+  sg_equipamento_icao: aircraft_model_icao
+  ds_modelo: aircraft_model_description
+  ds_matricula: aircraft_registration
+  id_aerodromo_destino: destination_airport_id
+  sg_icao_destino: destination_airport_icao
+  sg_iata_destino: destination_airport_iata
+  nm_aerodromo_destino: destination_airport_name
+  nm_municipio_destino: destination_city_name
+  sg_uf_destino: destination_state_name
+  nm_regiao_destino: destination_region_name
+  nm_pais_destino: destination_country
+  nm_continente_destino: destination_continent
+  nr_escala_destino: destination_stage_sequence
+  lt_combustivel: fuel_consumption  # liters
+  nr_assentos_ofertados: seats_available
+  kg_payload:  payload_capacity  # kg
+  km_distancia: distance # km
+  nr_passag_pagos: passengers_revenue
+  nr_passag_gratis: passengers_no_revenue
+  kg_bagagem_livre: free_baggage  # kg
+  kg_bagagem_excesso:  excess_baggage  # kg
+  kg_carga_paga: cargo_paid  # kg
+  kg_carga_gratis:  free_cargo  # kg
+  kg_correio:  post
+  nr_decolagem: takeoff
+  nr_horas_voadas: flown_hour # h
+  kg_peso: total_weight # kg
+  nr_velocidade_media:  average_flight_speed  # km/h
+  nr_pax_gratis_km:  free_passenger_distance # number*km; the product between the number of free passengers and the distance of the stage
+  nr_carga_paga_km: paid_cargo_distance # kg*km; to the product between the amount of cargo paid (kg) and the distance of the basic stage (km)
+  nr_carga_gratis_km:  free_cargo_distance # kg*km; the product between the amount of free load (kg) and the distance of the basic stage (km)
+  nr_correio_km:  free_post_distance # kg*km; to the product between the amount of mail (kg) and the distance of the basic stage (km)
+  nr_bagagem_paga_km:  paid_baggage_distance # kg*km; the product between the amount of luggage paid (kg) and the distance of the basic stage (km).
+  nr_bagagem_gratis_km: free_baggage_distance  # kg*km; the product between the amount of free baggage (kg) and the distance of the basic stage (km)
+  nr_ask: available_seat_km # number*km; the volume of Available Seat Kilometers, the product between the number of seats offered and the distance of the step
+  nr_rpk: revenue_passenger_km # the volume of Revenue Passenger Kilometers, the product between the number of passengers paid and the distance of the step
+  nr_atk: available_t_km # ton x km; Available Tonne Kilometers, expressed in (ton x km). It is calculated, in each basic stage, by the product between the Payload Capacity (kg) and the distance of the stage, divided by 1000
+  nr_rtk: revenue_t_km # the volume of transported Tonne Kilometers (Revenue Tonne Kilometer), expressed in (ton x km). It is calculated, in each basic stage, by the product between the quantity, expressed in kilograms, of passengers, luggage, cargo and mail paid transported and the distance of the stage, divided by 1000. Each passenger has an estimated weight of 75kg, for Brazilian companies. In the case of foreign companies, which do not send ANAC baggage data, the total weight of passengers and baggage is estimated by multiplying the total amount of passengers by 90.
+  id_arquivo: file_id
+  nm_arquivo: file_name
+  nr_linha: line_number
+  dt_sistema: in_registration_stamp  # YYYY-MM-DD HH:MM:SS -> time stamp
+
+# %% key-value translation -> the translation of values in each given column name (EN)
+#      - key: the value (PT) in the raw data
+#      - value: the value (EN)
+#      note: instead if key-value pair, it can also be a 'str' -> the translation is the same as the given 'str'
+#            e.g, destination_country: origin_country
+
+line_type_service_description:
+  NÃO IDENTIFICADO: unidentified
+  PASSAGEIRO: passenger
+  CARGUEIRO: cargo
+
+flight_state_nature_description:
+  NÃO IDENTIFICADA: unidentified
+  DOMÉSTICA: domestic
+  INTERNACIONAL: international
+
+line_type_nature_description:
+  NÃO IDENTIFICADA: unidentified
+  DOMÉSTICA: domestic
+  INTERNACIONAL: international
+
+group_digit:
+  IMPRODUTIVO: unproductive
+  "NÃO REGULAR": non-regular
+  REGULAR: regular
+
+month_name:
+  JANEIRO: January
+  FEVEREIRO: February
+  MARÇO: March
+  ABRIL: April
+  MAIO: May
+  JUNHO: June
+  JULHO: July
+  AGOSTO: August
+  SETEMBRO: September
+  OUTUBRO: October
+  NOVEMBRO: November
+  DEZEMBRO: December
+
+week_name:
+  QUARTA-FEIRA: Wednesday
+  DOMINGO: Sunday
+  SÁBADO: Saturday
+  TERÇA-FEIRA: Tuesday
+  SEGUNDA-FEIRA: Monday
+  SEXTA-FEIRA: Friday
+  QUINTA-FEIRA: Thursday
+
+line_type_description:
+  NÃO IDENTIFICADA: unidentified
+  DOMÉSTICA MISTA: mixed domestic
+  DOMÉSTICA REGIONAL: regional domestic
+  INTERNACIONAL MISTA: international mixed
+  DOMÉSTICA REDE POSTAL: domestic postal network
+  DOMÉSTICA ESPECIAL: domestic special
+  DOMÉSTICA CARGUEIRA: domestic cargo
+  INTERNACIONAL CARGUEIRA: international cargo
+
+origin_continent:
+  ÁFRICA: Africa
+  EUROPA: Europe
+  AMÉRICA DO SUL: South America
+  AMÉRICA DO NORTE: North America
+  AMÉRICA CENTRAL: Central America
+  ÁSIA: Asia
+  NÃO IDENTIFICADO: unidentified
+  OCEANIA: Oceania
+
+origin_country:
+  # one-word country names
+  SENEGAL: Senegal
+  ALEMANHA: Germany
+  BRASIL: Brazil
+  PARAGUAI: Paraguay
+  URUGUAI: Uruguay
+  ARGENTINA: Argentina
+  FRANÇA: France
+  RÚSSIA: Russia
+  MÉXICO: Mexico
+  CUBA: Cuba
+  COLÔMBIA: Colombia
+  ITÁLIA: Italy
+  CANADÁ: Canada
+  PANAMÁ: Panama
+  CURAÇAO: Curaçao
+  TUNÍSIA: Tunisia
+  PERU: Peru
+  ANGOLA: Angola
+  EQUADOR: Ecuador
+  CHILE: Chile
+  ESPANHA: Spain
+  JAPÃO: Japan
+  BOLÍVIA: Bolivia
+  PORTUGAL: Portugal
+  SUÍÇA: Switzerland
+  VENEZUELA: Venezuela
+  BÉLGICA: Belgium
+  SURINAME: Suriname
+  CABO VERDE: Cape Verde
+  BAHAMAS: Bahamas
+  MOÇAMBIQUE: Mozambique
+  ARUBA: Aruba
+  GANA: Ghana
+  LUXEMBURGO: Luxembourg
+  QATAR: Qatar
+  ISRAEL: Israel
+  MARTINICA: Martinique
+  COSTA RICA: Costa Rica
+  ETIÓPIA: Ethiopia
+  TURQUIA: Turkey
+  AUSTRÁLIA: Australia
+  INDONÉSIA: Indonesia
+  MAURÍCIA: Mauritius
+  GRÉCIA: Greece
+  GÂMBIA: Gambia
+  POLÔNIA: Poland
+  NORUEGA: Norway
+  GUADALUPE: Guadalupe
+  JAMAICA: Jamaica
+  HONDURAS: Honduras
+  BARBADOS: Barbados
+  GUATEMALA: Guatemala
+  QUÊNIA: Kenya
+  BAHREIN: Bahrein
+  KUWAIT: Kuwait
+  AFEGANISTÃO: Afghanistan
+  AZERBAIJÃO: Azerbaijan
+  EGITO: Egypt
+  CAZAQUISTÃO: Kazakhstan
+  BERMUDAS: Bermudas
+  HAITI: Haiti
+  GUIANA: Guyana
+  CONGO: Republic of the Congo # TODO check
+  MARROCOS: Morocco
+  FILIPINAS: Philippines
+  ESLOVÁQUIA: Slovakia
+  MALÁSIA: Malaysia
+  UCRÂNIA: Ukraine
+  SUÉCIA: Sweden
+  NIGÉRIA: Nigeria
+  GUINÉ: Guinea
+  ÍNDIA: India
+  TAILÂNDIA: Thailand
+  SINGAPURA: Singapore
+  TOGO: Togo
+  INGLATERRA: England
+  ÁUSTRIA: Austria
+  Curaçao: Curaçao
+  SÍRIA: Syria
+  IRLANDA: Ireland
+  MALDIVAS: Maldives
+  CHINA: China
+  LIBÉRIA: Liberia
+  NICARÁGUA: Nicaragua
+  MALTA: Malta
+  ZIMBÁBUE: Zimbabwe
+  UZBEQUISTÃO: Uzbekistan
+  NAMÍBIA: Namibia
+  HONG KONG: Hong Kong
+  BULGÁRIA: Bulgaria
+  ZÂMBIA: Zambia
+  SUDÃO: Sudan
+  BENIM: Benim
+  MALI: Mali
+  CAMARÕES: Cameroon
+  LETÔNIA: Latvia
+  HUNGRIA: Hungary
+  CAMBOJA: Cambodia
+  ISLÂNDIA: Iceland
+  ARGÉLIA: Algeria
+  MAURITÂNIA: Mauritania
+  FINLÂNDIA: Finland
+  OMÃ: Oman
+  PAQUISTÃO: Pakistan
+  TANZÂNIA: Tanzania
+  ROMÊNIA: Romania
+  NÍGER: Niger
+  BELIZE: Belize
+  MALAUÍ: Malawi
+  LÍBIA: Libya
+  CHIPRE: Cyprus
+  BANGLADESH: Bangladesh
+  LÍBANO: Lebanon
+  DINAMARCA: Denmark
+  MOLDÁVIA: Moldova
+
+
+
+  # country names with more than one word
+  REPÚBLICA DEMOCRÁTICA DO CONGO: Democratic Republic of the Congo
+  ILHAS CAYMAN: Ilhas Cayman
+  "FORMOSA (TAIWAN)": "Formosa (Taiwan)"
+  GUINÉ EQUATORIAL: Equatorial Guinea
+  POLINÉSIA FRANCESA: French Polynesia
+  ARÁBIA SAUDITA: Saudi Arabia
+  NOVA ZELÂNDIA: New Zealand
+  PAÍSES BAIXOS: Netherlands
+  HOLANDA: Netherlands
+  SÃO TOMÉ E PRÍNCIPE: Saint Thomas and Prince
+  ANTÍGUA E BARBUDA: Antigua and Barbuda
+  ESTADOS UNIDOS DA AMÉRICA: United States
+  GUIANA FRANCESA: French Guiana
+  BIELOR RÚSSIA: Belarus  # Note: put this before RUSSIA, otherwise part of the "BIELOR RÚSSIA" will be translated
+  REINO UNIDO: United Kingdom
+  COREIA DO SUL: South Korea
+  ÁFRICA DO SUL: South Africa
+  ILHAS FEROÉ: Faroe Islands
+  TRINIDAD E TOBAGO: Trinidad and Tobago
+  NÃO IDENTIFICADO: unidentified
+  ILHAS CANÁRIAS: Canary Islands
+  REPÚBLICA DOMINICANA: Dominican Republic
+  ILHA DE SÃO MARTINHO: Saint Martin island
+  EMIRADOS ÁRABES UNIDOS: United Arab Emirates
+  REPÚBLICA TCHECA: Czech Republic
+  COSTA DO MARFIM: Cote d'ivoire
+  PORTO RICO: Port Rico
+  SRI LANKA: Sri Lanka
+  EL SALVADOR: El Salvador
+
+
+identifier_digit_description:
+  # Note: the mapping between cd_di in the dataset is not inline with the webpage
+  #  cd_di                                          ds_di
+  #  3                                             RETORNO
+  #  0                          REGULAR PREVISTO EM HOTRAN
+  #  4      INCLUSÃO DE ETAPA EM UM VOO PREVISTO EM HOTRAN
+  #  9                                             CHARTER
+  #  7                                          FRETAMENTO
+  #  5                               CARGUEIRO NÃO REGULAR
+  #  6                              SERVIÇO/POSICIONAMENTO
+  #  1                                    EXTRA COM HOTRAN
+  #  2                                    EXTRA SEM HOTRAN
+  #  8           CONEXÃO PARA ATENDER VIAGEM INTERNACIONAL
+  #  C                                        CODE SHARING
+  #  A                                           INSTRUÇÃO
+  #  B                                         EXPERIÊNCIA
+  #  D                                      DUPLICATED LEG
+  #  NaN                                               NaN
+  RETORNO: return state
+  REGULAR PREVISTO EM HOTRAN: regular scheduled on HOTRAN
+  INCLUSÃO DE ETAPA EM UM VOO PREVISTO EM HOTRAN: add step to a scheduled flight on HOTRAN # Stage Inclusion in the doc
+  CHARTER: charter flight state
+  FRETAMENTO: freighter flight state
+  CARGUEIRO NÃO REGULAR: non-scheduled freighter
+  SERVIÇO/POSICIONAMENTO: service/positioning
+  EXTRA COM HOTRAN: extra with HOTRAN
+  EXTRA SEM HOTRAN: extra without HOTRAN
+  CONEXÃO PARA ATENDER VIAGEM INTERNACIONAL: connection to meet international trip
+  DUPLICATED LEG: doubled flight state
+  EXPERIÊNCIA: experience
+  INSTRUÇÃO: instruction
+  CODE SHARING: code sharing
+  SERVIÇO COM TRANSPORTE: shuttle service
+
+semester_name:
+  '1º SEMESTRE': 1_semester  # TODO: this could be improved in the utility/def translate_pt_to_en_df() - now exact string matching
+  '2º SEMESTRE': 2_semester
+  '3º SEMESTRE': 3_semester
+  '4º SEMESTRE': 4_semester
+
+quarter_name:
+  '1º TRIMESTRE': 1_quarter
+  '2º TRIMESTRE': 2_quarter
+  '3º TRIMESTRE': 3_quarter
+  '4º TRIMESTRE': 4_quarter
+
+company_type:
+  TRANSPORTE AÉREO REGULAR: Scheduled air transport
+  TRANSPORTE AÉREO NÃO REGULAR: Non-scheduled air transport
+  DOMÉSTICO REGULAR: Domestic scheduled
+  ESTRANGEIRA REGULAR: Regular foreign
+  ESTRANGEIRA NÃO REGULAR: Non-scheduled foreign
+  SERVIÇOS AÉREOS PÚBLICOS: Public air services
+  LIGAÇÃO AÉREA SISTEMÁTICA REGULAR: Systematic scheduled air service
+  TÁXI-AÉREO: Air taxiing
+  AEROLEVANTAMENTE: Aerial lift
+  AEROPUBLICIDADE: Aeropublicity
+  AEROFOTOGRAFIA: Aerophotography
+  AEROINSPEÇÃO: Aerial-inspection
+  ESTRANGEIRA OFFLINE: Foreign offline
+  AEROLEVANTAMENTO: Aerial survey
+  SERVIÇOS AÉREOS PÚBLICOS, TRANSPORTE AÉREO REGULAR: Public air services, scheduled air transport
+  AEROFOTOGRAFIA, AEROINSPEÇÃO, SERVIÇOS AÉREOS PÚBLICOS, TÁXI-AÉREO, TRANSPORTE AÉREO NÃO REGULAR: Aerophotography, aero-inspection, public air services, air taxiing, non-scheduled air transport
+  TRANSPORTE AÉREO NÃO REGULAR, TRANSPORTE AÉREO REGULAR: Non-scheduled air transport, scheduled air transport
+  AEROLEVANTAMENTO, AEROPUBLICIDADE, LIGAÇÃO AÉREA SISTEMÁTICA REGULAR, TÁXI-AÉREO, TRANSPORTE AÉREO REGULAR: Aerial surveying, aeropublicity, systematic scheduled air link, air cab, scheduled air transport
+
+airline_country: origin_country
+destination_country: origin_country # Note: this indicates: the translation is the same as in origin_country
+departure_month_name: month_name
+arrival_month_name: month_name
+departure_week_name: week_name
+arrival_week_name: week_name
+destination_continent: origin_continent
+departure_semester_name: semester_name
+arrival_semester_name: semester_name
+departure_quarter_name: quarter_name
+arrival_quarter_name: quarter_name
+destination_region_name: region_pt_en
+origin_region_name: region_pt_en
+
+type:  # PT: Fonte, Tipo de geração; EN: type, Type of generation power plants
+  # used in ANEEL
+  CGH: mini_hydro # Mini Hydroelectric Power Plant, < 5MW
+  PCH: small_hydro  # Small Hydroelectric Power Plant, 5MW<= <= 30MW
+  UHE: hydro  # Hydroelectric Power Plant, 5MW<= <= 50MW; p.s. the UHE of Itaipu (Brazilian part)-7.000 MW is considered in PR states
+  CGU: wave  # Wave-electric Power Plant
+  EOL: on_wind  # Wind Power Plant(onshore wind)
+  UFV: solar_pv  # Photovoltaic Solar Power Plant
+  UTE: thermal  # Thermal Power Plant
+  UTN: nuclear  # Thermonuclear Power Plant
+  # used in ONS capaicty
+  Eólica: on_wind
+  EOLIELÉTRICA: on_wind
+  Hidrelétrica: hydro
+  HIDROELÉTRICA: hydro
+  Nuclear: nuclear
+  NUCLEAR: nuclear
+  Solar: solar_pv
+  Térmica: thermal
+  TÉRMICA: thermal
+  BOMBEAMENTO: hydro_pump
+  FOTOVOLTAICA: solar_pv
+
+
+  # used in ANEEL auction
+  UEE: on_wind
+  BION: thermal  # biomass-thermal
+  UES: solar_pv
+
+
+phase: # PT: Fase/Estado; EN: Phase/State
+  Construção: construction
+  Construção não iniciada: construction not started
+  Operação: operation
+
+qualified:
+  Não: no
+  Sim: yes
+
+operation_type:
+  Concessão: grant
+  Registro: registration
+  Autorização: authorization
+
+fuel_type:
+  Biomassa: Biomass
+  Eólica: Wind
+  Fóssil: Fossil
+  Hídrica: Hydroelectric
+  Nuclear: Nuclear
+  Solar: Solar
+  Undi-Elétrica: Wave
+  Undi-elétrica: Wave
+
+fuel_source:
+  Agroindustriais: Agro-industry
+  Biocombustíveis líquidos: Liquid biofuels
+  Carvão mineral: Mineral coal
+  Cinética da água: Water kinetic energy
+  Cinética do vento: Wind kinetic energy
+  Floresta: Forest
+  Gás natural: Natural gas
+  Outros Fósseis: Other fossil energy
+  Petróleo: Oil
+  Potencial hidráulico: Hydraulic potential
+  Radiação solar: Solar radiation
+  Resíduos animais: Animal waste
+  Resíduos sólidos urbanos: Urban solid waste
+  Urânio: Uranium
+
+primary:  # fuel primary -> due to the limit of store the column name of 10 characters, use primary for fuel primary
+  # both used in ANEEL and ONS
+  Óleo Diesel: Diesel oil
+  Gás Natural: Natural gas
+
+  # used in ANEEL (partly used in EPE)
+  Óleo combustível: Fuel oil
+  Óleos vegetais: Vegetable oil
+  Bagaço de Cana de Açúcar: Sugarcane bagasse
+  Biogás - Floresta: Forest biogas
+  Biogás - RA: Biogas - animal waste
+  Biogás - RU: Biogas-urban solid waste
+  Biogás-AGR: Biogas-agro-industrial
+  Calor de Processo - CM: Process heat-mineral coal
+  Calor de Processo - GN: Process heat-natural gas
+  Calor de Processo - OF: Process heat-other fossil source
+  Capim Elefante: Elephant grass
+  Carvão - RU: Urban solid waste coal
+  Carvão Mineral: Mineral coal
+  Carvão Vegetal: Vegetal coal
+  Casca de Arroz: Rice husk
+  Cinética da água: Kinetic water
+  Cinética do vento: Kinetic wind
+  Etanol: Ethanol
+  Gás de Alto-Forno - Biomassa: Blast furnace gas – biomass
+  Gás de Alto Forno - Biomassa: Blast furnace gas – biomass
+  Gás de Alto-Forno - CM: Blast furnace gas – mineral coal
+  Gás de Alto Forno - CM: Blast furnace gas – mineral coal
+  Gás de Alto-Forno - PE: Blast furnace gas – petroleum
+  Gás de Alto Forno - PE: Blast furnace gas – petroleum
+  Gás de refinaria: Refinery gas
+  Gás de Refinaria: Refinery gas
+  Lenha: Firewood
+  Licor Negro: Black liquor
+  Outros Energéticos de Petróleo: Other petroleum energetics
+  Potencial hídrico: Hydraulic potential
+  Potencial hidráulico: Hydraulic potential
+  Radiação solar: Solar radiation
+  Resíduos florestais: Forest residue
+  Resíduos Sólidos Urbanos - RU: Urban solid waste
+  Urânio: Uranium
+
+  # used in ONS
+  Térmica: Thermal
+  Hidráulica: Hydraulic
+  HIDRÁULICA: Hydraulic
+  Gás: Gas
+  GÁS: Gas
+  Petróleo: Petroleum
+  Óleo Combustível: Fuel oil
+  ÓLEO COMBUSTÍVEL: Fuel oil
+  MULTI-FUEL GAS/DIESEL: Fuel oil # MULTI-FUEL GAS/DIESEL
+  MULTI-COMBUSTÍVEL GÁS/DIESEL: Fuel oil # MULTI-FUEL GAS/DIESEL
+  ÓLEO DIESEL: Diesel oil
+  MULTI-COMBUSTÍVEL DIESEL/ÓLEO: Fuel oil # MULTI-FUEL DIESEL/Oil
+  Biomassa: Biomass
+  BIOMASSA: Biomass
+  Eólica: Wind
+  EÓLICA: Wind
+  Fotovoltaica: Photovoltaic
+  Carvão: Coal
+  CARVÃO: Coal
+  Resíduos Industriais: Industrial waste
+  RESÍDUO CICLO COMBINADO: Industrial waste # COMBINED CYCLE RESIDUE
+  RESÍDUOS INDUSTRIAIS: Industrial waste
+  Nuclear: Nuclear
+  NUCLEAR: Nuclear
+  FOTOVOLTAICA: Solar
+
+  # used in EPE
+  Bagaço de Cana de Açucar: Sugarcane bagasse  # variants for Bagaço de Cana de Açúcar
+  Biogás: Biogas
+  Gás de Alto Forno: Blast furnace gas
+  Resíduos Florestais: Forest residue  # variants for Resíduos florestais
+  Biomassa Florestal: Forest biomass
+  gás natural: Natural gas
+  Calor de Processo: Process heat
+  gás de refinaria: Refinery gas
+  nuclear: Nuclear
+  diesel: Diesel oil
+
+  # used in ANEEL Auction
+  Água: Water
+  Bagaço de Cana-de-Açúcar: Sugarcane bagasse # variants for Bagaço de Cana de Açúcar
+  'Bagaço de Cana-de-Açúcar (Alternativo: palha de cana-de-açúcar)': Sugarcane bagasse # variants for Bagaço de Cana de Açúcar
+  'Bagaço de Cana-de-Açúcar (Alternativo: resíduos agrícolas)': Sugarcane bagasse
+  'Bagaço de Cana-de-Açúcar (Alternativo: palha e ponta de cana-de-açúcar)': Sugarcane bagasse
+  'Bagaço de Cana-de-Açúcar (Alternativo: cavaco de madeira)': Sugarcane bagasse
+  Bagaço de Cana: Sugarcane
+  BAGAÇO DE CANA: Sugarcane
+  'Biomassa de Resíduo Sólido Avícola (Alternativo: Resíduos de Madeira)': Solid waste biomass
+  Gás de Processo e Vapor de Processo: Process gas and process steam
+  Gás Natural Liquefeito: Natural gas
+  Gas Natural: Natural gas
+  GÁS NATURAL: Natural gas
+  Gás Natural Regaseificado (a partir de GNL): Natural gas
+  Óleo combustível (OCB1): Fuel oil   # Fuel Oil (OCB1): oils with lower sulphur content and lower viscosity limit; source: https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel
+  Óleo OCB1: Fuel oil
+  'Óleo OCB1 Alternativo: Óleo Diesel': Fuel oil
+  'Óleo Combustível B1 (especial) Alternativo: Óleo Diesel':  Fuel oil # Fuel Oil B1 (special) Alternative: Diesel Oil
+  'Óleo Combustível Especial B1 Alternativo: Óleo Diesel': Fuel oil
+  'Óleo Combustível B1 Alternativo: Óleo Diesel': Fuel oil
+  Óleo Combustível B1: Fuel oil
+  Óleo Combustível 1B: Fuel oil
+  Óleo combustível B1 especial: Fuel oil
+  'Óleo Combustível B1 Alternativo: Biodisel e Óleo Diesel': Fuel oil
+  'Capim Elefante (Alternativo: resíduo de madeira)': Elephant grass
+  'Óleo Diesel (Alternativo: Biodiesel)': Diesel oil # variants for Óleo Diesel
+  Cavaco/Resíduo de Madeira: Wood waste
+  Cavaco / Resíduo de Madeira: Wood waste
+  Cavaco de Madeira: Wood waste
+  CAVACO RESÍDUO DE MADEIRA: Wood waste
+  UTE: UTE
+  Carvão Mineral Nacional: Mineral coal # variants for Carvão Mineral
+  Carvão Mineral Importado: Mineral coal
+  Sol: Sun
+  SOL: Sun
+  SOLAR: Sun
+  Vento: Wind
+  VENTO: Wind
+  Rio: River
+  RIO: River
+
+
+# TODO: Note the classification of region might be different in electric regions and locations
+region:
+  Sudeste/Centro-Oeste:  SE  # Southeast/Midwest
+  Sul: S  # South
+  Nordeste: NE  # Northeast
+  Norte: N  # North
+  Centro Oeste: SE  # convert to the electric region defined in ONS, in some source: SE-CO
+  Sudeste: SE  # convert to the electric region defined in ONS, in some source: SE-CO
+
+  SUDESTE/CENTRO-OESTE: SE  # Southeast/Midwest
+  SUL: S  # South
+  NORDESTE: NE  # Northeast
+  NORTE: N  # North
+  CENTRO-OESTE: SE  # convert to the electric region defined in ONS, in some source: SE-CO
+  SUDESTE: SE  # convert to the electric region defined in ONS, in some source: SE-CO
+
+  # used in ANP
+  CENTRO OESTE: SE  # convert to the electric region defined in ONS, in some source: SE-CO
+  # used in ANAC
+  NÃO IDENTIFICADO: unidentified
+region_en:
+  Southeast/Midwest:  SE  # Southeast/Midwest
+  South: S  # South
+  Northeast: NE  # Northeast
+  North: N  # North
+
+region_pt_en:
+  Sudeste: Southeast
+  SUDESTE: Southeast
+  Centro-Oeste: Midwest
+  CENTRO-OESTE: Midwest
+  Norte: North
+  NORTE: North
+  Nordeste: Northeast
+  NORDESTE: Northeast
+  Sul: South
+  SUL: South
+  # used in the ANAC data
+  NÃO IDENTIFICADO: unidentified
+
+state:  # source: EPE, Unidades_da_Federação.shp from https://gisepeprd2.epe.gov.br/WebMapEPE/
+  # name in PT
+  Acre: AC
+  Alagoas: AL
+  Amapá: AP
+  Amazonas: AM
+  Bahia: BA
+  Ceará: CE
+  Distrito Federal: DF
+  Espírito Santo: ES
+  Goiás: GO
+  Maranhão: MA
+  Mato Grosso: MT
+  Mato Grosso do Sul: MS
+  Minas Gerais: MG
+  Pará: PA
+  Paraíba: PB
+  Paraná: PR
+  Pernambuco: PE
+  Piauí: PI
+  Rio de Janeiro: RJ
+  Rio Grande do Norte: RN
+  Rio Grande do Sul: RS
+  Rondônia: RO
+  Roraima: RR
+  Santa Catarina: SC
+  São Paulo: SP
+  Sergipe: SE
+  Tocantins: TO
+
+  # name in PT with letters in all upper case and without accent
+  ACRE: AC
+  ALAGOAS: AL
+  AMAPA: AP
+  AMAZONAS: AM
+  BAHIA: BA
+  CEARA: CE
+  DISTRITO FEDERAL: DF
+  ESPIRITO SANTO: ES
+  GOIAS: GO
+  MARANHAO: MA
+  MATO GROSSO: MT
+  MATO GROSSO DO SUL: MS
+  MINAS GERAIS: MG
+  PARA: PA
+  PARAIBA: PB
+  PARANA: PR
+  PERNAMBUCO: PE
+  PIAUI: PI
+  RIO DE JANEIRO: RJ
+  RIO GRANDE DO NORTE: RN
+  RIO GRANDE DO SUL: RS
+  RONDONIA: RO
+  RORAIMA: RR
+  SANTA CATARINA: SC
+  SAO PAULO: SP
+  SERGIPE: SE
+  TOCANTINS: TO
+
+  # name in PT with letters in all upper case and with accent
+  AMAPÁ: AP
+  CEARÁ: CE
+  ESPÍRITO SANTO: ES
+  GOIÁS: GO
+  MARANHÃO: MA
+  PARÁ: PA
+  PARAÍBA: PB
+  PARANÁ: PR
+  PIAUÍ: PI
+  RONDÔNIA: RO
+  SÃO PAULO: SP
+
+  # name in PT with uncommon accent in letters
+  Maranhăo: MA
+  Săo Paulo: SP
+
+start_node: # 'only used by international transmission'
+  SIN: SIN
+end_node: # 'only used by international transmission'
+  Uruguai: URU
+  Argentina: ARG
+
+regime:
+  # source:https://app.powerbi.com/view?r=eyJrIjoiNjc4OGYyYjQtYWM2ZC00YjllLWJlYmEtYzdkNTQ1MTc1NjM2IiwidCI6IjQwZDZmOWI4LWVjYTctNDZhMi05MmQ0LWVhNGU5YzAxNzBlMSIsImMiOjR9
+  # Manual do Usuario - Regimes de Exploração
+  # the REG = SP = Public Service is based on guess
+  SP: Public Service
+  REG: Public Service
+  APE: Self-producer of electric energy
+  PIE: Independent power producer
+
+product:
+  # https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-413/topico-567/SP-EPE-DPG-SDB-Abast-02-2020_Carga%20tribut%C3%A1ria_2020_r1.pdf
+  # used in ANP distribution fuel price
+  GASOLINA DE AVIAÇÃO:  Gasoline # AVIATION GASOLINE
+  QUEROSENE DE AVIAÇÃO: Kerosene # AVIATION KEROSENE
+  QAV: Kerosene
+  Gasolina: Gasoline
+
+column_ibge_gpd:
+  Ano: year  # Year
+  Código da Grande Região: region_id # Great Region Code
+  Nome da Grande Região: region # Region name
+  Código da Unidade da Federação: state_code # Federation Unit Code
+  Sigla da Unidade da Federação: state # Acronym of the Federation Unit
+  Nome da Unidade da Federação: state_name # Federation Unit Name
+  Código do Município: city_code # Municipality code
+  Nome do Município: city # Name of the Municipality
+  Região Metropolitana: metropolis # Metropolitan region
+  Código da Mesorregião: mesoregion_code # Code of the Mesoregion
+  Nome da Mesorregião: mesoregion # Name of the Mesoregion
+  Código da Microrregião: microregion_code # Microregion Code
+  Nome da Microrregião: microregion # Name of the Microregion
+  Código da Região Geográfica Imediata: immediate_region_code # Immediate Geographic Region Code
+  Nome da Região Geográfica Imediata: immediate_region # Name of Immediate Geographic Region
+  Município da Região Geográfica Imediata: city_immediate_region_code # Municipality of the Immediate Geographic Region
+  Código da Região Geográfica Intermediária: intermediate_region_code # Intermediate Geographic Region Code
+  Nome da Região Geográfica Intermediária: intermediate_region # Name of Intermediate Geographic Region
+  Município da Região Geográfica Intermediária: city_intermediate_region_code # Municipality of the Intermediate Geographic Region
+  Código Concentração Urbana: urban_code # Urban Concentration Code
+  Nome Concentração Urbana: urban # Urban Concentration Name
+  Tipo Concentração Urbana: urban_type # Urban Concentration Type
+  Código Arranjo Populacional: pop_code # Population Arrangement Code
+  Nome Arranjo Populacional: pop # Name Population Arrangement
+  Hierarquia Urbana: urban_level_details # Urban Hierarchy
+  Hierarquia Urbana (principais categorias): urban_level # Urban Hierarchy (main categories)
+  Código da Região Rural: rural_code # Rural Region Code
+  Nome da Região Rural: rural # Rural Region Name
+  Região rural (segundo classificação do núcleo): rural_region # Rural Region (according to Core Classification)
+  Amazônia Legal: amazon # Legal Amazon
+  Semiárido: semiarid # Semi-arid
+  Cidade-Região de São Paulo: SP # São Paulo City-Region
+  Valor adicionado bruto da Agropecuária, a preços correntes (R$ 1.000): agri_cattle # Gross added value of agriculture and cattle-raising at current prices (R$ 1.000)
+  Valor adicionado bruto da Indústria, a preços correntes (R$ 1.000): industry # Gross added value of Industry current prices (R$ 1.000)
+  Valor adicionado bruto dos Serviços, a preços correntes - exceto Administração, defesa, educação e saúde públicas e seguridade social (R$ 1.000): serives # Gross added value of Services, at current prices - except Administration, defense, public education and health and social security (R$ 1.000)
+  Valor adicionado bruto da Administração, defesa, educação e saúde públicas e seguridade social, a preços correntes (R$ 1.000): administrative # Gross value added of Administration, defense, public education and health and social security at current prices (R$ 1.000)
+  Valor adicionado bruto total, a preços correntes (R$ 1.000): total_value # Total gross value added at current prices (R$ 1.000)
+  Impostos, líquidos de subsídios, sobre produtos, a preços correntes (R$ 1.000): others # Taxes, net of subsidies, on products at current prices (R$ 1.000)
+  'Produto Interno Bruto,  a preços correntes (R$ 1.000)': gdp # Gross Domestic Product at current prices (R$ 1.000)
+  'Produto Interno Bruto per capita,  a preços correntes (R$ 1,00)': gdp_per_capita # Gross Domestic Product per capita, at current prices (R$ 1.00)
+  Atividade com maior valor adicionado bruto: activity_ hightest # Activity with the highest gross added value
+  Atividade com segundo maior valor adicionado bruto: activity_second_hightest # Activity with the second-highest gross added value
+  Atividade com terceiro maior valor adicionado bruto: activity_ hightest # Activity with the third-highest added value
+
+state_name: state
+
+column_anac_airfare:
+  # source: https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas/microdados-de-tarifas-aereas-comercializadas
+  # details see read me about the meaning
+  # domestic
+  ANO: year
+  MES: month
+  EMPRESA: company
+  ORIGEM: origin
+  DESTINO: destination
+  TARIFA: fare  # Shows the value of the air transport service included in the ticket. Does not include airport departure fees or amounts charged for optional services. For domestic air fares, the nominal value in Reais (BRL) is presented. For international air fares, the nominal value in US Dollars (USD) is presented.
+  ASSENTOS: seats
+
+  Ano de Referência: year
+  Mês de Referência: month
+  ICAO Empresa Aérea: company
+  ICAO Aeródromo Origem: origin
+  ICAO Aeródromo Destino: destination
+  Tarifa-N: fare
+  Assentos Comercializados: seats
+
+  # international (those not in the domestic)
+  RETORNO: return_airport # Field applicable only to international fares and indicates the cabin class of the ticket sold, with codes Y (for economy class), J (for business class), F (for first class) or 9 (used to fill in the class field of return on one-way tickets)
+  CLASSE IDA: one_way_class
+  CLASSE VOLTA: return_way_class
+
+column_bio_potential:
+  # in "Copia de Dados GIS potencial biomassa3_potencial técnico y sustentable_v1.xlsx" -> no longer used
+  Code: id
+  Geocodigo: geo_id
+  Municipality_2009: city
+  Estado: state
+  Sugarcane_WTE: sugarcane
+  Rice_WTE: rice
+  Soybean_straw: soybean
+  Cotton_straw: cotton
+  Cassava_peels_ +_tops: cassava
+  Peanut_WTE: peanut
+  Coffee_husk: coffee
+  Coconut_WTE: coconut
+  Palm_Oil_WTE: palm oil
+  Bean_stems_and_leaves: bean
+  Rye_straw: rye
+  Barley_straw: barley
+  Maize_corn_stover: corn
+  Sorghum_straw: sorghum
+  Oat_straw: oat
+  Wheat_straw: wheat
+  Total: total
+
+  # Potencial económico_dentro del círculo2.xlsx, not full
+  Potencial sustentável e económico (kWh/y): total
+
+
+
+column_pop:
+  'Unnamed: 2': state
+  state: state
+
+grid_mode:
+# source: http://www.ons.org.br/paginas/conhecimento/glossario
+  'TIPO I': type I # Plants connected to the Basic Grid or not, which have an impact on the security of the Operation Network, considering the aspects of voltage control, equipment load control and systemic transmission limits.
+  # type II: Plants connected to the Basic Grid, not classified as Type I, and the plants connected outside the Basic Grid that do not cause impacts on the security of the Operation Network, but affect the processes of planning, operation programming and system operation, and therefore, there is a need for their individualized representation in these processes.
+  # type III: Power Plants individually not classified as Type I or Type II.
+  'TIPO II-A': type A # Thermal Power Plants (UTEs) classified as Type II and that have a declared Variable Unit Cost (CVU).
+  'TIPO II-B': type B # Power Plants classified as Type II, except those classified as Type II-A.
+  'TIPO II-C': type C # no info available

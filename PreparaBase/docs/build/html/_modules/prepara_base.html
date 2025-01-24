@@ -1,0 +1,758 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prepara_base &#8212; documentação Gerador de Base de Dados 0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Código fonte para prepara_base</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Módulo com métodos responsáveis por montar base de dados CSV, que posteriormente será convertida para arquivo datafile (input do OSeMOSYS)</span>
+
+<span class="sd">Inputs: </span>
+<span class="sd">        - arquivos de dados brutos, que devem estar contidos no folder DadosBrutos</span>
+<span class="sd">        - arquivo de configuração yaml, que deve estar contido no folder DadosBrutos</span>
+
+<span class="sd">Output: </span>
+<span class="sd">        - folder &#39;data&#39; com arquivos CSVs estruturados para o Otoole</span>
+<span class="sd">        - arquivo datafile utilizado pelo Otoole</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Bibliotecas</span>
+<span class="kn">import</span> <span class="nn">yaml</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1"># Define o diretório de trabalho para o diretório atual do script</span>
+<span class="n">diretorio_corrente</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">diretorio_corrente</span><span class="p">)</span>
+
+<span class="c1"># SETs</span>
+<div class="viewcode-block" id="SetDAILYTIMEBRACKET"><a class="viewcode-back" href="../index.html#prepara_base.SetDAILYTIMEBRACKET">[documentos]</a><span class="k">def</span> <span class="nf">SetDAILYTIMEBRACKET</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetDAYTYPE"><a class="viewcode-back" href="../index.html#prepara_base.SetDAYTYPE">[documentos]</a><span class="k">def</span> <span class="nf">SetDAYTYPE</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetEMISSION"><a class="viewcode-back" href="../index.html#prepara_base.SetEMISSION">[documentos]</a><span class="k">def</span> <span class="nf">SetEMISSION</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetFUEL"><a class="viewcode-back" href="../index.html#prepara_base.SetFUEL">[documentos]</a><span class="k">def</span> <span class="nf">SetFUEL</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetMODE_OF_OPERATION"><a class="viewcode-back" href="../index.html#prepara_base.SetMODE_OF_OPERATION">[documentos]</a><span class="k">def</span> <span class="nf">SetMODE_OF_OPERATION</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetRegion"><a class="viewcode-back" href="../index.html#prepara_base.SetRegion">[documentos]</a><span class="k">def</span> <span class="nf">SetRegion</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetSEASON"><a class="viewcode-back" href="../index.html#prepara_base.SetSEASON">[documentos]</a><span class="k">def</span> <span class="nf">SetSEASON</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetSTORAGE"><a class="viewcode-back" href="../index.html#prepara_base.SetSTORAGE">[documentos]</a><span class="k">def</span> <span class="nf">SetSTORAGE</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetTECHNOLOGY"><a class="viewcode-back" href="../index.html#prepara_base.SetTECHNOLOGY">[documentos]</a><span class="k">def</span> <span class="nf">SetTECHNOLOGY</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetTIMESLICE"><a class="viewcode-back" href="../index.html#prepara_base.SetTIMESLICE">[documentos]</a><span class="k">def</span> <span class="nf">SetTIMESLICE</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SetYEAR"><a class="viewcode-back" href="../index.html#prepara_base.SetYEAR">[documentos]</a><span class="k">def</span> <span class="nf">SetYEAR</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+
+<span class="c1"># params</span>
+<div class="viewcode-block" id="AccumulatedAnnualDemand"><a class="viewcode-back" href="../index.html#prepara_base.AccumulatedAnnualDemand">[documentos]</a><span class="k">def</span> <span class="nf">AccumulatedAnnualDemand</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;AccumulatedAnnualDemand&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="AnnualEmissionLimit"><a class="viewcode-back" href="../index.html#prepara_base.AnnualEmissionLimit">[documentos]</a><span class="k">def</span> <span class="nf">AnnualEmissionLimit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;AnnualEmissionLimit&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;EMISSION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">e</span><span class="p">))]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;AnnualEmissionLimit&quot;</span><span class="p">)</span> </div>
+                
+
+<div class="viewcode-block" id="AnnualExogenousEmission"><a class="viewcode-back" href="../index.html#prepara_base.AnnualExogenousEmission">[documentos]</a><span class="k">def</span> <span class="nf">AnnualExogenousEmission</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;AnnualExogenousEmission&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="AvailabilityFactor"><a class="viewcode-back" href="../index.html#prepara_base.AvailabilityFactor">[documentos]</a><span class="k">def</span> <span class="nf">AvailabilityFactor</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;AvailabilityFactor&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="CapacityFactor"><a class="viewcode-back" href="../index.html#prepara_base.CapacityFactor">[documentos]</a><span class="k">def</span> <span class="nf">CapacityFactor</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">on_wind</span><span class="p">,</span><span class="n">off_wind</span><span class="p">,</span><span class="n">solar_pv</span><span class="p">,</span><span class="n">other_tec</span><span class="p">):</span>
+    <span class="c1">#AJUSTAR AGREGAÇÃO TEMPORAL   </span>
+    <span class="n">regions</span> <span class="o">=</span> <span class="n">r</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;ARG&#39;</span><span class="p">,</span> <span class="s1">&#39;PRY&#39;</span><span class="p">,</span> <span class="s1">&#39;VEN&#39;</span><span class="p">,</span> <span class="s1">&#39;URY&#39;</span><span class="p">]:</span>
+        <span class="n">regions</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    
+    <span class="n">column_order</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span> <span class="s2">&quot;TECHNOLOGY&quot;</span><span class="p">,</span> <span class="s2">&quot;hours&quot;</span><span class="p">,</span> <span class="s2">&quot;YEAR&quot;</span><span class="p">,</span> <span class="s2">&quot;VALUE&quot;</span><span class="p">]</span>
+    <span class="n">df_onwind</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">on_wind</span><span class="p">)</span>
+    <span class="n">df_onwind_melted</span> <span class="o">=</span> <span class="n">df_onwind</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;hours&quot;</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;VALUE&quot;</span><span class="p">)</span>
+    <span class="n">df_onwind_melted</span><span class="p">[</span><span class="s2">&quot;REGION&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_onwind_melted</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">regions</span><span class="p">)</span>
+    <span class="n">df_onwind_final</span> <span class="o">=</span> <span class="n">df_onwind_melted</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span><span class="s2">&quot;hours&quot;</span><span class="p">])[</span><span class="s1">&#39;VALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">df_onwind_final</span><span class="p">[</span><span class="s2">&quot;TECHNOLOGY&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;on_wind&#39;</span>
+
+    <span class="n">df_offwind</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">off_wind</span><span class="p">)</span>
+    <span class="n">df_offwind_melted</span> <span class="o">=</span> <span class="n">df_offwind</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;hours&quot;</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;VALUE&quot;</span><span class="p">)</span>
+    <span class="n">df_offwind_melted</span><span class="p">[</span><span class="s2">&quot;REGION&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_offwind_melted</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">regions</span><span class="p">)</span>
+    <span class="n">df_offwind_final</span> <span class="o">=</span> <span class="n">df_offwind_melted</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span><span class="s2">&quot;hours&quot;</span><span class="p">])[</span><span class="s1">&#39;VALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">df_offwind_final</span><span class="p">[</span><span class="s2">&quot;TECHNOLOGY&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;off_wind&#39;</span>
+
+    <span class="n">df_solar_pv</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">solar_pv</span><span class="p">)</span>
+    <span class="n">df_solar_pv_melted</span> <span class="o">=</span> <span class="n">df_solar_pv</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;hours&quot;</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;VALUE&quot;</span><span class="p">)</span>
+    <span class="n">df_solar_pv_melted</span><span class="p">[</span><span class="s2">&quot;REGION&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_solar_pv_melted</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">regions</span><span class="p">)</span>
+    <span class="n">df_solar_pv_final</span> <span class="o">=</span> <span class="n">df_solar_pv_melted</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span><span class="s2">&quot;hours&quot;</span><span class="p">])[</span><span class="s1">&#39;VALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">df_solar_pv_final</span><span class="p">[</span><span class="s2">&quot;TECHNOLOGY&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;solar_pv&#39;</span>
+    
+    <span class="n">df_othertec</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">other_tec</span><span class="p">)</span>
+    <span class="n">df_othertec_filtered</span> <span class="o">=</span> <span class="n">df_othertec</span><span class="p">[</span><span class="n">df_othertec</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">)]</span>
+    <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+    <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+        <span class="n">df_othertec_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_othertec_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_onwind_final</span><span class="p">,</span> <span class="n">df_offwind_final</span><span class="p">,</span> <span class="n">df_solar_pv_final</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;CapacityFactor&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CapacityOfOneTechnologyUnit"><a class="viewcode-back" href="../index.html#prepara_base.CapacityOfOneTechnologyUnit">[documentos]</a><span class="k">def</span> <span class="nf">CapacityOfOneTechnologyUnit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;CapacityOfOneTechnologyUnit&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="CapacityToActivityUnit"><a class="viewcode-back" href="../index.html#prepara_base.CapacityToActivityUnit">[documentos]</a><span class="k">def</span> <span class="nf">CapacityToActivityUnit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;CapacityToActivityUnit&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;CapacityToActivityUnit&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CapitalCost"><a class="viewcode-back" href="../index.html#prepara_base.CapitalCost">[documentos]</a><span class="k">def</span> <span class="nf">CapitalCost</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;CapitalCost&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;CapitalCost&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CapitalCostStorage"><a class="viewcode-back" href="../index.html#prepara_base.CapitalCostStorage">[documentos]</a><span class="k">def</span> <span class="nf">CapitalCostStorage</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;CapitalCostStorage&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Conversionld"><a class="viewcode-back" href="../index.html#prepara_base.Conversionld">[documentos]</a><span class="k">def</span> <span class="nf">Conversionld</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Conversionls"><a class="viewcode-back" href="../index.html#prepara_base.Conversionls">[documentos]</a><span class="k">def</span> <span class="nf">Conversionls</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Conversionlh"><a class="viewcode-back" href="../index.html#prepara_base.Conversionlh">[documentos]</a><span class="k">def</span> <span class="nf">Conversionlh</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="DaySplit"><a class="viewcode-back" href="../index.html#prepara_base.DaySplit">[documentos]</a><span class="k">def</span> <span class="nf">DaySplit</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="DaysInDayType"><a class="viewcode-back" href="../index.html#prepara_base.DaysInDayType">[documentos]</a><span class="k">def</span> <span class="nf">DaysInDayType</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="DepreciationMethod"><a class="viewcode-back" href="../index.html#prepara_base.DepreciationMethod">[documentos]</a><span class="k">def</span> <span class="nf">DepreciationMethod</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;DepreciationMethod&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="DiscountRate"><a class="viewcode-back" href="../index.html#prepara_base.DiscountRate">[documentos]</a><span class="k">def</span> <span class="nf">DiscountRate</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;DiscountRate&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="DiscountRateStorage"><a class="viewcode-back" href="../index.html#prepara_base.DiscountRateStorage">[documentos]</a><span class="k">def</span> <span class="nf">DiscountRateStorage</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;DiscountRateStorage&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="EmissionActivityRatio"><a class="viewcode-back" href="../index.html#prepara_base.EmissionActivityRatio">[documentos]</a><span class="k">def</span> <span class="nf">EmissionActivityRatio</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;EmissionActivityRatio&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;EMISSION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MODE_OF_OPERATION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;EmissionActivityRatio&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="EmissionsPenalty"><a class="viewcode-back" href="../index.html#prepara_base.EmissionsPenalty">[documentos]</a><span class="k">def</span> <span class="nf">EmissionsPenalty</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;EmissionsPenalty&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="FixedCost"><a class="viewcode-back" href="../index.html#prepara_base.FixedCost">[documentos]</a><span class="k">def</span> <span class="nf">FixedCost</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;FixedCost&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;FixedCost&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="InputActivityRatio"><a class="viewcode-back" href="../index.html#prepara_base.InputActivityRatio">[documentos]</a><span class="k">def</span> <span class="nf">InputActivityRatio</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;InputActivityRatio&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;FUEL&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MODE_OF_OPERATION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;InputActivityRatio&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ModelPeriodEmissionLimit"><a class="viewcode-back" href="../index.html#prepara_base.ModelPeriodEmissionLimit">[documentos]</a><span class="k">def</span> <span class="nf">ModelPeriodEmissionLimit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ModelPeriodEmissionLimit&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;EMISSION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">e</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;ModelPeriodEmissionLimit&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ModelPeriodExogenousEmission"><a class="viewcode-back" href="../index.html#prepara_base.ModelPeriodExogenousEmission">[documentos]</a><span class="k">def</span> <span class="nf">ModelPeriodExogenousEmission</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ModelPeriodExogenousEmission&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="OperationalLife"><a class="viewcode-back" href="../index.html#prepara_base.OperationalLife">[documentos]</a><span class="k">def</span> <span class="nf">OperationalLife</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;OperationalLife&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;OperationalLife&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="OperationalLifeStorage"><a class="viewcode-back" href="../index.html#prepara_base.OperationalLifeStorage">[documentos]</a><span class="k">def</span> <span class="nf">OperationalLifeStorage</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;OperationalLifeStorage&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="OutputActivityRatio"><a class="viewcode-back" href="../index.html#prepara_base.OutputActivityRatio">[documentos]</a><span class="k">def</span> <span class="nf">OutputActivityRatio</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;OutputActivityRatio&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;FUEL&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;MODE_OF_OPERATION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">m</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">))]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;OutputActivityRatio&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="REMinProductionTarget"><a class="viewcode-back" href="../index.html#prepara_base.REMinProductionTarget">[documentos]</a><span class="k">def</span> <span class="nf">REMinProductionTarget</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;REMinProductionTarget&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="RETagFuel"><a class="viewcode-back" href="../index.html#prepara_base.RETagFuel">[documentos]</a><span class="k">def</span> <span class="nf">RETagFuel</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;RETagFuel&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="RETagTechnology"><a class="viewcode-back" href="../index.html#prepara_base.RETagTechnology">[documentos]</a><span class="k">def</span> <span class="nf">RETagTechnology</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;RETagTechnology&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="ReserveMargin"><a class="viewcode-back" href="../index.html#prepara_base.ReserveMargin">[documentos]</a><span class="k">def</span> <span class="nf">ReserveMargin</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ReserveMargin&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">)]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;ReserveMargin&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ReserveMarginTagFuel"><a class="viewcode-back" href="../index.html#prepara_base.ReserveMarginTagFuel">[documentos]</a><span class="k">def</span> <span class="nf">ReserveMarginTagFuel</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ReserveMarginTagFuel&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;FUEL&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">))]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;ReserveMarginTagFuel&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ReserveMarginTagTechnology"><a class="viewcode-back" href="../index.html#prepara_base.ReserveMarginTagTechnology">[documentos]</a><span class="k">def</span> <span class="nf">ReserveMarginTagTechnology</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ReserveMarginTagTechnology&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">))]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;ReserveMarginTagTechnology&quot;</span><span class="p">)</span></div>
+    
+
+<div class="viewcode-block" id="ResidualCapacity"><a class="viewcode-back" href="../index.html#prepara_base.ResidualCapacity">[documentos]</a><span class="k">def</span> <span class="nf">ResidualCapacity</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;_summary_</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        r (_type_): _description_</span>
+<span class="sd">        t (_type_): _description_</span>
+<span class="sd">        y (_type_): _description_</span>
+<span class="sd">        file_name (_type_): _description_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">df_inst_cap</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="n">df_inst_cap</span> <span class="o">=</span> <span class="n">df_inst_cap</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="s1">&#39;REGION&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">,</span> <span class="s1">&#39;phase&#39;</span><span class="p">:</span> <span class="s1">&#39;PHASE&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span><span class="s1">&#39;VALUE&#39;</span><span class="p">,</span> <span class="s1">&#39;reference_year&#39;</span><span class="p">:</span> <span class="s1">&#39;YEAR&#39;</span><span class="p">})</span>
+    <span class="n">df_inst_cap</span> <span class="o">=</span> <span class="n">df_inst_cap</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span><span class="s2">&quot;TECHNOLOGY&quot;</span><span class="p">,</span><span class="s2">&quot;YEAR&quot;</span><span class="p">])[</span><span class="s2">&quot;VALUE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">y</span><span class="p">:</span>
+
+        <span class="c1"># Replica valores do ano inicial para todos os anos do estudo</span>
+        <span class="n">df_inst_cap_ano</span> <span class="o">=</span> <span class="n">df_inst_cap</span>
+        <span class="n">df_inst_cap_ano</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">year</span> 
+
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">df_inst_cap_ano</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">)]</span>
+
+    <span class="c1"># Mapeia os dados de agregação de região no dicionário já filtrado por tecnologia</span>
+    <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION_AUX&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+    <span class="n">df_filtered</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">])</span>
+
+    <span class="c1"># Agrega os dados de capacidade de acordo com a &#39;REGION&#39; fornecida pelo usuário</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">df_filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;REGION_AUX&quot;</span><span class="p">,</span> <span class="s2">&quot;TECHNOLOGY&quot;</span><span class="p">,</span> <span class="s2">&quot;YEAR&quot;</span><span class="p">])[</span><span class="s2">&quot;VALUE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">df_final</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;REGION_AUX&#39;</span><span class="p">:</span> <span class="s1">&#39;REGION&#39;</span><span class="p">})</span>
+    
+    <span class="c1"># Escreve arquivo .csv    </span>
+    <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;ResidualCapacity&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ResidualStorageCapacity"><a class="viewcode-back" href="../index.html#prepara_base.ResidualStorageCapacity">[documentos]</a><span class="k">def</span> <span class="nf">ResidualStorageCapacity</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ResidualStorageCapacity&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SpecifiedAnnualDemand"><a class="viewcode-back" href="../index.html#prepara_base.SpecifiedAnnualDemand">[documentos]</a><span class="k">def</span> <span class="nf">SpecifiedAnnualDemand</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Cálculo da demanda anual do sistema. A demanda dos estados são agregadas nas regiões</span>
+<span class="sd">    fornecidas pelo usuário e é aplicadoo fator de crescimento para cada ano do horizonte de estudo</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        r (dict): _description_</span>
+<span class="sd">        f (list): _description_</span>
+<span class="sd">        y (list): _description_</span>
+<span class="sd">        file_name (str): _description_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    
+    <span class="c1"># Agrega demanda do ano por UF</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;state&#39;</span><span class="p">])[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    
+    <span class="c1"># Mapeia regioes de acordo com &#39;REGION&#39; fornecida pelo usuário</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">])</span>
+
+    <span class="c1"># Agrega os dados de demanda de acordo com a &#39;REGION&#39; fornecida pelo usuário</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;REGION&quot;</span><span class="p">])[</span><span class="s2">&quot;value&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span></div>
+
+    <span class="c1">#TODO: Aplicar fator de crescimento de demanda para os anos seguintes</span>
+    
+    <span class="c1">#</span>
+    
+<div class="viewcode-block" id="SpecifiedDemandProfile"><a class="viewcode-back" href="../index.html#prepara_base.SpecifiedDemandProfile">[documentos]</a><span class="k">def</span> <span class="nf">SpecifiedDemandProfile</span><span class="p">():</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="MinStorageCharge"><a class="viewcode-back" href="../index.html#prepara_base.MinStorageCharge">[documentos]</a><span class="k">def</span> <span class="nf">MinStorageCharge</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;MinStorageCharge&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="StorageLevelStart"><a class="viewcode-back" href="../index.html#prepara_base.StorageLevelStart">[documentos]</a><span class="k">def</span> <span class="nf">StorageLevelStart</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;StorageLevelStart&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="StorageMaxChargeRate"><a class="viewcode-back" href="../index.html#prepara_base.StorageMaxChargeRate">[documentos]</a><span class="k">def</span> <span class="nf">StorageMaxChargeRate</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;StorageMaxChargeRate&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="StorageMaxDischargeRate"><a class="viewcode-back" href="../index.html#prepara_base.StorageMaxDischargeRate">[documentos]</a><span class="k">def</span> <span class="nf">StorageMaxDischargeRate</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;StorageMaxDischargeRate&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TechnologyFromStorage"><a class="viewcode-back" href="../index.html#prepara_base.TechnologyFromStorage">[documentos]</a><span class="k">def</span> <span class="nf">TechnologyFromStorage</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TechnologyFromStorage&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TechnologyToStorage"><a class="viewcode-back" href="../index.html#prepara_base.TechnologyToStorage">[documentos]</a><span class="k">def</span> <span class="nf">TechnologyToStorage</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TechnologyToStorage&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalAnnualMaxCapacity"><a class="viewcode-back" href="../index.html#prepara_base.TotalAnnualMaxCapacity">[documentos]</a><span class="k">def</span> <span class="nf">TotalAnnualMaxCapacity</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TotalAnnualMaxCapacity&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalAnnualMaxCapacityInvestment"><a class="viewcode-back" href="../index.html#prepara_base.TotalAnnualMaxCapacityInvestment">[documentos]</a><span class="k">def</span> <span class="nf">TotalAnnualMaxCapacityInvestment</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TotalAnnualMaxCapacityInvestment&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalAnnualMinCapacity"><a class="viewcode-back" href="../index.html#prepara_base.TotalAnnualMinCapacity">[documentos]</a><span class="k">def</span> <span class="nf">TotalAnnualMinCapacity</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TotalAnnualMinCapacity&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalAnnualMinCapacityInvestment"><a class="viewcode-back" href="../index.html#prepara_base.TotalAnnualMinCapacityInvestment">[documentos]</a><span class="k">def</span> <span class="nf">TotalAnnualMinCapacityInvestment</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TotalAnnualMinCapacityInvestment&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalTechnologyAnnualActivityLowerLimit"><a class="viewcode-back" href="../index.html#prepara_base.TotalTechnologyAnnualActivityLowerLimit">[documentos]</a><span class="k">def</span> <span class="nf">TotalTechnologyAnnualActivityLowerLimit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TotalTechnologyAnnualActivityLowerLimit&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalTechnologyAnnualActivityUpperLimit"><a class="viewcode-back" href="../index.html#prepara_base.TotalTechnologyAnnualActivityUpperLimit">[documentos]</a><span class="k">def</span> <span class="nf">TotalTechnologyAnnualActivityUpperLimit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;ReserveMarginTagTechnology&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">))]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;ReserveMarginTagTechnology&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TotalTechnologyModelPeriodActivityLowerLimit"><a class="viewcode-back" href="../index.html#prepara_base.TotalTechnologyModelPeriodActivityLowerLimit">[documentos]</a><span class="k">def</span> <span class="nf">TotalTechnologyModelPeriodActivityLowerLimit</span><span class="p">():</span>
+    <span class="c1"># Conferir se é a parte de rede</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TotalTechnologyModelPeriodActivityUpperLimit"><a class="viewcode-back" href="../index.html#prepara_base.TotalTechnologyModelPeriodActivityUpperLimit">[documentos]</a><span class="k">def</span> <span class="nf">TotalTechnologyModelPeriodActivityUpperLimit</span><span class="p">():</span>
+    <span class="c1"># Conferir se é a parte de rede</span>
+    <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TradeRoute"><a class="viewcode-back" href="../index.html#prepara_base.TradeRoute">[documentos]</a><span class="k">def</span> <span class="nf">TradeRoute</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;TradeRoute&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="VariableCost"><a class="viewcode-back" href="../index.html#prepara_base.VariableCost">[documentos]</a><span class="k">def</span> <span class="nf">VariableCost</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;VariableCost&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TECHNOLOGY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;MODE_OF_OPERATION&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">m</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">y</span><span class="p">))]</span>
+        <span class="n">regions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">regions</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;ARGENTINA&#39;</span><span class="p">,</span> <span class="s1">&#39;PARAGUAI&#39;</span><span class="p">,</span> <span class="s1">&#39;VENEZUELA&#39;</span><span class="p">,</span> <span class="s1">&#39;URUGUAI&#39;</span><span class="p">])</span>
+        <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+            <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;REGION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">region</span>
+            <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_final</span><span class="p">,</span> <span class="n">df_filtered</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">EscreveArquivo</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="s2">&quot;VariableCost&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="YearSplit"><a class="viewcode-back" href="../index.html#prepara_base.YearSplit">[documentos]</a><span class="k">def</span> <span class="nf">YearSplit</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="k">pass</span></div>
+
+
+
+<span class="c1"># Funções utilitárias</span>
+<div class="viewcode-block" id="CarregaArquivo"><a class="viewcode-back" href="../index.html#prepara_base.CarregaArquivo">[documentos]</a><span class="k">def</span> <span class="nf">CarregaArquivo</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;DadosBrutos&quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span></div>
+
+<div class="viewcode-block" id="EscreveArquivo"><a class="viewcode-back" href="../index.html#prepara_base.EscreveArquivo">[documentos]</a><span class="k">def</span> <span class="nf">EscreveArquivo</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">file_name</span> <span class="o">+</span> <span class="s2">&quot;.csv&quot;</span><span class="p">)</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CarregaArquivoYAML"><a class="viewcode-back" href="../index.html#prepara_base.CarregaArquivoYAML">[documentos]</a><span class="k">def</span> <span class="nf">CarregaArquivoYAML</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;input.yaml&quot;</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;DadosBrutos&quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">yaml_dict</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">yaml_dict</span></div>
+
+<span class="c1"># Rotinas</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">configs</span> <span class="o">=</span> <span class="n">CarregaArquivoYAML</span><span class="p">()</span>
+    <span class="n">regions</span> <span class="o">=</span> <span class="n">configs</span><span class="p">[</span><span class="s1">&#39;regions&#39;</span><span class="p">]</span>
+    <span class="n">emissions</span> <span class="o">=</span> <span class="n">configs</span><span class="p">[</span><span class="s1">&#39;emissions&#39;</span><span class="p">]</span>
+    <span class="n">years</span> <span class="o">=</span> <span class="n">configs</span><span class="p">[</span><span class="s1">&#39;years&#39;</span><span class="p">]</span>
+    <span class="n">fuels</span> <span class="o">=</span> <span class="n">configs</span><span class="p">[</span><span class="s1">&#39;fuels&#39;</span><span class="p">]</span>
+    <span class="n">techs</span> <span class="o">=</span> <span class="n">configs</span><span class="p">[</span><span class="s1">&#39;techs&#39;</span><span class="p">]</span>
+    <span class="n">timeslice</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1">#TODO</span>
+    <span class="n">storages</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1">#TODO</span>
+    <span class="n">modes_of_operation</span> <span class="o">=</span> <span class="n">configs</span><span class="p">[</span><span class="s1">&#39;modes_of_operation&#39;</span><span class="p">]</span>
+
+    <span class="n">AccumulatedAnnualDemand</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span> <span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_AccumulatedAnnualDemand.csv&quot;</span><span class="p">)</span>
+    <span class="n">AnnualEmissionLimit</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="n">emissions</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_AnnualEmissionLimit.csv&quot;</span><span class="p">)</span>
+    <span class="n">AnnualExogenousEmission</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_AnnualExogenousEmission.csv&quot;</span><span class="p">)</span>
+    <span class="n">AvailabilityFactor</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_AvailabilityFactor.csv&quot;</span><span class="p">)</span>
+    <span class="n">CapacityFactor</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="n">timeslice</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span> <span class="n">on_wind</span><span class="o">=</span><span class="s2">&quot;in_CapacityFactorOnWind.csv&quot;</span><span class="p">,</span> <span class="n">off_wind</span><span class="o">=</span><span class="s2">&quot;in_CapacityFactorOffWind.csv&quot;</span><span class="p">,</span> <span class="n">solar_pv</span><span class="o">=</span><span class="s2">&quot;in_CapacityFactorSolarPV.csv&quot;</span><span class="p">,</span> <span class="n">other_tec</span><span class="o">=</span><span class="s2">&quot;in_CapacityFactor.csv&quot;</span><span class="p">)</span>
+    <span class="n">CapacityOfOneTechnologyUnit</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_CapacityOfOneTechnologyUnit.csv&quot;</span><span class="p">)</span>
+    <span class="n">CapacityToActivityUnit</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_CapacityToActivityUnit.csv&quot;</span><span class="p">)</span>
+    <span class="n">CapitalCost</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_CapitalCost.csv&quot;</span><span class="p">)</span>
+    <span class="n">CapitalCostStorage</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_CapitalCostStorage.csv&quot;</span><span class="p">)</span>
+    <span class="n">DepreciationMethod</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_DepreciationMethod.csv&quot;</span><span class="p">)</span>
+    <span class="n">DiscountRate</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_DiscountRate.csv&quot;</span><span class="p">)</span>
+    <span class="n">DiscountRateStorage</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_DiscountRateStorage.csv&quot;</span><span class="p">)</span>
+    <span class="n">EmissionActivityRatio</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="n">emissions</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">modes_of_operation</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_EmissionActivityRatio.csv&quot;</span><span class="p">)</span>
+    <span class="n">EmissionsPenalty</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="n">emissions</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_EmissionsPenalty.csv&quot;</span><span class="p">)</span>
+    <span class="n">FixedCost</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_FixedCost.csv&quot;</span><span class="p">)</span>
+    <span class="n">InputActivityRatio</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">modes_of_operation</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_InputActivityRatio.csv&quot;</span><span class="p">)</span>
+    <span class="n">ModelPeriodEmissionLimit</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="n">emissions</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ModelPeriodEmissionLimit.csv&quot;</span><span class="p">)</span>
+    <span class="n">ModelPeriodExogenousEmission</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="n">emissions</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ModelPeriodExogenousEmission.csv&quot;</span><span class="p">)</span>
+    <span class="n">OperationalLife</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_OperationalLife.csv&quot;</span><span class="p">)</span>
+    <span class="n">OperationalLifeStorage</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_OperationalLifeStorage.csv&quot;</span><span class="p">)</span>
+    <span class="n">OutputActivityRatio</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">modes_of_operation</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_OutputActivityRatio.csv&quot;</span><span class="p">)</span>
+    <span class="n">REMinProductionTarget</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_REMinProductionTarget.csv&quot;</span><span class="p">)</span>
+    <span class="n">RETagFuel</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_RETagFuel.csv&quot;</span><span class="p">)</span>
+    <span class="n">RETagTechnology</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_RETagTechnology.csv&quot;</span><span class="p">)</span>
+    <span class="n">ReserveMargin</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ReserveMargin.csv&quot;</span><span class="p">)</span>
+    <span class="n">ReserveMarginTagFuel</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ReserveMarginTagFuel.csv&quot;</span><span class="p">)</span>
+    <span class="n">ReserveMarginTagTechnology</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ReserveMarginTagTechnology.csv&quot;</span><span class="p">)</span>
+    <span class="n">ResidualCapacity</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ResidualCapacity.csv&quot;</span><span class="p">)</span>
+    <span class="n">ResidualStorageCapacity</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_ResidualStorageCapacity.csv&quot;</span><span class="p">)</span>
+    <span class="c1">#SpecifiedAnnualDemand(r=regions,f=fuels,y=years,file_name=&quot;in_Demand.csv&quot;)</span>
+    <span class="n">SpecifiedDemandProfile</span><span class="p">()</span>
+    <span class="n">MinStorageCharge</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_MinStorageCharge.csv&quot;</span><span class="p">)</span>
+    <span class="n">StorageLevelStart</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_StorageLevelStart.csv&quot;</span><span class="p">)</span>
+    <span class="n">StorageMaxChargeRate</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_StorageMaxChargeRate.csv&quot;</span><span class="p">)</span>
+    <span class="n">StorageMaxDischargeRate</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_StorageMaxDischargeRate.csv&quot;</span><span class="p">)</span>
+    <span class="n">TechnologyFromStorage</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">modes_of_operation</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TechnologyFromStorage.csv&quot;</span><span class="p">)</span>
+    <span class="n">TechnologyToStorage</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">storages</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">modes_of_operation</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TechnologyToStorage.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalAnnualMaxCapacity</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TotalAnnualMaxCapacity.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalAnnualMaxCapacityInvestment</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TotalAnnualMaxCapacityInvestment.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalAnnualMinCapacity</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TotalAnnualMinCapacity.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalAnnualMinCapacityInvestment</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TotalAnnualMinCapacityInvestment.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalTechnologyAnnualActivityLowerLimit</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TotalTechnologyAnnualActivityLowerLimit.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalTechnologyAnnualActivityUpperLimit</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TotalTechnologyAnnualActivityUpperLimit.csv&quot;</span><span class="p">)</span>
+    <span class="n">TotalTechnologyModelPeriodActivityLowerLimit</span><span class="p">()</span>
+    <span class="n">TotalTechnologyModelPeriodActivityUpperLimit</span><span class="p">()</span>
+    <span class="n">TradeRoute</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">fuels</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_TradeRoute.csv&quot;</span><span class="p">)</span>
+    <span class="n">VariableCost</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">modes_of_operation</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_VariableCost.csv&quot;</span><span class="p">)</span>
+    <span class="n">YearSplit</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="n">techs</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;in_YearSplit.csv&quot;</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Gerador de Base de Dados</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegação</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Código do módulo</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Busca rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Gabriel Villas Boas Sancho.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

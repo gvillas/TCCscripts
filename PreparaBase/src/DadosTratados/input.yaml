@@ -1,0 +1,93 @@
+# Este arquivo contém as configurações que serão utilizadas para montar a base de dados do SIN.
+
+regions:
+    PA: 'NORTE'
+    TO: 'NORTE'
+    MA: 'NORTE'
+    AP: 'NORTE'
+    AM: 'NORTE'
+    RR: 'NORTE'
+    PI: 'NORDESTE'
+    CE: 'NORDESTE'
+    RN: 'NORDESTE'
+    PB: 'NORDESTE'
+    PE: 'NORDESTE'
+    AL: 'NORDESTE'
+    SE: 'NORDESTE'
+    BA: 'NORDESTE'
+    ES: 'SUDESTE'
+    RJ: 'SUDESTE'
+    MG: 'SUDESTE'
+    SP: 'SUDESTE'
+    GO: 'SUDESTE'
+    DF: 'SUDESTE'
+    MT: 'SUDESTE'
+    AC: 'SUDESTE'
+    RO: 'SUDESTE'
+    MS: 'SUDESTE'
+    RS: 'SUL'
+    SC: 'SUL'
+    PR: 'SUL'
+    ARG: 'ARGENTINA'
+    PRY: 'PARAGUAI'
+    VEN: 'VENEZUELA'
+    URY: 'URUGUAI'
+
+
+emissions:
+    ['EMIC02']
+
+years:
+    [2024, 2025, 2026, 2027, 2028, 2029, 2030]
+
+techs:
+    ['IMPBIO',
+    'MINBIO',
+    'IMPURN',
+    'MINURN',
+    'IMPCOA',
+    'MINCOA',
+    'IMPNGS',
+    'MINNGS',
+    'IMPOIL',
+    'MINOIL',
+    'IMPLFO',
+    'IMPHFO',
+    'UPSREF001',
+    'UPSREF002',
+    'MINGEO',
+    'MINSOL',
+    'MINWND',
+    'MINHYD',
+    'biomass',
+    'nuclear',
+    'coal',
+    'gas',
+    'oil',
+    'solar_pv',
+    'on_wind',
+    'off_wind',
+    'hydro',
+    'small_hydro',
+    'mini_hydro',
+    'import',
+    'export']
+
+modes_of_operation:
+    [1, 2]
+
+fuels:
+    [BIO,
+    URN,
+    COA,
+    NGS,
+    OIL,
+    LFO,
+    HFO,
+    GEO,
+    SOL,
+    WND,
+    HYD,
+    DEM]
+
+    

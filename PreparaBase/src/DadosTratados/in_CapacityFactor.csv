@@ -1,0 +1,9 @@
+REGION,TECHNOLOGY,TIMESLICE,YEAR,VALUE
+SIN,biomass,,,0.66
+SIN,coal,,,0.85
+SIN,oil,,,0.85
+SIN,gas,,,0.85
+SIN,hydro,,,0.62121847
+SIN,mini_hydro,,,0.62121847
+SIN,nuclear,,,0.85
+SIN,small_hydro,,,0.62121847

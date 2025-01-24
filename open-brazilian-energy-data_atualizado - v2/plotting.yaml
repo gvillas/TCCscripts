@@ -1,0 +1,91 @@
+#__version__ = '0.1.0'
+#__maintainer__ = 'Ying Deng 12.12.2022'
+#__authors__ = 'Ying Deng'
+#__credits__ = 'Ying Deng'
+#__email__ = 'Ying.Deng@dlr.de'
+#__date__ = '12.07.2022'
+#__status__ = 'dev'  # options are: dev, test, prod
+#__copyright__ = 'DLR'
+
+tech_color:
+  "gas": "#23c9ff"
+  "coal": "#804F2E"
+  "oil": "#262626"
+  "nuclear": "#f26df9"
+
+  "ac": "#14213d"
+  "hvdc": "#fca311"
+  "import_export": "#f09d51"
+  load: "#bf4342"
+  "electricity": "#bf4342"
+
+  "hydro": "#0077b6"
+  "biomass": "#7ae582"
+  "battery": "#b3afa4"
+
+  "fuel": "#463f3a"
+  "ptj": "#6b9080"
+  "jet": "#202020"
+  "biojet": "#20bf55"
+  "co2": "#123456"
+  "fuel_export": "c0b9dd"
+  "e_flight": "ffcad4"
+  "h2_flight": "ffcad4"
+  "truck": "#9d8189"
+  "ship": "#d8e2dc"
+  "railway": "#f4acb7"
+
+  # used in data processing script
+  "solar_pv": "#ffc300"
+  "small_hydro": "#00b4d8" # Note: in the model, all regarded as reservoir using color of hydro - "#0077b6"
+  "mini_hydro": "#90e0ef"  # Note: in the model, all regarded as reservoir using color of hydro - "#0077b6"
+  "wave": "#ade8f4"
+  "thermal": "#650a0b"
+  "on_wind": "#788bff"
+  "off_wind": "#5465ff"
+
+  # slack
+  "slack": "#7209b7"
+  "PHS": "#90e0ef"
+
+nice_name:
+  # conventional power plants
+  gas: "Gas thermal" # no technology info about the OCGT or CCGT; few insight: http://globalenergyobservatory.org/list.php?db=PowerPlants&type=Gas
+  coal: "Coal thermal"
+  oil: "Oil thermal"
+  nuclear: "Nuclear"
+
+  ac: "Lines (AC)"
+  hvdc: "Lines (HVDC)"
+  import_export: "Internation electricity exchange"
+  load: "Electricity load"
+  electricity: "Electricity"
+
+  hydro: "Large hydropower"
+  small_hydro: "Small hydropower"
+  biomass: "Biomass thermal"
+  battery: "Battery storage"
+
+  fuel: "Kerosene"
+  ptj: "E-kerosene"
+  jet: "Conventional kerosene"
+  biojet: "Supply with bio-jet"
+  co2: "Carbon dioxide"
+  fuel_export: "Kerosene international export"
+  e_flight: "Electric flight"
+  h2_flight: "Hydrogen flight"
+  truck: "Kerosene transportation by truck"
+  ship: "Kerosene transportation by ship"
+  railway: "Kerosene transportation by railway"
+
+  # used in data processing script
+  "solar_pv": "Photovoltaic"
+  "mini_hydro": "Mini hydropower"
+  "wave": "Wave"
+  "thermal": "Thermal plants (fossil + biomass)"
+  "on_wind": "Onshore wind"
+  "off_wind": "Offshore wind"
+
+  # slack
+  "slack": "Slack bus (PyPSA model)"
+  "PHS": "Pumped hydro storage"

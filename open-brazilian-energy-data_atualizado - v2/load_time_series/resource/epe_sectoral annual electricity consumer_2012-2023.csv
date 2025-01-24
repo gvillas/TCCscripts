@@ -1,0 +1,2161 @@
+,state,time,value,sector
+2,AC,2013,18911,Commercial
+1,AC,2013,716,Industrial
+5,AC,2013,256,Public Lighting
+4,AC,2013,3020,Public Sector
+6,AC,2013,145,Public Service
+0,AC,2013,181295,Residential
+3,AC,2013,26782,Rural
+1,AC,2013,231151,Total
+9,AC,2014,19625,Commercial
+8,AC,2014,716,Industrial
+12,AC,2014,259,Public Lighting
+11,AC,2014,3152,Public Sector
+13,AC,2014,158,Public Service
+7,AC,2014,188572,Residential
+10,AC,2014,27533,Rural
+28,AC,2014,240042,Total
+16,AC,2015,20016,Commercial
+15,AC,2015,712,Industrial
+19,AC,2015,258,Public Lighting
+18,AC,2015,3153,Public Sector
+20,AC,2015,159,Public Service
+14,AC,2015,193461,Residential
+17,AC,2015,27487,Rural
+55,AC,2015,245271,Total
+23,AC,2016,20750,Commercial
+22,AC,2016,677,Industrial
+26,AC,2016,273,Public Lighting
+25,AC,2016,3177,Public Sector
+27,AC,2016,160,Public Service
+21,AC,2016,201728,Residential
+24,AC,2016,27425,Rural
+82,AC,2016,254216,Total
+30,AC,2017,21462,Commercial
+29,AC,2017,650,Industrial
+33,AC,2017,260,Public Lighting
+32,AC,2017,3347,Public Sector
+34,AC,2017,214,Public Service
+28,AC,2017,208733,Residential
+31,AC,2017,28433,Rural
+109,AC,2017,263125,Total
+37,AC,2018,22640,Commercial
+36,AC,2018,572,Industrial
+40,AC,2018,293,Public Lighting
+39,AC,2018,3326,Public Sector
+41,AC,2018,212,Public Service
+35,AC,2018,211790,Residential
+38,AC,2018,28089,Rural
+136,AC,2018,266964,Total
+44,AC,2019,21880,Commercial
+43,AC,2019,271,Industrial
+47,AC,2019,285,Public Lighting
+46,AC,2019,3274,Public Sector
+48,AC,2019,200,Public Service
+42,AC,2019,212010,Residential
+45,AC,2019,26487,Rural
+163,AC,2019,264456,Total
+51,AC,2020,22200,Commercial
+50,AC,2020,270,Industrial
+54,AC,2020,287,Public Lighting
+53,AC,2020,3360,Public Sector
+55,AC,2020,207,Public Service
+49,AC,2020,225720,Residential
+52,AC,2020,26506,Rural
+190,AC,2020,278603,Total
+58,AC,2021,22768,Commercial
+57,AC,2021,278,Industrial
+61,AC,2021,454,Public Lighting
+60,AC,2021,2999,Public Sector
+62,AC,2021,240,Public Service
+56,AC,2021,226127,Residential
+59,AC,2021,26236,Rural
+217,AC,2021,279154,Total
+65,AC,2022,23069,Commercial
+64,AC,2022,295,Industrial
+68,AC,2022,497,Public Lighting
+67,AC,2022,3149,Public Sector
+69,AC,2022,223,Public Service
+63,AC,2022,239858,Residential
+66,AC,2022,19320,Rural
+244,AC,2022,286469,Total
+2,AL,2013,57735,Commercial
+1,AL,2013,2653,Industrial
+5,AL,2013,198,Public Lighting
+4,AL,2013,8588,Public Sector
+6,AL,2013,1142,Public Service
+0,AL,2013,901768,Residential
+3,AL,2013,10434,Rural
+13,AL,2013,982646,Total
+9,AL,2014,59215,Commercial
+8,AL,2014,2597,Industrial
+12,AL,2014,204,Public Lighting
+11,AL,2014,8680,Public Sector
+13,AL,2014,1202,Public Service
+7,AL,2014,931604,Residential
+10,AL,2014,11600,Rural
+40,AL,2014,1015206,Total
+16,AL,2015,60405,Commercial
+15,AL,2015,2510,Industrial
+19,AL,2015,204,Public Lighting
+18,AL,2015,8625,Public Sector
+20,AL,2015,1312,Public Service
+14,AL,2015,961346,Residential
+17,AL,2015,12025,Rural
+67,AL,2015,1046528,Total
+23,AL,2016,64840,Commercial
+22,AL,2016,2609,Industrial
+26,AL,2016,205,Public Lighting
+25,AL,2016,8801,Public Sector
+27,AL,2016,1341,Public Service
+21,AL,2016,1028041,Residential
+24,AL,2016,12422,Rural
+94,AL,2016,1118372,Total
+30,AL,2017,67240,Commercial
+29,AL,2017,2350,Industrial
+33,AL,2017,226,Public Lighting
+32,AL,2017,8695,Public Sector
+34,AL,2017,1447,Public Service
+28,AL,2017,1065789,Residential
+31,AL,2017,12827,Rural
+121,AL,2017,1158679,Total
+37,AL,2018,67287,Commercial
+36,AL,2018,2335,Industrial
+40,AL,2018,267,Public Lighting
+39,AL,2018,8923,Public Sector
+41,AL,2018,1717,Public Service
+35,AL,2018,1065986,Residential
+38,AL,2018,12707,Rural
+148,AL,2018,1159333,Total
+44,AL,2019,68056,Commercial
+43,AL,2019,2192,Industrial
+47,AL,2019,278,Public Lighting
+46,AL,2019,9003,Public Sector
+48,AL,2019,1731,Public Service
+42,AL,2019,1052601,Residential
+45,AL,2019,25415,Rural
+175,AL,2019,1159393,Total
+51,AL,2020,66033,Commercial
+50,AL,2020,2088,Industrial
+54,AL,2020,304,Public Lighting
+53,AL,2020,8978,Public Sector
+55,AL,2020,1771,Public Service
+49,AL,2020,1049793,Residential
+52,AL,2020,32977,Rural
+202,AL,2020,1162055,Total
+58,AL,2021,65694,Commercial
+57,AL,2021,1887,Industrial
+61,AL,2021,291,Public Lighting
+60,AL,2021,9122,Public Sector
+62,AL,2021,1868,Public Service
+56,AL,2021,1086611,Residential
+59,AL,2021,33734,Rural
+229,AL,2021,1199324,Total
+65,AL,2022,72786,Commercial
+64,AL,2022,2121,Industrial
+68,AL,2022,892,Public Lighting
+67,AL,2022,9393,Public Sector
+69,AL,2022,2070,Public Service
+63,AL,2022,1207371,Residential
+66,AL,2022,31793,Rural
+256,AL,2022,1326532,Total
+2,AM,2013,70185,Commercial
+1,AM,2013,3158,Industrial
+5,AM,2013,661,Public Lighting
+4,AM,2013,8578,Public Sector
+6,AM,2013,932,Public Service
+0,AM,2013,702376,Residential
+3,AM,2013,40947,Rural
+2,AM,2013,827235,Total
+9,AM,2014,71750,Commercial
+8,AM,2014,3082,Industrial
+12,AM,2014,663,Public Lighting
+11,AM,2014,8970,Public Sector
+13,AM,2014,953,Public Service
+7,AM,2014,733766,Residential
+10,AM,2014,41154,Rural
+29,AM,2014,860736,Total
+16,AM,2015,73475,Commercial
+15,AM,2015,3028,Industrial
+19,AM,2015,664,Public Lighting
+18,AM,2015,9394,Public Sector
+20,AM,2015,880,Public Service
+14,AM,2015,769171,Residential
+17,AM,2015,41391,Rural
+56,AM,2015,898365,Total
+23,AM,2016,74915,Commercial
+22,AM,2016,3012,Industrial
+26,AM,2016,664,Public Lighting
+25,AM,2016,9452,Public Sector
+27,AM,2016,894,Public Service
+21,AM,2016,813576,Residential
+24,AM,2016,42444,Rural
+83,AM,2016,945231,Total
+30,AM,2017,76271,Commercial
+29,AM,2017,2834,Industrial
+33,AM,2017,666,Public Lighting
+32,AM,2017,9525,Public Sector
+34,AM,2017,913,Public Service
+28,AM,2017,843242,Residential
+31,AM,2017,43156,Rural
+110,AM,2017,976874,Total
+37,AM,2018,76969,Commercial
+36,AM,2018,2720,Industrial
+40,AM,2018,663,Public Lighting
+39,AM,2018,9599,Public Sector
+41,AM,2018,911,Public Service
+35,AM,2018,866661,Residential
+38,AM,2018,43758,Rural
+137,AM,2018,1001550,Total
+44,AM,2019,78634,Commercial
+43,AM,2019,2704,Industrial
+47,AM,2019,611,Public Lighting
+46,AM,2019,9702,Public Sector
+48,AM,2019,926,Public Service
+42,AM,2019,883561,Residential
+45,AM,2019,43686,Rural
+164,AM,2019,1020088,Total
+51,AM,2020,80400,Commercial
+50,AM,2020,2642,Industrial
+54,AM,2020,666,Public Lighting
+53,AM,2020,9795,Public Sector
+55,AM,2020,948,Public Service
+49,AM,2020,906760,Residential
+52,AM,2020,44070,Rural
+191,AM,2020,1045536,Total
+58,AM,2021,76708,Commercial
+57,AM,2021,2300,Industrial
+61,AM,2021,717,Public Lighting
+60,AM,2021,9068,Public Sector
+62,AM,2021,1721,Public Service
+56,AM,2021,822538,Residential
+59,AM,2021,40609,Rural
+218,AM,2021,953900,Total
+65,AM,2022,81105,Commercial
+64,AM,2022,2254,Industrial
+68,AM,2022,229,Public Lighting
+67,AM,2022,9161,Public Sector
+69,AM,2022,1837,Public Service
+63,AM,2022,855613,Residential
+66,AM,2022,38448,Rural
+245,AM,2022,988880,Total
+2,AP,2013,16771,Commercial
+1,AP,2013,455,Industrial
+5,AP,2013,95,Public Lighting
+4,AP,2013,1859,Public Sector
+6,AP,2013,171,Public Service
+0,AP,2013,161344,Residential
+3,AP,2013,1359,Rural
+5,AP,2013,182091,Total
+9,AP,2014,17100,Commercial
+8,AP,2014,441,Industrial
+12,AP,2014,93,Public Lighting
+11,AP,2014,2112,Public Sector
+13,AP,2014,130,Public Service
+7,AP,2014,168849,Residential
+10,AP,2014,1508,Rural
+32,AP,2014,190271,Total
+16,AP,2015,18258,Commercial
+15,AP,2015,424,Industrial
+19,AP,2015,57,Public Lighting
+18,AP,2015,2107,Public Sector
+20,AP,2015,122,Public Service
+14,AP,2015,173284,Residential
+17,AP,2015,1726,Rural
+59,AP,2015,196012,Total
+23,AP,2016,18006,Commercial
+22,AP,2016,407,Industrial
+26,AP,2016,27,Public Lighting
+25,AP,2016,2015,Public Sector
+27,AP,2016,119,Public Service
+21,AP,2016,177310,Residential
+24,AP,2016,2144,Rural
+86,AP,2016,200066,Total
+30,AP,2017,17904,Commercial
+29,AP,2017,404,Industrial
+33,AP,2017,27,Public Lighting
+32,AP,2017,2126,Public Sector
+34,AP,2017,112,Public Service
+28,AP,2017,180918,Residential
+31,AP,2017,2216,Rural
+113,AP,2017,203747,Total
+37,AP,2018,17839,Commercial
+36,AP,2018,370,Industrial
+40,AP,2018,30,Public Lighting
+39,AP,2018,2155,Public Sector
+41,AP,2018,105,Public Service
+35,AP,2018,182254,Residential
+38,AP,2018,2171,Rural
+140,AP,2018,204965,Total
+44,AP,2019,18436,Commercial
+43,AP,2019,348,Industrial
+47,AP,2019,85,Public Lighting
+46,AP,2019,2148,Public Sector
+48,AP,2019,99,Public Service
+42,AP,2019,183418,Residential
+45,AP,2019,2322,Rural
+167,AP,2019,206897,Total
+51,AP,2020,18471,Commercial
+50,AP,2020,346,Industrial
+54,AP,2020,88,Public Lighting
+53,AP,2020,2161,Public Sector
+55,AP,2020,99,Public Service
+49,AP,2020,185066,Residential
+52,AP,2020,2341,Rural
+194,AP,2020,208613,Total
+58,AP,2021,17527,Commercial
+57,AP,2021,330,Industrial
+61,AP,2021,84,Public Lighting
+60,AP,2021,2053,Public Sector
+62,AP,2021,95,Public Service
+56,AP,2021,176375,Residential
+59,AP,2021,2240,Rural
+221,AP,2021,198743,Total
+65,AP,2022,15529,Commercial
+64,AP,2022,249,Industrial
+68,AP,2022,1,Public Lighting
+67,AP,2022,2148,Public Sector
+69,AP,2022,131,Public Service
+63,AP,2022,178462,Residential
+66,AP,2022,2395,Rural
+248,AP,2022,198955,Total
+2,BA,2013,332904,Commercial
+1,BA,2013,19573,Industrial
+5,BA,2013,16426,Public Lighting
+4,BA,2013,47281,Public Sector
+6,BA,2013,10475,Public Service
+0,BA,2013,4760737,Residential
+3,BA,2013,208922,Rural
+15,BA,2013,5396759,Total
+9,BA,2014,347184,Commercial
+8,BA,2014,16592,Industrial
+12,BA,2014,16615,Public Lighting
+11,BA,2014,48049,Public Sector
+13,BA,2014,11095,Public Service
+7,BA,2014,4943346,Residential
+10,BA,2014,212111,Rural
+42,BA,2014,5595443,Total
+16,BA,2015,369791,Commercial
+15,BA,2015,16004,Industrial
+19,BA,2015,16856,Public Lighting
+18,BA,2015,48351,Public Sector
+20,BA,2015,11725,Public Service
+14,BA,2015,5078127,Residential
+17,BA,2015,214312,Rural
+69,BA,2015,5755637,Total
+23,BA,2016,377491,Commercial
+22,BA,2016,15376,Industrial
+26,BA,2016,17007,Public Lighting
+25,BA,2016,48840,Public Sector
+27,BA,2016,12336,Public Service
+21,BA,2016,5164008,Residential
+24,BA,2016,219914,Rural
+96,BA,2016,5855452,Total
+30,BA,2017,384245,Commercial
+29,BA,2017,14916,Industrial
+33,BA,2017,17110,Public Lighting
+32,BA,2017,48489,Public Sector
+34,BA,2017,12740,Public Service
+28,BA,2017,5215019,Residential
+31,BA,2017,226844,Rural
+123,BA,2017,5919837,Total
+37,BA,2018,398134,Commercial
+36,BA,2018,14525,Industrial
+40,BA,2018,17343,Public Lighting
+39,BA,2018,48275,Public Sector
+41,BA,2018,13218,Public Service
+35,BA,2018,5288507,Residential
+38,BA,2018,232595,Rural
+150,BA,2018,6013095,Total
+44,BA,2019,427346,Commercial
+43,BA,2019,13994,Industrial
+47,BA,2019,17657,Public Lighting
+46,BA,2019,48513,Public Sector
+48,BA,2019,13825,Public Service
+42,BA,2019,5402274,Residential
+45,BA,2019,201298,Rural
+177,BA,2019,6125462,Total
+51,BA,2020,409205,Commercial
+50,BA,2020,13608,Industrial
+54,BA,2020,5668,Public Lighting
+53,BA,2020,48810,Public Sector
+55,BA,2020,14173,Public Service
+49,BA,2020,5507706,Residential
+52,BA,2020,225813,Rural
+204,BA,2020,6225560,Total
+58,BA,2021,422452,Commercial
+57,BA,2021,13267,Industrial
+61,BA,2021,6218,Public Lighting
+60,BA,2021,48843,Public Sector
+62,BA,2021,14274,Public Service
+56,BA,2021,5648429,Residential
+59,BA,2021,219215,Rural
+231,BA,2021,6373297,Total
+65,BA,2022,434728,Commercial
+64,BA,2022,10152,Industrial
+68,BA,2022,7137,Public Lighting
+67,BA,2022,48317,Public Sector
+69,BA,2022,13251,Public Service
+63,BA,2022,5786918,Residential
+66,BA,2022,201979,Rural
+258,BA,2022,6503069,Total
+2,CE,2013,173382,Commercial
+1,CE,2013,6075,Industrial
+5,CE,2013,9323,Public Lighting
+4,CE,2013,28573,Public Sector
+6,CE,2013,2060,Public Service
+0,CE,2013,2516776,Residential
+3,CE,2013,447988,Rural
+9,CE,2013,3184556,Total
+9,CE,2014,176549,Commercial
+8,CE,2014,6104,Industrial
+12,CE,2014,9507,Public Lighting
+11,CE,2014,33554,Public Sector
+13,CE,2014,2129,Public Service
+7,CE,2014,2590354,Residential
+10,CE,2014,476276,Rural
+36,CE,2014,3294860,Total
+16,CE,2015,176671,Commercial
+15,CE,2015,5948,Industrial
+19,CE,2015,10161,Public Lighting
+18,CE,2015,33995,Public Sector
+20,CE,2015,2530,Public Service
+14,CE,2015,2610573,Residential
+17,CE,2015,538147,Rural
+63,CE,2015,3378427,Total
+23,CE,2016,174418,Commercial
+22,CE,2016,5949,Industrial
+26,CE,2016,10370,Public Lighting
+25,CE,2016,34249,Public Sector
+27,CE,2016,2899,Public Service
+21,CE,2016,2630687,Residential
+24,CE,2016,558013,Rural
+90,CE,2016,3416986,Total
+30,CE,2017,175254,Commercial
+29,CE,2017,5971,Industrial
+33,CE,2017,10603,Public Lighting
+32,CE,2017,33487,Public Sector
+34,CE,2017,3279,Public Service
+28,CE,2017,2693590,Residential
+31,CE,2017,554899,Rural
+117,CE,2017,3477473,Total
+37,CE,2018,166780,Commercial
+36,CE,2018,5254,Industrial
+40,CE,2018,6982,Public Lighting
+39,CE,2018,30576,Public Sector
+41,CE,2018,3674,Public Service
+35,CE,2018,2788825,Residential
+38,CE,2018,529491,Rural
+144,CE,2018,3531583,Total
+44,CE,2019,176696,Commercial
+43,CE,2019,5814,Industrial
+47,CE,2019,11036,Public Lighting
+46,CE,2019,30513,Public Sector
+48,CE,2019,7894,Public Service
+42,CE,2019,2935298,Residential
+45,CE,2019,561207,Rural
+171,CE,2019,3728764,Total
+51,CE,2020,168232,Commercial
+50,CE,2020,5645,Industrial
+54,CE,2020,12292,Public Lighting
+53,CE,2020,46538,Public Sector
+55,CE,2020,11224,Public Service
+49,CE,2020,2994418,Residential
+52,CE,2020,569432,Rural
+198,CE,2020,3808096,Total
+58,CE,2021,165201,Commercial
+57,CE,2021,5423,Industrial
+61,CE,2021,29998,Public Lighting
+60,CE,2021,284612,Public Sector
+62,CE,2021,10955,Public Service
+56,CE,2021,3060243,Residential
+59,CE,2021,529349,Rural
+225,CE,2021,4086097,Total
+65,CE,2022,181769,Commercial
+64,CE,2022,5979,Industrial
+68,CE,2022,11658,Public Lighting
+67,CE,2022,31267,Public Sector
+69,CE,2022,8735,Public Service
+63,CE,2022,3353496,Residential
+66,CE,2022,532658,Rural
+252,CE,2022,4125885,Total
+2,DF,2013,104954,Commercial
+1,DF,2013,1727,Industrial
+5,DF,2013,19,Public Lighting
+4,DF,2013,5792,Public Sector
+6,DF,2013,286,Public Service
+0,DF,2013,824525,Residential
+3,DF,2013,9974,Rural
+26,DF,2013,947327,Total
+9,DF,2014,106665,Commercial
+8,DF,2014,1674,Industrial
+12,DF,2014,19,Public Lighting
+11,DF,2014,6212,Public Sector
+13,DF,2014,315,Public Service
+7,DF,2014,855945,Residential
+10,DF,2014,10098,Rural
+53,DF,2014,980980,Total
+16,DF,2015,108651,Commercial
+15,DF,2015,1690,Industrial
+19,DF,2015,19,Public Lighting
+18,DF,2015,5859,Public Sector
+20,DF,2015,313,Public Service
+14,DF,2015,885228,Residential
+17,DF,2015,10223,Rural
+80,DF,2015,1012035,Total
+23,DF,2016,108893,Commercial
+22,DF,2016,1609,Industrial
+26,DF,2016,19,Public Lighting
+25,DF,2016,5940,Public Sector
+27,DF,2016,326,Public Service
+21,DF,2016,908696,Residential
+24,DF,2016,10434,Rural
+107,DF,2016,1035967,Total
+30,DF,2017,110661,Commercial
+29,DF,2017,1555,Industrial
+33,DF,2017,19,Public Lighting
+32,DF,2017,6328,Public Sector
+34,DF,2017,337,Public Service
+28,DF,2017,927342,Residential
+31,DF,2017,10556,Rural
+134,DF,2017,1056848,Total
+37,DF,2018,115103,Commercial
+36,DF,2018,1450,Industrial
+40,DF,2018,19,Public Lighting
+39,DF,2018,6445,Public Sector
+41,DF,2018,346,Public Service
+35,DF,2018,946964,Residential
+38,DF,2018,10654,Rural
+161,DF,2018,1081030,Total
+44,DF,2019,115447,Commercial
+43,DF,2019,1405,Industrial
+47,DF,2019,23,Public Lighting
+46,DF,2019,6076,Public Sector
+48,DF,2019,352,Public Service
+42,DF,2019,952177,Residential
+45,DF,2019,10678,Rural
+188,DF,2019,1086202,Total
+51,DF,2020,114757,Commercial
+50,DF,2020,1387,Industrial
+54,DF,2020,22,Public Lighting
+53,DF,2020,6113,Public Sector
+55,DF,2020,362,Public Service
+49,DF,2020,959253,Residential
+52,DF,2020,10716,Rural
+215,DF,2020,1092653,Total
+58,DF,2021,115774,Commercial
+57,DF,2021,1313,Industrial
+61,DF,2021,22,Public Lighting
+60,DF,2021,6177,Public Sector
+62,DF,2021,372,Public Service
+56,DF,2021,987930,Residential
+59,DF,2021,10697,Rural
+242,DF,2021,1122351,Total
+65,DF,2022,115495,Commercial
+64,DF,2022,1279,Industrial
+68,DF,2022,19,Public Lighting
+67,DF,2022,5884,Public Sector
+69,DF,2022,372,Public Service
+63,DF,2022,1009764,Residential
+66,DF,2022,10050,Rural
+269,DF,2022,1142933,Total
+2,ES,2013,124832,Commercial
+1,ES,2013,13463,Industrial
+5,ES,2013,412,Public Lighting
+4,ES,2013,10995,Public Sector
+6,ES,2013,1350,Public Service
+0,ES,2013,1134462,Residential
+3,ES,2013,193233,Rural
+18,ES,2013,1478977,Total
+9,ES,2014,127869,Commercial
+8,ES,2014,13838,Industrial
+12,ES,2014,346,Public Lighting
+11,ES,2014,11145,Public Sector
+13,ES,2014,1249,Public Service
+7,ES,2014,1175518,Residential
+10,ES,2014,199222,Rural
+45,ES,2014,1529425,Total
+16,ES,2015,129168,Commercial
+15,ES,2015,13774,Industrial
+19,ES,2015,439,Public Lighting
+18,ES,2015,12280,Public Sector
+20,ES,2015,1528,Public Service
+14,ES,2015,1217576,Residential
+17,ES,2015,207446,Rural
+72,ES,2015,1582457,Total
+23,ES,2016,130560,Commercial
+22,ES,2016,13519,Industrial
+26,ES,2016,677,Public Lighting
+25,ES,2016,12163,Public Sector
+27,ES,2016,1582,Public Service
+21,ES,2016,1248911,Residential
+24,ES,2016,212029,Rural
+99,ES,2016,1619687,Total
+30,ES,2017,132783,Commercial
+29,ES,2017,13273,Industrial
+33,ES,2017,634,Public Lighting
+32,ES,2017,12363,Public Sector
+34,ES,2017,1686,Public Service
+28,ES,2017,1268307,Residential
+31,ES,2017,218611,Rural
+126,ES,2017,1647912,Total
+37,ES,2018,133726,Commercial
+36,ES,2018,12580,Industrial
+40,ES,2018,678,Public Lighting
+39,ES,2018,12292,Public Sector
+41,ES,2018,1725,Public Service
+35,ES,2018,1289688,Residential
+38,ES,2018,225212,Rural
+153,ES,2018,1676145,Total
+44,ES,2019,137252,Commercial
+43,ES,2019,12365,Industrial
+47,ES,2019,656,Public Lighting
+46,ES,2019,12466,Public Sector
+48,ES,2019,1832,Public Service
+42,ES,2019,1310465,Residential
+45,ES,2019,227238,Rural
+180,ES,2019,1702517,Total
+51,ES,2020,138856,Commercial
+50,ES,2020,11964,Industrial
+54,ES,2020,635,Public Lighting
+53,ES,2020,12494,Public Sector
+55,ES,2020,1859,Public Service
+49,ES,2020,1342347,Residential
+52,ES,2020,228457,Rural
+207,ES,2020,1736865,Total
+58,ES,2021,141418,Commercial
+57,ES,2021,11924,Industrial
+61,ES,2021,45,Public Lighting
+60,ES,2021,12629,Public Sector
+62,ES,2021,1946,Public Service
+56,ES,2021,1379598,Residential
+59,ES,2021,227295,Rural
+234,ES,2021,1775117,Total
+65,ES,2022,144299,Commercial
+64,ES,2022,11495,Industrial
+68,ES,2022,2386,Public Lighting
+67,ES,2022,12902,Public Sector
+69,ES,2022,1997,Public Service
+63,ES,2022,1421765,Residential
+66,ES,2022,221481,Rural
+261,ES,2022,1816610,Total
+2,GO,2013,223304,Commercial
+1,GO,2013,11362,Industrial
+5,GO,2013,640,Public Lighting
+4,GO,2013,17785,Public Sector
+6,GO,2013,2241,Public Service
+0,GO,2013,2214367,Residential
+3,GO,2013,177558,Rural
+25,GO,2013,2647550,Total
+9,GO,2014,225377,Commercial
+8,GO,2014,10965,Industrial
+12,GO,2014,657,Public Lighting
+11,GO,2014,18393,Public Sector
+13,GO,2014,2351,Public Service
+7,GO,2014,2310333,Residential
+10,GO,2014,181386,Rural
+52,GO,2014,2749741,Total
+16,GO,2015,225180,Commercial
+15,GO,2015,10531,Industrial
+19,GO,2015,656,Public Lighting
+18,GO,2015,17822,Public Sector
+20,GO,2015,2417,Public Service
+14,GO,2015,2394883,Residential
+17,GO,2015,183795,Rural
+79,GO,2015,2835556,Total
+23,GO,2016,219004,Commercial
+22,GO,2016,10004,Industrial
+26,GO,2016,656,Public Lighting
+25,GO,2016,17950,Public Sector
+27,GO,2016,2531,Public Service
+21,GO,2016,2423618,Residential
+24,GO,2016,185264,Rural
+106,GO,2016,2859289,Total
+30,GO,2017,216852,Commercial
+29,GO,2017,9588,Industrial
+33,GO,2017,659,Public Lighting
+32,GO,2017,18416,Public Sector
+34,GO,2017,2630,Public Service
+28,GO,2017,2467839,Residential
+31,GO,2017,185938,Rural
+133,GO,2017,2902193,Total
+37,GO,2018,212202,Commercial
+36,GO,2018,9344,Industrial
+40,GO,2018,646,Public Lighting
+39,GO,2018,18328,Public Sector
+41,GO,2018,2693,Public Service
+35,GO,2018,2532498,Residential
+38,GO,2018,191429,Rural
+160,GO,2018,2967666,Total
+44,GO,2019,211468,Commercial
+43,GO,2019,9064,Industrial
+47,GO,2019,648,Public Lighting
+46,GO,2019,19016,Public Sector
+48,GO,2019,2956,Public Service
+42,GO,2019,2613056,Residential
+45,GO,2019,195914,Rural
+187,GO,2019,3052673,Total
+51,GO,2020,209213,Commercial
+50,GO,2020,8958,Industrial
+54,GO,2020,314,Public Lighting
+53,GO,2020,19426,Public Sector
+55,GO,2020,3048,Public Service
+49,GO,2020,2704954,Residential
+52,GO,2020,206015,Rural
+214,GO,2020,3152474,Total
+58,GO,2021,205820,Commercial
+57,GO,2021,8740,Industrial
+61,GO,2021,285,Public Lighting
+60,GO,2021,19450,Public Sector
+62,GO,2021,3128,Public Service
+56,GO,2021,2773025,Residential
+59,GO,2021,216609,Rural
+241,GO,2021,3227576,Total
+65,GO,2022,205402,Commercial
+64,GO,2022,8654,Industrial
+68,GO,2022,320,Public Lighting
+67,GO,2022,19712,Public Sector
+69,GO,2022,3277,Public Service
+63,GO,2022,2851893,Residential
+66,GO,2022,241799,Rural
+268,GO,2022,3332695,Total
+2,MA,2013,134985,Commercial
+1,MA,2013,8985,Industrial
+5,MA,2013,949,Public Lighting
+4,MA,2013,21963,Public Sector
+6,MA,2013,5847,Public Service
+0,MA,2013,1893693,Residential
+3,MA,2013,59170,Rural
+7,MA,2013,2125963,Total
+9,MA,2014,146021,Commercial
+8,MA,2014,8688,Industrial
+12,MA,2014,975,Public Lighting
+11,MA,2014,22834,Public Sector
+13,MA,2014,6122,Public Service
+7,MA,2014,1954135,Residential
+10,MA,2014,58657,Rural
+34,MA,2014,2197826,Total
+16,MA,2015,151361,Commercial
+15,MA,2015,8511,Industrial
+19,MA,2015,1025,Public Lighting
+18,MA,2015,23149,Public Sector
+20,MA,2015,6431,Public Service
+14,MA,2015,2012172,Residential
+17,MA,2015,58649,Rural
+61,MA,2015,2261602,Total
+23,MA,2016,154754,Commercial
+22,MA,2016,8408,Industrial
+26,MA,2016,1025,Public Lighting
+25,MA,2016,23665,Public Sector
+27,MA,2016,6516,Public Service
+21,MA,2016,2104930,Residential
+24,MA,2016,59194,Rural
+88,MA,2016,2358810,Total
+30,MA,2017,155636,Commercial
+29,MA,2017,8121,Industrial
+33,MA,2017,1149,Public Lighting
+32,MA,2017,23643,Public Sector
+34,MA,2017,6739,Public Service
+28,MA,2017,2178275,Residential
+31,MA,2017,59718,Rural
+115,MA,2017,2433577,Total
+37,MA,2018,148648,Commercial
+36,MA,2018,7732,Industrial
+40,MA,2018,1207,Public Lighting
+39,MA,2018,24203,Public Sector
+41,MA,2018,6767,Public Service
+35,MA,2018,2242555,Residential
+38,MA,2018,60324,Rural
+142,MA,2018,2491732,Total
+44,MA,2019,142788,Commercial
+43,MA,2019,7545,Industrial
+47,MA,2019,1181,Public Lighting
+46,MA,2019,24831,Public Sector
+48,MA,2019,7059,Public Service
+42,MA,2019,2276955,Residential
+45,MA,2019,88131,Rural
+169,MA,2019,2548782,Total
+51,MA,2020,135107,Commercial
+50,MA,2020,7169,Industrial
+54,MA,2020,1248,Public Lighting
+53,MA,2020,25312,Public Sector
+55,MA,2020,7283,Public Service
+49,MA,2020,2308962,Residential
+52,MA,2020,109714,Rural
+196,MA,2020,2595105,Total
+58,MA,2021,125803,Commercial
+57,MA,2021,6473,Industrial
+61,MA,2021,1420,Public Lighting
+60,MA,2021,25698,Public Sector
+62,MA,2021,7433,Public Service
+56,MA,2021,2327284,Residential
+59,MA,2021,135066,Rural
+223,MA,2021,2629458,Total
+65,MA,2022,59203,Commercial
+64,MA,2022,2624,Industrial
+68,MA,2022,1597,Public Lighting
+67,MA,2022,27394,Public Sector
+69,MA,2022,7862,Public Service
+63,MA,2022,2454954,Residential
+66,MA,2022,122815,Rural
+250,MA,2022,2676735,Total
+2,MG,2013,754863,Commercial
+1,MG,2013,82500,Industrial
+5,MG,2013,4147,Public Lighting
+4,MG,2013,65569,Public Sector
+6,MG,2013,10577,Public Service
+0,MG,2013,6675861,Residential
+3,MG,2013,750622,Rural
+17,MG,2013,8345069,Total
+9,MG,2014,766069,Commercial
+8,MG,2014,82470,Industrial
+12,MG,2014,4352,Public Lighting
+11,MG,2014,67322,Public Sector
+13,MG,2014,11211,Public Service
+7,MG,2014,6884946,Residential
+10,MG,2014,769046,Rural
+44,MG,2014,8586343,Total
+16,MG,2015,760838,Commercial
+15,MG,2015,80118,Industrial
+19,MG,2015,4502,Public Lighting
+18,MG,2015,68010,Public Sector
+20,MG,2015,11870,Public Service
+14,MG,2015,6981499,Residential
+17,MG,2015,761784,Rural
+71,MG,2015,8669569,Total
+23,MG,2016,762823,Commercial
+22,MG,2016,79487,Industrial
+26,MG,2016,6029,Public Lighting
+25,MG,2016,68708,Public Sector
+27,MG,2016,13671,Public Service
+21,MG,2016,7145628,Residential
+24,MG,2016,775107,Rural
+98,MG,2016,8852395,Total
+30,MG,2017,764779,Commercial
+29,MG,2017,78880,Industrial
+33,MG,2017,6511,Public Lighting
+32,MG,2017,68713,Public Sector
+34,MG,2017,13869,Public Service
+28,MG,2017,7230122,Residential
+31,MG,2017,791677,Rural
+125,MG,2017,8955490,Total
+37,MG,2018,766848,Commercial
+36,MG,2018,77172,Industrial
+40,MG,2018,6778,Public Lighting
+39,MG,2018,69531,Public Sector
+41,MG,2018,14377,Public Service
+35,MG,2018,7292962,Residential
+38,MG,2018,799652,Rural
+152,MG,2018,9028254,Total
+44,MG,2019,818134,Commercial
+43,MG,2019,34715,Industrial
+47,MG,2019,7044,Public Lighting
+46,MG,2019,70413,Public Sector
+48,MG,2019,14701,Public Service
+42,MG,2019,7454286,Residential
+45,MG,2019,785376,Rural
+179,MG,2019,9185702,Total
+51,MG,2020,823853,Commercial
+50,MG,2020,34546,Industrial
+54,MG,2020,6505,Public Lighting
+53,MG,2020,71742,Public Sector
+55,MG,2020,14703,Public Service
+49,MG,2020,7621165,Residential
+52,MG,2020,776198,Rural
+206,MG,2020,9349615,Total
+58,MG,2021,841469,Commercial
+57,MG,2021,34614,Industrial
+61,MG,2021,7063,Public Lighting
+60,MG,2021,72993,Public Sector
+62,MG,2021,14735,Public Service
+56,MG,2021,7809502,Residential
+59,MG,2021,761204,Rural
+233,MG,2021,9542500,Total
+65,MG,2022,999537,Commercial
+64,MG,2022,34358,Industrial
+68,MG,2022,7449,Public Lighting
+67,MG,2022,74889,Public Sector
+69,MG,2022,14673,Public Service
+63,MG,2022,8040422,Residential
+66,MG,2022,550703,Rural
+260,MG,2022,9722990,Total
+2,MS,2013,78754,Commercial
+1,MS,2013,7804,Industrial
+5,MS,2013,2393,Public Lighting
+4,MS,2013,8990,Public Sector
+6,MS,2013,1030,Public Service
+0,MS,2013,776904,Residential
+3,MS,2013,88523,Rural
+23,MS,2013,964597,Total
+9,MS,2014,80430,Commercial
+8,MS,2014,8795,Industrial
+12,MS,2014,2418,Public Lighting
+11,MS,2014,9289,Public Sector
+13,MS,2014,1130,Public Service
+7,MS,2014,808216,Residential
+10,MS,2014,90986,Rural
+50,MS,2014,1001463,Total
+16,MS,2015,81903,Commercial
+15,MS,2015,8817,Industrial
+19,MS,2015,2538,Public Lighting
+18,MS,2015,9270,Public Sector
+20,MS,2015,1274,Public Service
+14,MS,2015,839479,Residential
+17,MS,2015,91839,Rural
+77,MS,2015,1035319,Total
+23,MS,2016,83236,Commercial
+22,MS,2016,8742,Industrial
+26,MS,2016,2649,Public Lighting
+25,MS,2016,9289,Public Sector
+27,MS,2016,1360,Public Service
+21,MS,2016,859806,Residential
+24,MS,2016,93623,Rural
+104,MS,2016,1058913,Total
+30,MS,2017,84901,Commercial
+29,MS,2017,8751,Industrial
+33,MS,2017,2686,Public Lighting
+32,MS,2017,9293,Public Sector
+34,MS,2017,1373,Public Service
+28,MS,2017,883454,Residential
+31,MS,2017,94667,Rural
+131,MS,2017,1085345,Total
+37,MS,2018,83984,Commercial
+36,MS,2018,8197,Industrial
+40,MS,2018,2774,Public Lighting
+39,MS,2018,9375,Public Sector
+41,MS,2018,1406,Public Service
+35,MS,2018,888842,Residential
+38,MS,2018,94330,Rural
+158,MS,2018,1089142,Total
+44,MS,2019,84246,Commercial
+43,MS,2019,7717,Industrial
+47,MS,2019,2835,Public Lighting
+46,MS,2019,9416,Public Sector
+48,MS,2019,1449,Public Service
+42,MS,2019,911472,Residential
+45,MS,2019,94393,Rural
+185,MS,2019,1111768,Total
+51,MS,2020,85021,Commercial
+50,MS,2020,7707,Industrial
+54,MS,2020,3300,Public Lighting
+53,MS,2020,9076,Public Sector
+55,MS,2020,1509,Public Service
+49,MS,2020,939888,Residential
+52,MS,2020,93713,Rural
+212,MS,2020,1140448,Total
+58,MS,2021,86062,Commercial
+57,MS,2021,7508,Industrial
+61,MS,2021,3063,Public Lighting
+60,MS,2021,9423,Public Sector
+62,MS,2021,1592,Public Service
+56,MS,2021,988288,Residential
+59,MS,2021,93502,Rural
+239,MS,2021,1189682,Total
+65,MS,2022,86720,Commercial
+64,MS,2022,7377,Industrial
+68,MS,2022,3146,Public Lighting
+67,MS,2022,9572,Public Sector
+69,MS,2022,1611,Public Service
+63,MS,2022,991382,Residential
+66,MS,2022,83401,Rural
+266,MS,2022,1183457,Total
+2,MT,2013,90332,Commercial
+1,MT,2013,21538,Industrial
+5,MT,2013,759,Public Lighting
+4,MT,2013,11473,Public Sector
+6,MT,2013,1162,Public Service
+0,MT,2013,934300,Residential
+3,MT,2013,159738,Rural
+24,MT,2013,1219591,Total
+9,MT,2014,94255,Commercial
+8,MT,2014,22635,Industrial
+12,MT,2014,792,Public Lighting
+11,MT,2014,11709,Public Sector
+13,MT,2014,1204,Public Service
+7,MT,2014,976619,Residential
+10,MT,2014,162165,Rural
+51,MT,2014,1269672,Total
+16,MT,2015,94591,Commercial
+15,MT,2015,22809,Industrial
+19,MT,2015,843,Public Lighting
+18,MT,2015,11803,Public Sector
+20,MT,2015,1250,Public Service
+14,MT,2015,999611,Residential
+17,MT,2015,165532,Rural
+78,MT,2015,1296741,Total
+23,MT,2016,93629,Commercial
+22,MT,2016,20763,Industrial
+26,MT,2016,873,Public Lighting
+25,MT,2016,11993,Public Sector
+27,MT,2016,1273,Public Service
+21,MT,2016,1030981,Residential
+24,MT,2016,168453,Rural
+105,MT,2016,1328281,Total
+30,MT,2017,93947,Commercial
+29,MT,2017,19526,Industrial
+33,MT,2017,908,Public Lighting
+32,MT,2017,12048,Public Sector
+34,MT,2017,1310,Public Service
+28,MT,2017,1063251,Residential
+31,MT,2017,174552,Rural
+132,MT,2017,1365862,Total
+37,MT,2018,94495,Commercial
+36,MT,2018,19005,Industrial
+40,MT,2018,792,Public Lighting
+39,MT,2018,12117,Public Sector
+41,MT,2018,1374,Public Service
+35,MT,2018,1093130,Residential
+38,MT,2018,183177,Rural
+159,MT,2018,1404405,Total
+44,MT,2019,96060,Commercial
+43,MT,2019,18513,Industrial
+47,MT,2019,803,Public Lighting
+46,MT,2019,12043,Public Sector
+48,MT,2019,1490,Public Service
+42,MT,2019,1135097,Residential
+45,MT,2019,193628,Rural
+186,MT,2019,1457950,Total
+51,MT,2020,96999,Commercial
+50,MT,2020,18473,Industrial
+54,MT,2020,804,Public Lighting
+53,MT,2020,12445,Public Sector
+55,MT,2020,1442,Public Service
+49,MT,2020,1177135,Residential
+52,MT,2020,200319,Rural
+213,MT,2020,1507933,Total
+58,MT,2021,100222,Commercial
+57,MT,2021,18013,Industrial
+61,MT,2021,672,Public Lighting
+60,MT,2021,12576,Public Sector
+62,MT,2021,1533,Public Service
+56,MT,2021,1226145,Residential
+59,MT,2021,203538,Rural
+240,MT,2021,1563010,Total
+65,MT,2022,102461,Commercial
+64,MT,2022,17421,Industrial
+68,MT,2022,754,Public Lighting
+67,MT,2022,12973,Public Sector
+69,MT,2022,1545,Public Service
+63,MT,2022,1289692,Residential
+66,MT,2022,173343,Rural
+267,MT,2022,1598499,Total
+2,PA,2013,153641,Commercial
+1,PA,2013,4049,Industrial
+5,PA,2013,364,Public Lighting
+4,PA,2013,17691,Public Sector
+6,PA,2013,1831,Public Service
+0,PA,2013,1736204,Residential
+3,PA,2013,119061,Rural
+4,PA,2013,2033106,Total
+9,PA,2014,161347,Commercial
+8,PA,2014,4046,Industrial
+12,PA,2014,442,Public Lighting
+11,PA,2014,18178,Public Sector
+13,PA,2014,1870,Public Service
+7,PA,2014,1882290,Residential
+10,PA,2014,117332,Rural
+31,PA,2014,2185789,Total
+16,PA,2015,168116,Commercial
+15,PA,2015,4021,Industrial
+19,PA,2015,488,Public Lighting
+18,PA,2015,18546,Public Sector
+20,PA,2015,1999,Public Service
+14,PA,2015,1987682,Residential
+17,PA,2015,129883,Rural
+58,PA,2015,2311029,Total
+23,PA,2016,176358,Commercial
+22,PA,2016,4277,Industrial
+26,PA,2016,463,Public Lighting
+25,PA,2016,19023,Public Sector
+27,PA,2016,2106,Public Service
+21,PA,2016,2096076,Residential
+24,PA,2016,144895,Rural
+85,PA,2016,2443463,Total
+30,PA,2017,180343,Commercial
+29,PA,2017,3997,Industrial
+33,PA,2017,480,Public Lighting
+32,PA,2017,19031,Public Sector
+34,PA,2017,2087,Public Service
+28,PA,2017,2226751,Residential
+31,PA,2017,163256,Rural
+112,PA,2017,2596163,Total
+37,PA,2018,175271,Commercial
+36,PA,2018,4081,Industrial
+40,PA,2018,481,Public Lighting
+39,PA,2018,19250,Public Sector
+41,PA,2018,2113,Public Service
+35,PA,2018,2271725,Residential
+38,PA,2018,170614,Rural
+139,PA,2018,2643790,Total
+44,PA,2019,173483,Commercial
+43,PA,2019,4030,Industrial
+47,PA,2019,519,Public Lighting
+46,PA,2019,19563,Public Sector
+48,PA,2019,2154,Public Service
+42,PA,2019,2323588,Residential
+45,PA,2019,187004,Rural
+166,PA,2019,2710597,Total
+51,PA,2020,166229,Commercial
+50,PA,2020,3956,Industrial
+54,PA,2020,504,Public Lighting
+53,PA,2020,19752,Public Sector
+55,PA,2020,2216,Public Service
+49,PA,2020,2360979,Residential
+52,PA,2020,179242,Rural
+193,PA,2020,2733140,Total
+58,PA,2021,162436,Commercial
+57,PA,2021,4239,Industrial
+61,PA,2021,531,Public Lighting
+60,PA,2021,19922,Public Sector
+62,PA,2021,2260,Public Service
+56,PA,2021,2432180,Residential
+59,PA,2021,189053,Rural
+220,PA,2021,2810890,Total
+65,PA,2022,161292,Commercial
+64,PA,2022,4182,Industrial
+68,PA,2022,539,Public Lighting
+67,PA,2022,20492,Public Sector
+69,PA,2022,2297,Public Service
+63,PA,2022,2543350,Residential
+66,PA,2022,180800,Rural
+247,PA,2022,2913220,Total
+2,PB,2013,105844,Commercial
+1,PB,2013,5159,Industrial
+5,PB,2013,702,Public Lighting
+4,PB,2013,16696,Public Sector
+6,PB,2013,1070,Public Service
+0,PB,2013,1192623,Residential
+3,PB,2013,130095,Rural
+11,PB,2013,1452411,Total
+9,PB,2014,107743,Commercial
+8,PB,2014,5094,Industrial
+12,PB,2014,718,Public Lighting
+11,PB,2014,17217,Public Sector
+13,PB,2014,1091,Public Service
+7,PB,2014,1240947,Residential
+10,PB,2014,135980,Rural
+38,PB,2014,1509035,Total
+16,PB,2015,108699,Commercial
+15,PB,2015,4916,Industrial
+19,PB,2015,759,Public Lighting
+18,PB,2015,17340,Public Sector
+20,PB,2015,1096,Public Service
+14,PB,2015,1286156,Residential
+17,PB,2015,140660,Rural
+65,PB,2015,1559893,Total
+23,PB,2016,108162,Commercial
+22,PB,2016,4738,Industrial
+26,PB,2016,788,Public Lighting
+25,PB,2016,17634,Public Sector
+27,PB,2016,1136,Public Service
+21,PB,2016,1311074,Residential
+24,PB,2016,143538,Rural
+92,PB,2016,1587330,Total
+30,PB,2017,108466,Commercial
+29,PB,2017,4595,Industrial
+33,PB,2017,804,Public Lighting
+32,PB,2017,17732,Public Sector
+34,PB,2017,1133,Public Service
+28,PB,2017,1334764,Residential
+31,PB,2017,146577,Rural
+119,PB,2017,1614340,Total
+37,PB,2018,108963,Commercial
+36,PB,2018,4515,Industrial
+40,PB,2018,797,Public Lighting
+39,PB,2018,17805,Public Sector
+41,PB,2018,1136,Public Service
+35,PB,2018,1354210,Residential
+38,PB,2018,149197,Rural
+146,PB,2018,1636897,Total
+44,PB,2019,109677,Commercial
+43,PB,2019,4421,Industrial
+47,PB,2019,818,Public Lighting
+46,PB,2019,18252,Public Sector
+48,PB,2019,1074,Public Service
+42,PB,2019,1372335,Residential
+45,PB,2019,151368,Rural
+173,PB,2019,1658252,Total
+51,PB,2020,111212,Commercial
+50,PB,2020,4510,Industrial
+54,PB,2020,752,Public Lighting
+53,PB,2020,18501,Public Sector
+55,PB,2020,1084,Public Service
+49,PB,2020,1418189,Residential
+52,PB,2020,152914,Rural
+200,PB,2020,1707481,Total
+58,PB,2021,112719,Commercial
+57,PB,2021,4485,Industrial
+61,PB,2021,833,Public Lighting
+60,PB,2021,18689,Public Sector
+62,PB,2021,1087,Public Service
+56,PB,2021,1488858,Residential
+59,PB,2021,147934,Rural
+227,PB,2021,1774931,Total
+65,PB,2022,114390,Commercial
+64,PB,2022,4541,Industrial
+68,PB,2022,957,Public Lighting
+67,PB,2022,19135,Public Sector
+69,PB,2022,1133,Public Service
+63,PB,2022,1506038,Residential
+66,PB,2022,125661,Rural
+254,PB,2022,1772181,Total
+2,PE,2013,203306,Commercial
+1,PE,2013,12065,Industrial
+5,PE,2013,5455,Public Lighting
+4,PE,2013,22891,Public Sector
+6,PE,2013,3205,Public Service
+0,PE,2013,2927466,Residential
+3,PE,2013,156291,Rural
+12,PE,2013,3330940,Total
+9,PE,2014,215501,Commercial
+8,PE,2014,4892,Industrial
+12,PE,2014,5318,Public Lighting
+11,PE,2014,23145,Public Sector
+13,PE,2014,3343,Public Service
+7,PE,2014,3022703,Residential
+10,PE,2014,157736,Rural
+39,PE,2014,3433627,Total
+16,PE,2015,227862,Commercial
+15,PE,2015,4996,Industrial
+19,PE,2015,5330,Public Lighting
+18,PE,2015,23114,Public Sector
+20,PE,2015,3499,Public Service
+14,PE,2015,3101987,Residential
+17,PE,2015,160632,Rural
+66,PE,2015,3527767,Total
+23,PE,2016,231298,Commercial
+22,PE,2016,5423,Industrial
+26,PE,2016,5398,Public Lighting
+25,PE,2016,22528,Public Sector
+27,PE,2016,3934,Public Service
+21,PE,2016,3172284,Residential
+24,PE,2016,160688,Rural
+93,PE,2016,3601860,Total
+30,PE,2017,230271,Commercial
+29,PE,2017,5199,Industrial
+33,PE,2017,5588,Public Lighting
+32,PE,2017,22480,Public Sector
+34,PE,2017,4066,Public Service
+28,PE,2017,3227078,Residential
+31,PE,2017,161795,Rural
+120,PE,2017,3656814,Total
+37,PE,2018,227874,Commercial
+36,PE,2018,4958,Industrial
+40,PE,2018,5844,Public Lighting
+39,PE,2018,22489,Public Sector
+41,PE,2018,4157,Public Service
+35,PE,2018,3266551,Residential
+38,PE,2018,161482,Rural
+147,PE,2018,3693663,Total
+44,PE,2019,232632,Commercial
+43,PE,2019,4962,Industrial
+47,PE,2019,6039,Public Lighting
+46,PE,2019,22256,Public Sector
+48,PE,2019,4218,Public Service
+42,PE,2019,3330803,Residential
+45,PE,2019,155997,Rural
+174,PE,2019,3757220,Total
+51,PE,2020,221151,Commercial
+50,PE,2020,4733,Industrial
+54,PE,2020,6318,Public Lighting
+53,PE,2020,21996,Public Sector
+55,PE,2020,4285,Public Service
+49,PE,2020,3393784,Residential
+52,PE,2020,143298,Rural
+201,PE,2020,3795855,Total
+58,PE,2021,225283,Commercial
+57,PE,2021,4810,Industrial
+61,PE,2021,7112,Public Lighting
+60,PE,2021,22121,Public Sector
+62,PE,2021,4265,Public Service
+56,PE,2021,3477630,Residential
+59,PE,2021,139876,Rural
+228,PE,2021,3881415,Total
+65,PE,2022,228610,Commercial
+64,PE,2022,4892,Industrial
+68,PE,2022,7373,Public Lighting
+67,PE,2022,21876,Public Sector
+69,PE,2022,4183,Public Service
+63,PE,2022,3548504,Residential
+66,PE,2022,130814,Rural
+255,PE,2022,3946586,Total
+2,PI,2013,80129,Commercial
+1,PI,2013,3600,Industrial
+5,PI,2013,695,Public Lighting
+4,PI,2013,14309,Public Sector
+6,PI,2013,5348,Public Service
+0,PI,2013,967464,Residential
+3,PI,2013,30302,Rural
+8,PI,2013,1102020,Total
+9,PI,2014,83476,Commercial
+8,PI,2014,3526,Industrial
+12,PI,2014,365,Public Lighting
+11,PI,2014,14279,Public Sector
+13,PI,2014,5976,Public Service
+7,PI,2014,1006280,Residential
+10,PI,2014,30268,Rural
+35,PI,2014,1144333,Total
+16,PI,2015,86158,Commercial
+15,PI,2015,3354,Industrial
+19,PI,2015,393,Public Lighting
+18,PI,2015,15024,Public Sector
+20,PI,2015,5852,Public Service
+14,PI,2015,1031703,Residential
+17,PI,2015,30385,Rural
+62,PI,2015,1173064,Total
+23,PI,2016,90984,Commercial
+22,PI,2016,3415,Industrial
+26,PI,2016,423,Public Lighting
+25,PI,2016,15550,Public Sector
+27,PI,2016,6203,Public Service
+21,PI,2016,1079035,Residential
+24,PI,2016,31587,Rural
+89,PI,2016,1227344,Total
+30,PI,2017,93127,Commercial
+29,PI,2017,3131,Industrial
+33,PI,2017,456,Public Lighting
+32,PI,2017,16138,Public Sector
+34,PI,2017,6390,Public Service
+28,PI,2017,1114076,Residential
+31,PI,2017,33021,Rural
+116,PI,2017,1266485,Total
+37,PI,2018,93128,Commercial
+36,PI,2018,2890,Industrial
+40,PI,2018,513,Public Lighting
+39,PI,2018,16138,Public Sector
+41,PI,2018,6676,Public Service
+35,PI,2018,1114210,Residential
+38,PI,2018,33021,Rural
+143,PI,2018,1266722,Total
+44,PI,2019,94854,Commercial
+43,PI,2019,2882,Industrial
+47,PI,2019,624,Public Lighting
+46,PI,2019,16045,Public Sector
+48,PI,2019,7066,Public Service
+42,PI,2019,1114558,Residential
+45,PI,2019,64700,Rural
+170,PI,2019,1300895,Total
+51,PI,2020,86760,Commercial
+50,PI,2020,2455,Industrial
+54,PI,2020,822,Public Lighting
+53,PI,2020,16361,Public Sector
+55,PI,2020,7819,Public Service
+49,PI,2020,1099861,Residential
+52,PI,2020,114234,Rural
+197,PI,2020,1328482,Total
+58,PI,2021,86979,Commercial
+57,PI,2021,2415,Industrial
+61,PI,2021,780,Public Lighting
+60,PI,2021,16394,Public Sector
+62,PI,2021,8510,Public Service
+56,PI,2021,1132019,Residential
+59,PI,2021,118000,Rural
+224,PI,2021,1365242,Total
+65,PI,2022,88216,Commercial
+64,PI,2022,2377,Industrial
+68,PI,2022,788,Public Lighting
+67,PI,2022,16797,Public Sector
+69,PI,2022,8847,Public Service
+63,PI,2022,1193877,Residential
+66,PI,2022,111130,Rural
+251,PI,2022,1422074,Total
+2,PR,2013,347663,Commercial
+1,PR,2013,95649,Industrial
+5,PR,2013,12916,Public Lighting
+4,PR,2013,39542,Public Sector
+6,PR,2013,4373,Public Service
+0,PR,2013,3428226,Residential
+3,PR,2013,379414,Rural
+20,PR,2013,4308666,Total
+9,PR,2014,378504,Commercial
+8,PR,2014,93220,Industrial
+12,PR,2014,12306,Public Lighting
+11,PR,2014,40455,Public Sector
+13,PR,2014,4820,Public Service
+7,PR,2014,3548796,Residential
+10,PR,2014,379170,Rural
+47,PR,2014,4458132,Total
+16,PR,2015,386480,Commercial
+15,PR,2015,89606,Industrial
+19,PR,2015,12784,Public Lighting
+18,PR,2015,40025,Public Sector
+20,PR,2015,5026,Public Service
+14,PR,2015,3641991,Residential
+17,PR,2015,375192,Rural
+74,PR,2015,4551900,Total
+23,PR,2016,391850,Commercial
+22,PR,2016,83670,Industrial
+26,PR,2016,12187,Public Lighting
+25,PR,2016,40567,Public Sector
+27,PR,2016,5096,Public Service
+21,PR,2016,3714348,Residential
+24,PR,2016,367111,Rural
+101,PR,2016,4615594,Total
+30,PR,2017,399869,Commercial
+29,PR,2017,78015,Industrial
+33,PR,2017,12462,Public Lighting
+32,PR,2017,40363,Public Sector
+34,PR,2017,5189,Public Service
+28,PR,2017,3801253,Residential
+31,PR,2017,361917,Rural
+128,PR,2017,4699806,Total
+37,PR,2018,410496,Commercial
+36,PR,2018,74825,Industrial
+40,PR,2018,12973,Public Lighting
+39,PR,2018,39912,Public Sector
+41,PR,2018,5502,Public Service
+35,PR,2018,3876539,Residential
+38,PR,2018,359215,Rural
+155,PR,2018,4780151,Total
+44,PR,2019,417352,Commercial
+43,PR,2019,73814,Industrial
+47,PR,2019,13613,Public Lighting
+46,PR,2019,39931,Public Sector
+48,PR,2019,5596,Public Service
+42,PR,2019,3952776,Residential
+45,PR,2019,360026,Rural
+182,PR,2019,4863785,Total
+51,PR,2020,423711,Commercial
+50,PR,2020,72719,Industrial
+54,PR,2020,14571,Public Lighting
+53,PR,2020,40386,Public Sector
+55,PR,2020,5798,Public Service
+49,PR,2020,4076516,Residential
+52,PR,2020,354662,Rural
+209,PR,2020,4989033,Total
+58,PR,2021,434156,Commercial
+57,PR,2021,72844,Industrial
+61,PR,2021,6936,Public Lighting
+60,PR,2021,40475,Public Sector
+62,PR,2021,5859,Public Service
+56,PR,2021,4170754,Residential
+59,PR,2021,349505,Rural
+236,PR,2021,5081207,Total
+65,PR,2022,442075,Commercial
+64,PR,2022,70894,Industrial
+68,PR,2022,7216,Public Lighting
+67,PR,2022,41332,Public Sector
+69,PR,2022,5986,Public Service
+63,PR,2022,4263340,Residential
+66,PR,2022,337995,Rural
+263,PR,2022,5169495,Total
+2,RJ,2013,473329,Commercial
+1,RJ,2013,13774,Industrial
+5,RJ,2013,2198,Public Lighting
+4,RJ,2013,25621,Public Sector
+6,RJ,2013,2992,Public Service
+0,RJ,2013,6107949,Residential
+3,RJ,2013,77299,Rural
+19,RJ,2013,6703971,Total
+9,RJ,2014,481867,Commercial
+8,RJ,2014,13417,Industrial
+12,RJ,2014,2310,Public Lighting
+11,RJ,2014,26674,Public Sector
+13,RJ,2014,3163,Public Service
+7,RJ,2014,6274740,Residential
+10,RJ,2014,78629,Rural
+46,RJ,2014,6881599,Total
+16,RJ,2015,483937,Commercial
+15,RJ,2015,12894,Industrial
+19,RJ,2015,2691,Public Lighting
+18,RJ,2015,26769,Public Sector
+20,RJ,2015,3361,Public Service
+14,RJ,2015,6468273,Residential
+17,RJ,2015,76626,Rural
+73,RJ,2015,7075372,Total
+23,RJ,2016,456123,Commercial
+22,RJ,2016,11732,Industrial
+26,RJ,2016,2399,Public Lighting
+25,RJ,2016,14054,Public Sector
+27,RJ,2016,2326,Public Service
+21,RJ,2016,6524280,Residential
+24,RJ,2016,13509,Rural
+100,RJ,2016,7024946,Total
+30,RJ,2017,474361,Commercial
+29,RJ,2017,15310,Industrial
+33,RJ,2017,2478,Public Lighting
+32,RJ,2017,26801,Public Sector
+34,RJ,2017,3822,Public Service
+28,RJ,2017,6727424,Residential
+31,RJ,2017,78953,Rural
+127,RJ,2017,7329970,Total
+37,RJ,2018,489850,Commercial
+36,RJ,2018,14873,Industrial
+40,RJ,2018,2656,Public Lighting
+39,RJ,2018,26375,Public Sector
+41,RJ,2018,3839,Public Service
+35,RJ,2018,6616913,Residential
+38,RJ,2018,77622,Rural
+154,RJ,2018,7232935,Total
+44,RJ,2019,464934,Commercial
+43,RJ,2019,13931,Industrial
+47,RJ,2019,2480,Public Lighting
+46,RJ,2019,24964,Public Sector
+48,RJ,2019,3732,Public Service
+42,RJ,2019,6359992,Residential
+45,RJ,2019,16784,Rural
+181,RJ,2019,6887615,Total
+51,RJ,2020,464703,Commercial
+50,RJ,2020,13466,Industrial
+54,RJ,2020,2613,Public Lighting
+53,RJ,2020,25356,Public Sector
+55,RJ,2020,4788,Public Service
+49,RJ,2020,6601096,Residential
+52,RJ,2020,73775,Rural
+208,RJ,2020,7186574,Total
+58,RJ,2021,449683,Commercial
+57,RJ,2021,12931,Industrial
+61,RJ,2021,2713,Public Lighting
+60,RJ,2021,26863,Public Sector
+62,RJ,2021,5262,Public Service
+56,RJ,2021,6663005,Residential
+59,RJ,2021,74130,Rural
+235,RJ,2021,7235354,Total
+65,RJ,2022,459865,Commercial
+64,RJ,2022,12410,Industrial
+68,RJ,2022,3104,Public Lighting
+67,RJ,2022,27309,Public Sector
+69,RJ,2022,4824,Public Service
+63,RJ,2022,6997396,Residential
+66,RJ,2022,68590,Rural
+262,RJ,2022,7574575,Total
+2,RN,2013,81641,Commercial
+1,RN,2013,4784,Industrial
+5,RN,2013,6404,Public Lighting
+4,RN,2013,12404,Public Sector
+6,RN,2013,1771,Public Service
+0,RN,2013,1076050,Residential
+3,RN,2013,71814,Rural
+10,RN,2013,1255080,Total
+9,RN,2014,85895,Commercial
+8,RN,2014,1529,Industrial
+12,RN,2014,7024,Public Lighting
+11,RN,2014,12581,Public Sector
+13,RN,2014,1851,Public Service
+7,RN,2014,1122564,Residential
+10,RN,2014,71984,Rural
+37,RN,2014,1303632,Total
+16,RN,2015,88866,Commercial
+15,RN,2015,1486,Industrial
+19,RN,2015,7581,Public Lighting
+18,RN,2015,12642,Public Sector
+20,RN,2015,1934,Public Service
+14,RN,2015,1163604,Residential
+17,RN,2015,72230,Rural
+64,RN,2015,1348531,Total
+23,RN,2016,92290,Commercial
+22,RN,2016,1462,Industrial
+26,RN,2016,8089,Public Lighting
+25,RN,2016,12604,Public Sector
+27,RN,2016,2031,Public Service
+21,RN,2016,1207972,Residential
+24,RN,2016,62284,Rural
+91,RN,2016,1386906,Total
+30,RN,2017,96205,Commercial
+29,RN,2017,1460,Industrial
+33,RN,2017,8600,Public Lighting
+32,RN,2017,12504,Public Sector
+34,RN,2017,2155,Public Service
+28,RN,2017,1236063,Residential
+31,RN,2017,62603,Rural
+118,RN,2017,1419720,Total
+37,RN,2018,100224,Commercial
+36,RN,2018,1457,Industrial
+40,RN,2018,9098,Public Lighting
+39,RN,2018,12450,Public Sector
+41,RN,2018,2234,Public Service
+35,RN,2018,1262906,Residential
+38,RN,2018,61319,Rural
+145,RN,2018,1449826,Total
+44,RN,2019,103142,Commercial
+43,RN,2019,1290,Industrial
+47,RN,2019,9933,Public Lighting
+46,RN,2019,12327,Public Sector
+48,RN,2019,2280,Public Service
+42,RN,2019,1297376,Residential
+45,RN,2019,49709,Rural
+172,RN,2019,1476198,Total
+51,RN,2020,103581,Commercial
+50,RN,2020,1383,Industrial
+54,RN,2020,10882,Public Lighting
+53,RN,2020,12495,Public Sector
+55,RN,2020,2338,Public Service
+49,RN,2020,1307685,Residential
+52,RN,2020,56087,Rural
+199,RN,2020,1494596,Total
+58,RN,2021,106785,Commercial
+57,RN,2021,1441,Industrial
+61,RN,2021,11612,Public Lighting
+60,RN,2021,12572,Public Sector
+62,RN,2021,2437,Public Service
+56,RN,2021,1336863,Residential
+59,RN,2021,53983,Rural
+226,RN,2021,1525863,Total
+65,RN,2022,110268,Commercial
+64,RN,2022,1458,Industrial
+68,RN,2022,12231,Public Lighting
+67,RN,2022,12626,Public Sector
+69,RN,2022,2560,Public Service
+63,RN,2022,1364959,Residential
+66,RN,2022,50979,Rural
+253,RN,2022,1555248,Total
+2,RO,2013,38382,Commercial
+1,RO,2013,1977,Industrial
+5,RO,2013,246,Public Lighting
+4,RO,2013,4501,Public Sector
+6,RO,2013,214,Public Service
+0,RO,2013,402119,Residential
+3,RO,2013,117344,Rural
+0,RO,2013,564901,Total
+9,RO,2014,39141,Commercial
+8,RO,2014,1970,Industrial
+12,RO,2014,273,Public Lighting
+11,RO,2014,4598,Public Sector
+13,RO,2014,214,Public Service
+7,RO,2014,415354,Residential
+10,RO,2014,119198,Rural
+27,RO,2014,580868,Total
+16,RO,2015,39168,Commercial
+15,RO,2015,1920,Industrial
+19,RO,2015,281,Public Lighting
+18,RO,2015,4675,Public Sector
+20,RO,2015,226,Public Service
+14,RO,2015,423404,Residential
+17,RO,2015,119529,Rural
+54,RO,2015,589341,Total
+23,RO,2016,39852,Commercial
+22,RO,2016,1832,Industrial
+26,RO,2016,281,Public Lighting
+25,RO,2016,4664,Public Sector
+27,RO,2016,252,Public Service
+21,RO,2016,439160,Residential
+24,RO,2016,122917,Rural
+81,RO,2016,609099,Total
+30,RO,2017,40470,Commercial
+29,RO,2017,1700,Industrial
+33,RO,2017,280,Public Lighting
+32,RO,2017,4703,Public Sector
+34,RO,2017,267,Public Service
+28,RO,2017,458222,Residential
+31,RO,2017,127190,Rural
+108,RO,2017,632975,Total
+37,RO,2018,42535,Commercial
+36,RO,2018,1629,Industrial
+40,RO,2018,286,Public Lighting
+39,RO,2018,4719,Public Sector
+41,RO,2018,283,Public Service
+35,RO,2018,463977,Residential
+38,RO,2018,128463,Rural
+135,RO,2018,642033,Total
+44,RO,2019,43825,Commercial
+43,RO,2019,1531,Industrial
+47,RO,2019,293,Public Lighting
+46,RO,2019,4694,Public Sector
+48,RO,2019,300,Public Service
+42,RO,2019,466685,Residential
+45,RO,2019,127697,Rural
+162,RO,2019,645173,Total
+51,RO,2020,47259,Commercial
+50,RO,2020,1686,Industrial
+54,RO,2020,342,Public Lighting
+53,RO,2020,5367,Public Sector
+55,RO,2020,324,Public Service
+49,RO,2020,530411,Residential
+52,RO,2020,150870,Rural
+189,RO,2020,736437,Total
+58,RO,2021,44286,Commercial
+57,RO,2021,1527,Industrial
+61,RO,2021,171,Public Lighting
+60,RO,2021,4837,Public Sector
+62,RO,2021,316,Public Service
+56,RO,2021,496642,Residential
+59,RO,2021,126233,Rural
+216,RO,2021,674181,Total
+65,RO,2022,49054,Commercial
+64,RO,2022,2431,Industrial
+68,RO,2022,335,Public Lighting
+67,RO,2022,4733,Public Sector
+69,RO,2022,344,Public Service
+63,RO,2022,521893,Residential
+66,RO,2022,116885,Rural
+243,RO,2022,695861,Total
+2,RR,2013,11134,Commercial
+1,RR,2013,473,Industrial
+5,RR,2013,118,Public Lighting
+4,RR,2013,1806,Public Sector
+6,RR,2013,181,Public Service
+0,RR,2013,107855,Residential
+3,RR,2013,13449,Rural
+3,RR,2013,135082,Total
+9,RR,2014,11532,Commercial
+8,RR,2014,464,Industrial
+12,RR,2014,137,Public Lighting
+11,RR,2014,1871,Public Sector
+13,RR,2014,205,Public Service
+7,RR,2014,114512,Residential
+10,RR,2014,14612,Rural
+30,RR,2014,143396,Total
+16,RR,2015,11763,Commercial
+15,RR,2015,483,Industrial
+19,RR,2015,134,Public Lighting
+18,RR,2015,1920,Public Sector
+20,RR,2015,204,Public Service
+14,RR,2015,118832,Residential
+17,RR,2015,15877,Rural
+57,RR,2015,149274,Total
+23,RR,2016,12054,Commercial
+22,RR,2016,467,Industrial
+26,RR,2016,144,Public Lighting
+25,RR,2016,1884,Public Sector
+27,RR,2016,211,Public Service
+21,RR,2016,124680,Residential
+24,RR,2016,16344,Rural
+84,RR,2016,155846,Total
+30,RR,2017,12374,Commercial
+29,RR,2017,470,Industrial
+33,RR,2017,150,Public Lighting
+32,RR,2017,1972,Public Sector
+34,RR,2017,218,Public Service
+28,RR,2017,129656,Residential
+31,RR,2017,16839,Rural
+111,RR,2017,161714,Total
+37,RR,2018,12397,Commercial
+36,RR,2018,420,Industrial
+40,RR,2018,166,Public Lighting
+39,RR,2018,2010,Public Sector
+41,RR,2018,236,Public Service
+35,RR,2018,130244,Residential
+38,RR,2018,17702,Rural
+138,RR,2018,163214,Total
+44,RR,2019,12409,Commercial
+43,RR,2019,407,Industrial
+47,RR,2019,194,Public Lighting
+46,RR,2019,1996,Public Sector
+48,RR,2019,267,Public Service
+42,RR,2019,132113,Residential
+45,RR,2019,18286,Rural
+165,RR,2019,165715,Total
+51,RR,2020,12436,Commercial
+50,RR,2020,388,Industrial
+54,RR,2020,204,Public Lighting
+53,RR,2020,2084,Public Sector
+55,RR,2020,288,Public Service
+49,RR,2020,143213,Residential
+52,RR,2020,19041,Rural
+192,RR,2020,177697,Total
+58,RR,2021,12862,Commercial
+57,RR,2021,400,Industrial
+61,RR,2021,168,Public Lighting
+60,RR,2021,2185,Public Sector
+62,RR,2021,317,Public Service
+56,RR,2021,152679,Residential
+59,RR,2021,20967,Rural
+219,RR,2021,189622,Total
+65,RR,2022,14404,Commercial
+64,RR,2022,411,Industrial
+68,RR,2022,171,Public Lighting
+67,RR,2022,2303,Public Sector
+69,RR,2022,342,Public Service
+63,RR,2022,170957,Residential
+66,RR,2022,10081,Rural
+246,RR,2022,198715,Total
+2,RS,2013,349718,Commercial
+1,RS,2013,37198,Industrial
+5,RS,2013,561,Public Lighting
+4,RS,2013,28408,Public Sector
+6,RS,2013,3835,Public Service
+0,RS,2013,3562681,Residential
+3,RS,2013,342717,Rural
+22,RS,2013,4325544,Total
+9,RS,2014,350736,Commercial
+8,RS,2014,36407,Industrial
+12,RS,2014,561,Public Lighting
+11,RS,2014,28904,Public Sector
+13,RS,2014,3945,Public Service
+7,RS,2014,3656818,Residential
+10,RS,2014,341489,Rural
+49,RS,2014,4419281,Total
+16,RS,2015,347466,Commercial
+15,RS,2015,35480,Industrial
+19,RS,2015,565,Public Lighting
+18,RS,2015,29326,Public Sector
+20,RS,2015,3997,Public Service
+14,RS,2015,3729564,Residential
+17,RS,2015,335685,Rural
+76,RS,2015,4482506,Total
+23,RS,2016,342858,Commercial
+22,RS,2016,34390,Industrial
+26,RS,2016,582,Public Lighting
+25,RS,2016,29920,Public Sector
+27,RS,2016,4101,Public Service
+21,RS,2016,3784899,Residential
+24,RS,2016,339721,Rural
+103,RS,2016,4536889,Total
+30,RS,2017,345271,Commercial
+29,RS,2017,34040,Industrial
+33,RS,2017,578,Public Lighting
+32,RS,2017,29873,Public Sector
+34,RS,2017,4142,Public Service
+28,RS,2017,3894915,Residential
+31,RS,2017,344498,Rural
+130,RS,2017,4653724,Total
+37,RS,2018,340016,Commercial
+36,RS,2018,33856,Industrial
+40,RS,2018,591,Public Lighting
+39,RS,2018,29671,Public Sector
+41,RS,2018,4423,Public Service
+35,RS,2018,3977801,Residential
+38,RS,2018,347727,Rural
+157,RS,2018,4734475,Total
+44,RS,2019,343261,Commercial
+43,RS,2019,32914,Industrial
+47,RS,2019,596,Public Lighting
+46,RS,2019,30170,Public Sector
+48,RS,2019,4518,Public Service
+42,RS,2019,4114961,Residential
+45,RS,2019,348809,Rural
+184,RS,2019,4875593,Total
+51,RS,2020,341073,Commercial
+50,RS,2020,29695,Industrial
+54,RS,2020,647,Public Lighting
+53,RS,2020,31244,Public Sector
+55,RS,2020,4648,Public Service
+49,RS,2020,4062926,Residential
+52,RS,2020,348752,Rural
+211,RS,2020,4819355,Total
+58,RS,2021,343522,Commercial
+57,RS,2021,27348,Industrial
+61,RS,2021,667,Public Lighting
+60,RS,2021,31274,Public Sector
+62,RS,2021,4853,Public Service
+56,RS,2021,4133463,Residential
+59,RS,2021,346382,Rural
+238,RS,2021,4887879,Total
+65,RS,2022,356569,Commercial
+64,RS,2022,21706,Industrial
+68,RS,2022,759,Public Lighting
+67,RS,2022,32123,Public Sector
+69,RS,2022,5010,Public Service
+63,RS,2022,4269663,Residential
+66,RS,2022,331399,Rural
+265,RS,2022,5017620,Total
+2,SC,2013,235929,Commercial
+1,SC,2013,97541,Industrial
+5,SC,2013,570,Public Lighting
+4,SC,2013,21260,Public Sector
+6,SC,2013,2659,Public Service
+0,SC,2013,2037420,Residential
+3,SC,2013,235962,Rural
+21,SC,2013,2631730,Total
+9,SC,2014,245958,Commercial
+8,SC,2014,101153,Industrial
+12,SC,2014,609,Public Lighting
+11,SC,2014,21804,Public Sector
+13,SC,2014,2827,Public Service
+7,SC,2014,2113284,Residential
+10,SC,2014,238154,Rural
+48,SC,2014,2724184,Total
+16,SC,2015,254095,Commercial
+15,SC,2015,102997,Industrial
+19,SC,2015,645,Public Lighting
+18,SC,2015,22536,Public Sector
+20,SC,2015,3007,Public Service
+14,SC,2015,2190211,Residential
+17,SC,2015,239398,Rural
+75,SC,2015,2813286,Total
+23,SC,2016,260155,Commercial
+22,SC,2016,103087,Industrial
+26,SC,2016,720,Public Lighting
+25,SC,2016,22966,Public Sector
+27,SC,2016,3227,Public Service
+21,SC,2016,2246917,Residential
+24,SC,2016,239634,Rural
+102,SC,2016,2877097,Total
+30,SC,2017,268136,Commercial
+29,SC,2017,104418,Industrial
+33,SC,2017,785,Public Lighting
+32,SC,2017,23253,Public Sector
+34,SC,2017,3294,Public Service
+28,SC,2017,2305937,Residential
+31,SC,2017,239609,Rural
+129,SC,2017,2945836,Total
+37,SC,2018,276762,Commercial
+36,SC,2018,108523,Industrial
+40,SC,2018,825,Public Lighting
+39,SC,2018,23581,Public Sector
+41,SC,2018,3488,Public Service
+35,SC,2018,2371166,Residential
+38,SC,2018,239817,Rural
+156,SC,2018,3024564,Total
+44,SC,2019,285396,Commercial
+43,SC,2019,111921,Industrial
+47,SC,2019,895,Public Lighting
+46,SC,2019,23763,Public Sector
+48,SC,2019,3579,Public Service
+42,SC,2019,2435214,Residential
+45,SC,2019,237518,Rural
+183,SC,2019,3098702,Total
+51,SC,2020,293504,Commercial
+50,SC,2020,119134,Industrial
+54,SC,2020,953,Public Lighting
+53,SC,2020,24238,Public Sector
+55,SC,2020,3840,Public Service
+49,SC,2020,2506042,Residential
+52,SC,2020,237848,Rural
+210,SC,2020,3185994,Total
+58,SC,2021,305408,Commercial
+57,SC,2021,128949,Industrial
+61,SC,2021,995,Public Lighting
+60,SC,2021,24722,Public Sector
+62,SC,2021,4031,Public Service
+56,SC,2021,2581156,Residential
+59,SC,2021,6002,Rural
+237,SC,2021,3051714,Total
+65,SC,2022,315723,Commercial
+64,SC,2022,135946,Industrial
+68,SC,2022,1123,Public Lighting
+67,SC,2022,25486,Public Sector
+69,SC,2022,4221,Public Service
+63,SC,2022,2654761,Residential
+66,SC,2022,232521,Rural
+264,SC,2022,3370252,Total
+2,SE,2013,48282,Commercial
+1,SE,2013,3228,Industrial
+5,SE,2013,752,Public Lighting
+4,SE,2013,6654,Public Sector
+6,SE,2013,1322,Public Service
+0,SE,2013,712378,Residential
+3,SE,2013,21640,Rural
+14,SE,2013,794361,Total
+9,SE,2014,49858,Commercial
+8,SE,2014,3222,Industrial
+12,SE,2014,703,Public Lighting
+11,SE,2014,6690,Public Sector
+13,SE,2014,1333,Public Service
+7,SE,2014,742645,Residential
+10,SE,2014,22109,Rural
+41,SE,2014,826675,Total
+16,SE,2015,50498,Commercial
+15,SE,2015,3077,Industrial
+19,SE,2015,783,Public Lighting
+18,SE,2015,6682,Public Sector
+20,SE,2015,1374,Public Service
+14,SE,2015,766729,Residential
+17,SE,2015,22726,Rural
+68,SE,2015,851982,Total
+23,SE,2016,51156,Commercial
+22,SE,2016,2967,Industrial
+26,SE,2016,803,Public Lighting
+25,SE,2016,6702,Public Sector
+27,SE,2016,1421,Public Service
+21,SE,2016,784415,Residential
+24,SE,2016,23973,Rural
+95,SE,2016,871557,Total
+30,SE,2017,51382,Commercial
+29,SE,2017,2854,Industrial
+33,SE,2017,817,Public Lighting
+32,SE,2017,6650,Public Sector
+34,SE,2017,1469,Public Service
+28,SE,2017,799809,Residential
+31,SE,2017,25277,Rural
+122,SE,2017,888380,Total
+37,SE,2018,53273,Commercial
+36,SE,2018,1506,Industrial
+40,SE,2018,884,Public Lighting
+39,SE,2018,6710,Public Sector
+41,SE,2018,1509,Public Service
+35,SE,2018,814678,Residential
+38,SE,2018,26306,Rural
+149,SE,2018,904987,Total
+44,SE,2019,54063,Commercial
+43,SE,2019,1258,Industrial
+47,SE,2019,919,Public Lighting
+46,SE,2019,6649,Public Sector
+48,SE,2019,1558,Public Service
+42,SE,2019,826643,Residential
+45,SE,2019,27630,Rural
+176,SE,2019,918843,Total
+51,SE,2020,53917,Commercial
+50,SE,2020,1122,Industrial
+54,SE,2020,971,Public Lighting
+53,SE,2020,6792,Public Sector
+55,SE,2020,1635,Public Service
+49,SE,2020,848690,Residential
+52,SE,2020,28152,Rural
+203,SE,2020,941430,Total
+58,SE,2021,53269,Commercial
+57,SE,2021,1190,Industrial
+61,SE,2021,1266,Public Lighting
+60,SE,2021,6471,Public Sector
+62,SE,2021,1737,Public Service
+56,SE,2021,874716,Residential
+59,SE,2021,27825,Rural
+230,SE,2021,966590,Total
+65,SE,2022,54155,Commercial
+64,SE,2022,1202,Industrial
+68,SE,2022,1448,Public Lighting
+67,SE,2022,6321,Public Sector
+69,SE,2022,1894,Public Service
+63,SE,2022,899904,Residential
+66,SE,2022,24207,Rural
+257,SE,2022,989241,Total
+2,SP,2013,1096823,Commercial
+1,SP,2013,122803,Industrial
+5,SP,2013,19243,Public Lighting
+4,SP,2013,84379,Public Sector
+6,SP,2013,12488,Public Service
+0,SP,2013,15513352,Residential
+3,SP,2013,264522,Rural
+16,SP,2013,17118034,Total
+9,SP,2014,1077671,Commercial
+8,SP,2014,124041,Industrial
+12,SP,2014,19736,Public Lighting
+11,SP,2014,86553,Public Sector
+13,SP,2014,12964,Public Service
+7,SP,2014,15909887,Residential
+10,SP,2014,266754,Rural
+43,SP,2014,17502487,Total
+16,SP,2015,1126185,Commercial
+15,SP,2015,106380,Industrial
+19,SP,2015,21283,Public Lighting
+18,SP,2015,88096,Public Sector
+20,SP,2015,13301,Public Service
+14,SP,2015,16265435,Residential
+17,SP,2015,270190,Rural
+70,SP,2015,17892445,Total
+23,SP,2016,1116948,Commercial
+22,SP,2016,105912,Industrial
+26,SP,2016,22223,Public Lighting
+25,SP,2016,88224,Public Sector
+27,SP,2016,13586,Public Service
+21,SP,2016,16594746,Residential
+24,SP,2016,272662,Rural
+97,SP,2016,18215874,Total
+30,SP,2017,1117386,Commercial
+29,SP,2017,104681,Industrial
+33,SP,2017,23063,Public Lighting
+32,SP,2017,88265,Public Sector
+34,SP,2017,13845,Public Service
+28,SP,2017,16953937,Residential
+31,SP,2017,274627,Rural
+124,SP,2017,18577400,Total
+37,SP,2018,1116499,Commercial
+36,SP,2018,102117,Industrial
+40,SP,2018,22544,Public Lighting
+39,SP,2018,88281,Public Sector
+41,SP,2018,14154,Public Service
+35,SP,2018,17384160,Residential
+38,SP,2018,276756,Rural
+151,SP,2018,19006136,Total
+44,SP,2019,1130843,Commercial
+43,SP,2019,100849,Industrial
+47,SP,2019,24495,Public Lighting
+46,SP,2019,89081,Public Sector
+48,SP,2019,14624,Public Service
+42,SP,2019,17832649,Residential
+45,SP,2019,268347,Rural
+178,SP,2019,19462416,Total
+51,SP,2020,1125725,Commercial
+50,SP,2020,97897,Industrial
+54,SP,2020,24987,Public Lighting
+53,SP,2020,90705,Public Sector
+55,SP,2020,14976,Public Service
+49,SP,2020,18019714,Residential
+52,SP,2020,271678,Rural
+205,SP,2020,19647258,Total
+58,SP,2021,1032910,Commercial
+57,SP,2021,92470,Industrial
+61,SP,2021,17745,Public Lighting
+60,SP,2021,87781,Public Sector
+62,SP,2021,15132,Public Service
+56,SP,2021,17243818,Residential
+59,SP,2021,267618,Rural
+232,SP,2021,18759139,Total
+65,SP,2022,1155375,Commercial
+64,SP,2022,90113,Industrial
+68,SP,2022,22147,Public Lighting
+67,SP,2022,93873,Public Sector
+69,SP,2022,15372,Public Service
+63,SP,2022,18763521,Residential
+66,SP,2022,252619,Rural
+259,SP,2022,20394712,Total
+2,TO,2013,36913,Commercial
+1,TO,2013,2158,Industrial
+5,TO,2013,696,Public Lighting
+4,TO,2013,6909,Public Sector
+6,TO,2013,674,Public Service
+0,TO,2013,412135,Residential
+3,TO,2013,64739,Rural
+6,TO,2013,524421,Total
+9,TO,2014,38379,Commercial
+8,TO,2014,2124,Industrial
+12,TO,2014,715,Public Lighting
+11,TO,2014,7013,Public Sector
+13,TO,2014,685,Public Service
+7,TO,2014,433522,Residential
+10,TO,2014,63800,Rural
+33,TO,2014,546424,Total
+16,TO,2015,39104,Commercial
+15,TO,2015,2085,Industrial
+19,TO,2015,742,Public Lighting
+18,TO,2015,7161,Public Sector
+20,TO,2015,686,Public Service
+14,TO,2015,454499,Residential
+17,TO,2015,62987,Rural
+60,TO,2015,567478,Total
+23,TO,2016,35948,Commercial
+22,TO,2016,1897,Industrial
+26,TO,2016,743,Public Lighting
+25,TO,2016,7108,Public Sector
+27,TO,2016,721,Public Service
+21,TO,2016,459594,Residential
+24,TO,2016,59915,Rural
+87,TO,2016,566141,Total
+30,TO,2017,34022,Commercial
+29,TO,2017,1763,Industrial
+33,TO,2017,757,Public Lighting
+32,TO,2017,7206,Public Sector
+34,TO,2017,753,Public Service
+28,TO,2017,470747,Residential
+31,TO,2017,58396,Rural
+114,TO,2017,573878,Total
+37,TO,2018,32784,Commercial
+36,TO,2018,1643,Industrial
+40,TO,2018,760,Public Lighting
+39,TO,2018,7279,Public Sector
+41,TO,2018,801,Public Service
+35,TO,2018,485718,Residential
+38,TO,2018,57277,Rural
+141,TO,2018,586494,Total
+44,TO,2019,32888,Commercial
+43,TO,2019,1532,Industrial
+47,TO,2019,838,Public Lighting
+46,TO,2019,7281,Public Sector
+48,TO,2019,846,Public Service
+42,TO,2019,498033,Residential
+45,TO,2019,57972,Rural
+168,TO,2019,599630,Total
+51,TO,2020,33198,Commercial
+50,TO,2020,1529,Industrial
+54,TO,2020,939,Public Lighting
+53,TO,2020,7438,Public Sector
+55,TO,2020,923,Public Service
+49,TO,2020,515919,Residential
+52,TO,2020,57966,Rural
+195,TO,2020,618148,Total
+58,TO,2021,33911,Commercial
+57,TO,2021,1501,Industrial
+61,TO,2021,1136,Public Lighting
+60,TO,2021,7176,Public Sector
+62,TO,2021,990,Public Service
+56,TO,2021,535831,Residential
+59,TO,2021,54344,Rural
+222,TO,2021,635127,Total
+65,TO,2022,34818,Commercial
+64,TO,2022,1446,Industrial
+68,TO,2022,1425,Public Lighting
+67,TO,2022,6989,Public Sector
+69,TO,2022,1142,Public Service
+63,TO,2022,559303,Residential
+66,TO,2022,45409,Rural
+249,TO,2022,650773,Total

@@ -1,0 +1,16 @@
+1. O script gera um arquivo com dados de demanda para o ano corrente. Como montar o dado para os anos seguintes?
+
+2. Como montar os dados de capacidade instalada para os anos seguintes? Arquivo da ANEEL não contempla dados de descomissionamento. Apenas de fim de vigencia do contrato
+
+3. Qual arquivo contém dados de rede?
+
+4. Converter arquivo de vazao para fator de capacidade hydro?
+
+5. Capacidade instalada planejada do arquivo da ANEEL nao indica o ano de entrada, mas entendo que projetos planejados são sempre
+para o horizonte de 4/5 anos a frente. De qualquer forma, capacidade planjeda de plantas solares está muito alta, valores nao batem
+com o indicado no info grafico do ONS. Uma saída seria desconsiderar dados de plantas solares com construção no
+status de "Construção não iniciada". Assim os valores ficam mais próximos.
+
+
+
+Fazendo: Função que gera dados de descomissionamento por ano

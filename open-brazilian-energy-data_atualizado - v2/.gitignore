@@ -1,0 +1,7 @@
+/.idea/csv-plugin.xml
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/open-brazilian-energy-data.iml
+/.idea/vcs.xml
+**/__pycache__
