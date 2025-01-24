@@ -1,0 +1,1 @@
+## Scritps utilizados no TCC
